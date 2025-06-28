@@ -12,6 +12,7 @@ class PythonCheatSheet:
                                                     'extend': methods_paths['extend'],
                                                     'sort': methods_paths['sort'],
                                                     'sorted': function_paths['sorted'],
+                                                    'split': methods_paths['split'],
                                           }
                                           }
 

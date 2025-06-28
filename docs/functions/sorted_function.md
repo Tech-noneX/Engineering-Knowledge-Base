@@ -100,7 +100,8 @@ result = sorted(words, key=len, reverse=True)
 # result is ['banana', 'apple', 'pear']
 ```
 
- **Note:**  
+ **Note:**
+
 - `sorted()` always returns a **new list**, even if input is another type.  
 - The original iterable is never modified.
 
