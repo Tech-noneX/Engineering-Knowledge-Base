@@ -1,21 +1,25 @@
 import os
 import random
 from pathlib import Path
-append_path = Path(__file__).parent.parent / 'docs' / 'append.md'
+from greetings_function import greetings
+from md_paths import function_paths
 
 
-greetings = ["Hello bro, enter function?","Whats up, mate, any function?",
-             "Hey dude, function?","Bro, enter function?",
-             "What function are you looking for?", "Looking for something?"
-            ]
-cheat_sheet = {'Functions': {'append': str(append_path)}}
-
-find_function = input(f"{random.choice(greetings)}\n:")
-if find_function in cheat_sheet['Functions']:
-    os.startfile(cheat_sheet['Functions'][find_function])
-else:
-    print("Function not found!")
+class PythonCheatSheet:
 
 
+    def __init__(self):
+        self.cheat_sheet = {'Functions': {'append': function_paths['append']}}
 
-    
+
+    def functions_menu(self):
+        find_function = input(f"{random.choice(greetings)}\n:")
+        if find_function in self.cheat_sheet['Functions']:
+            os.startfile(self.cheat_sheet['Functions'][find_function])
+        else:
+            print("Function not found!")
+
+
+
+pychsh = PythonCheatSheet()
+pychsh.functions_menu()

@@ -2,8 +2,8 @@
 
 ## Python Cheat Sheet
 
-A simple, well-organized Python reference project with code examples, explanations, and best practices.
-Perfect for beginners, self-learners, and anyone who wants a quick refresher on Python syntax and concepts.
+A simple, well-organized `Python` reference project with code examples, explanations, and best practices.
+Perfect for `beginners`, `self-learners`, and anyone who wants a quick refresher on Python `syntax` and concepts.
 
 ## What is this?
 
