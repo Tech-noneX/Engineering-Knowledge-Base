@@ -13,7 +13,8 @@ class PythonCheatSheet:
                                                     'sort': methods_paths['sort'],
                                                     'sorted': function_paths['sorted'],
                                                     'split': methods_paths['split'],
-                                                    'insert': methods_paths['insert']
+                                                    'insert': methods_paths['insert'],
+                                                    'index': methods_paths['index'],
                                           }
                                           }
 

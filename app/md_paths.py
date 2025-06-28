@@ -6,7 +6,8 @@ methods_paths = {
     'extend': Path(__file__).parent.parent/'docs'/'methods'/'extend_method.md',
     'sort': Path(__file__).parent.parent/'docs'/'methods'/'sort_method.md',
     'split': Path(__file__).parent.parent/'docs'/'methods'/'split_method.md',
-    'insert': Path(__file__).parent.parent/'docs'/'methods'/'insert_method.md'
+    'insert': Path(__file__).parent.parent/'docs'/'methods'/'insert_method.md',
+    'index': Path(__file__).parent.parent/'docs'/'methods'/'index_method.md'
     }
 
 
