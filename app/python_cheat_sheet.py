@@ -12,6 +12,10 @@ class PythonCheatSheet:
         self.cheat_sheet = {'Functions': {'append': function_paths['append']}}
 
 
+    def main_menu(self):
+        pass
+
+    
     def functions_menu(self):
         find_function = input(f"{random.choice(greetings)}\n:")
         if find_function in self.cheat_sheet['Functions']:
