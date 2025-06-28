@@ -10,6 +10,8 @@ class PythonCheatSheet:
     def __init__(self):
         self.cheat_sheet = {'functions & methods': {'append': methods_paths['append'],
                                                     'extend': methods_paths['extend'],
+                                                    'sort': methods_paths['sort'],
+                                                    'sorted': function_paths['sorted'],
                                           }
                                           }
 
