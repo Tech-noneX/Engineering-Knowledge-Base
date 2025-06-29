@@ -25,4 +25,5 @@ string_methods = {
     'lower': Path(__file__).parent.parent/'docs'/'strings'/'methods'/'lower_method.md',
     'title': Path(__file__).parent.parent/'docs'/'strings'/'methods'/'title_method.md',
     'lstrip': Path(__file__).parent.parent/'docs'/'strings'/'methods'/'lstrip_method.md',
+    'rstrip': Path(__file__).parent.parent/'docs'/'strings'/'methods'/'rstrip_method.md',
 }

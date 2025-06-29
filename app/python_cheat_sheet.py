@@ -19,8 +19,16 @@ class PythonCheatSheet:
                                                     'lower': string_methods['lower'],
                                                     'title': string_methods['title'],
                                                     'lstrip': string_methods['lstrip'],
-                                          }
-                                          }
+                                                    'rstrip': string_methods['rstrip'],
+
+                                                    }}
+        self.string_sheet = {'functions & methods:': {'upper': string_methods['upper'],
+                                                      'lower': string_methods['lower'],
+                                                      'title': string_methods['title'],
+                                                      'lstrip': string_methods['lstrip'],
+                                                      'rstrip': string_methods['rstrip'],
+
+                                                    }}
         self.dict_sheet = {'functions & methods': {'get': dict_methods_paths['get']}}
 
     def main_menu(self):
@@ -34,6 +42,9 @@ class PythonCheatSheet:
 
         elif find_function in self.dict_sheet['functions & methods']:
             os.startfile(self.dict_sheet['functions & methods'][find_function])
+        
+        elif find_function in self.string_sheet['functions & methods']:
+            os.startfile(self.string_sheet['functions & methods'][find_function])
         else:
             print("Function not found!")
 
