@@ -11,7 +11,7 @@ lists_methods_paths = {
     }
 
 
-lists_function_paths ={
+lists_function_paths = {
     'sorted': Path(__file__).parent.parent/'docs'/'lists'/'functions'/'sorted_function.md',
     }
 
@@ -27,4 +27,5 @@ string_methods = {
     'lstrip': Path(__file__).parent.parent/'docs'/'strings'/'methods'/'lstrip_method.md',
     'rstrip': Path(__file__).parent.parent/'docs'/'strings'/'methods'/'rstrip_method.md',
     'strip': Path(__file__).parent.parent/'docs'/'strings'/'methods'/'strip_method.md',
+    'removeprefix': Path(__file__).parent.parent/'docs'/'strings'/'methods'/'removeprefix_method.md',
 }

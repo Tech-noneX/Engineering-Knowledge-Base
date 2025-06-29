@@ -10,15 +10,15 @@ works_with: ['lists', 'strings']
 # append
 
 - **Used with:**
-List
+  List
 - **Construct:**
-Method
+  Method
 - **Library:**
- Built-in
+  Built-in
 - **Iterable:**
- Yes (but only on lists; argument itself can be any object)
+  Yes (but only on lists; argument itself can be any object)
 - **Time Complexity:**
- Average: O(1) (amortized constant time)
+  Average: O(1) (amortized constant time)
 
 ## Description
 

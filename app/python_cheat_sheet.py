@@ -22,12 +22,13 @@ class PythonCheatSheet:
                                                     'rstrip': string_methods['rstrip'],
 
                                                     }}
-        self.string_sheet = {'functions & methods:': {'upper': string_methods['upper'],
+        self.string_sheet = {'functions & methods': {'upper': string_methods['upper'],
                                                       'lower': string_methods['lower'],
                                                       'title': string_methods['title'],
                                                       'lstrip': string_methods['lstrip'],
                                                       'rstrip': string_methods['rstrip'],
-                                                      'strip': string_methods['strip']
+                                                      'strip': string_methods['strip'],
+                                                      'removeprefix': string_methods['removeprefix'],
                                                     }}
         self.dict_sheet = {'functions & methods': {'get': dict_methods_paths['get']}}
 
@@ -40,10 +41,10 @@ class PythonCheatSheet:
         if find_function in self.lists_sheet['functions & methods']:
             os.startfile(self.lists_sheet['functions & methods'][find_function])
 
-        elif find_function in self.dict_sheet['functions & methods']:
+        if find_function in self.dict_sheet['functions & methods']:
             os.startfile(self.dict_sheet['functions & methods'][find_function])
         
-        elif find_function in self.string_sheet['functions & methods']:
+        if find_function in self.string_sheet['functions & methods']:
             os.startfile(self.string_sheet['functions & methods'][find_function])
         
         else:
