@@ -1,3 +1,12 @@
+---
+id: index
+title: "index()"
+section: "Sequence Methods"
+tags: ["list", "tuple", "string", "method", "search", "sequence"]
+see_also: ["find()", "count()"]
+works_with: ["list", "tuple", "string"]
+---
+
 # index
 
 **Used with:**  

@@ -1,3 +1,12 @@
+---
+id: split
+title: "split()"
+section: "String Methods"
+tags: ["string", "method", "split", "delimiter", "text", "conversion"]
+see_also: ["join()", "partition()", "rsplit()"]
+works_with: ["string"]
+---
+
 # split
 
 **Used with:**  

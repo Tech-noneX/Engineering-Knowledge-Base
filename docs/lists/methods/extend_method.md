@@ -1,14 +1,18 @@
+---
+id: extend
+title: "extend()"
+section: "List Methods"
+tags: ["list", "method", "in-place", "add", "iterable", "mutable"]
+---
+
 # extend
 
 **Used with:**  
 List
-
 **Construct:**  
 Method
-
 **Library:**  
 Built-in
-
 **Iterable:**  
 Yes (argument must be iterable, e.g. list, tuple, set, string, or a variable referencing any iterable)
 

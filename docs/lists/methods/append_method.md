@@ -1,18 +1,21 @@
-# append()
+---
+id: append
+title: "append()"
+section: "List Methods"
+tags: ["list", "method", "in-place", "add", "mutable"]
+---
 
-**Used with:**  
+# append
+
+**Used with:**
 List
-
-**Construct:**  
+**Construct:**
 Method
-
-**Library:**  
+**Library:**
 Built-in
-
-**Iterable:**  
+**Iterable:**
 Yes (but only on lists; argument itself can be any object)
-
-**Time Complexity:**  
+**Time Complexity:**
 Average: O(1) (amortized constant time)
 
 ## Description

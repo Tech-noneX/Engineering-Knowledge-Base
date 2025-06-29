@@ -1,3 +1,12 @@
+---
+id: insert
+title: "insert()"
+section: "List Methods"
+tags: ["list", "method", "in-place", "add", "mutable", "position"]
+see_also: ["append()", "extend()"]
+works_with: ["list"]
+---
+
 # insert
 
 **Used with:**  

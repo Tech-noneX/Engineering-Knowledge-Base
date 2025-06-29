@@ -1,32 +1,35 @@
 import os
 import random
 from greetings_function import greetings
-from md_paths import methods_paths, function_paths
+from md_paths import lists_methods_paths, lists_function_paths,dict_methods_paths
 
 
 class PythonCheatSheet:
 
 
     def __init__(self):
-        self.cheat_sheet = {'functions & methods': {'append': methods_paths['append'],
-                                                    'extend': methods_paths['extend'],
-                                                    'sort': methods_paths['sort'],
-                                                    'sorted': function_paths['sorted'],
-                                                    'split': methods_paths['split'],
-                                                    'insert': methods_paths['insert'],
-                                                    'index': methods_paths['index'],
+        self.lists_sheet = {'functions & methods': {'append': lists_methods_paths['append'],
+                                                    'extend': lists_methods_paths['extend'],
+                                                    'sort': lists_methods_paths['sort'],
+                                                    'sorted': lists_function_paths['sorted'],
+                                                    'split': lists_methods_paths['split'],
+                                                    'insert': lists_methods_paths['insert'],
+                                                    'index': lists_methods_paths['index'],
                                           }
                                           }
-
+        self.dict_sheet = {'functions & methods': {'get': dict_methods_paths['get']}}
 
     def main_menu(self):
         pass
 
     
     def functions_menu(self):
-        find_function = input(f"{random.choice(greetings)}\n:")
-        if find_function in self.cheat_sheet['functions & methods']:
-            os.startfile(self.cheat_sheet['functions & methods'][find_function])
+        find_function = input(f"{random.choice(greetings)}\n:").lower().strip()
+        if find_function in self.lists_sheet['functions & methods']:
+            os.startfile(self.lists_sheet['functions & methods'][find_function])
+
+        elif find_function in self.dict_sheet['functions & methods']:
+            os.startfile(self.dict_sheet['functions & methods'][find_function])
         else:
             print("Function not found!")
 

@@ -1,0 +1,143 @@
+[
+  {
+    "content": "# Python-cheat-sheet\n\n## Python Cheat Sheet\n\nA simple, well-organized `Python` reference project with code examples, explanations, and best practices.\nPerfect for `beginners`, `self-learners`, and anyone who wants a quick refresher on Python `syntax` and concepts.\n\n## What is this?\n\nPython Cheat Sheet is a growing collection of practical Python code snippets and concise explanations.\nIt’s designed as a reference you can use while learning, coding, or prepping for interviews.\nExamples are organized by topic (variables, lists, loops, functions, file I/O, etc.).\nCode is commented and easy to follow.\nMarkdown files include key notes, summaries, and links to resources.\n\n## How to Use\n\n- Clone the repository\n\n```sh\nCopy\nEdit\ngit clone <https://github.com/yourusername/python-cheat-sheet.git>\ncd python-cheat-sheet\n```\n\n- Explore the folders:\n\n    app/ – Main Python scripts and code examples.\n    docs/ – Markdown notes and explanations.\n\n- Run code samples:\n\n    Open any .py file in your editor (VS Code recommended) and run with:\n\n```sh\nCopy\nEdit\npython filename.py\n```\n\n## Project Structure\n\n```ph\npython-cheat-sheet/\n├── app/\n│   ├── app.py\n│   └── ... more Python scripts\n├── docs/\n│   ├── cheat_sheet.md\n│   └── ... more notes\n├── README.md\n```\n\nKeep code (.py) and docs (.md) separate for easy navigation.\n\nAll file paths are set up to work with relative imports (no hardcoding).\n\n### Features\n\n- Clean, readable code for each topic.\n\n- Beginner-friendly explanations.\n\n- Easily expandable—just add more scripts or notes as you learn.\n\n- Perfect for interview prep or revision.\n\n### Contributing\n\nWant to add examples or fix a typo?\nPull requests are welcome!\nJust fork the repo, add your changes, and open a PR.\n\n### License\n\nMIT License – free to use, share, and improve.\n\n### Acknowledgements\n\nInspired by Python Crash Course, Automate the Boring Stuff with Python, and the official Python Docs.\n\nProject by Honzik.\n\nHappy coding! If you find this project useful, feel free to star ⭐ the repo!",
+    "file_path": "Python-cheat-sheet\\README.md"
+  },
+  {
+    "id": "sorted",
+    "title": "sorted()",
+    "section": "List Function",
+    "tags": [
+      "list",
+      "Returns new list",
+      "Function",
+      "sort"
+    ],
+    "content": "# sorted\n\n**Used with:**  \nAny iterable (lists, tuples, strings, dictionaries, sets, etc.)  \n**Construct:**  \nFunction  \n**Library:**  \nBuilt-in  \n**Iterable:**  \nYes (returns a new sorted iterable)  \n**Time Complexity:**  \nO(n log n) (Timsort, average and worst-case)\n\n## Description\n\nReturns a new sorted list from the items in any iterable.  \nUnlike `.sort()`, it does **not modify** the original object.\n\n## Usable With\n\nAll iterables: lists, tuples, strings, dictionaries (sorts keys), sets, etc.\n\n## Syntax\n\n```python\nsorted(iterable, *, key=None, reverse=False)\n```\n\n- **explanation:**\n  - `iterable`: The object you want to sort (e.g., list, tuple, string, set, dictionary keys).\n  - `key=None`: (Optional) A function that extracts a comparison key from each element (e.g., `key=len`).\n  - `reverse=False`: (Optional) Set to `True` to sort in descending order.\n  - The asterisk `*` means all following arguments must be specified by keyword.\n  - **Returns a new sorted list**—original iterable is not modified.\n\n## Arguments\n\n**Required:** 1 (`iterable`)  \n**Optional:** 2 (`key`, `reverse`)  \n**Maximum:** 3\n\n- Required:\n\n```python\n# The iterable to sort.\nsorted([3, 1, 2])\nsorted('hello')\n```\n\n- Optional:\n\n```python\nkey      # (Optional) Function for custom sort order.\n# Example:\nsorted(['pear', ' 'apple', 'banana'], key=len)  # Sort by length\n\nreverse  # (Optional) Sort in descending order.\n# Example:\nsorted([1, 2, 3], reverse=True)  # [3, 2, 1]\n```\n\n- Maximum\n\n```python\n# All three arguments can be used together.\nsorted(['pear', 'apple', 'banana'], key=len, reverse=True)  # ['banana', 'apple', 'pear']\n```\n\n## Examples\n\n- **Sort a list of numbers (ascending)**\n\n```python\nnumbers = [5, 2, 9, 1]\nresult = sorted(numbers)\n# result is [1, 2, 5, 9]\n```\n\n- **Sort a string (returns sorted list of characters)**\n\n```python\nletters = 'edcba'\nresult = sorted(letters)\n# result is ['a', 'b', 'c', 'd', 'e']\n```\n\n- **Sort dictionary keys**\n\n```python\nd = {'c': 1, 'b': 2, 'a': 3}\nresult = sorted(d)\n# result is ['a', 'b', 'c']\n```\n\n- **Sort with key and reverse (longest to shortest string)**\n\n```python\nwords = ['pear', 'apple', 'banana']\nresult = sorted(words, key=len, reverse=True)\n# result is ['banana', 'apple', 'pear']\n```\n\n **Note:**\n\n- `sorted()` always returns a **new list**, even if input is another type.  \n- The original iterable is never modified.\n\n## Tips & Common mistakes\n\n- Does **not modify** the original iterable.\n- Returns a **list**, even if input is a tuple, set, etc.\n- For in-place sorting of lists, use `.sort()` method instead.\n- The `key` argument can be any function that takes one argument.\n- Sorting a dictionary sorts the keys (not values).\n\n```python\n# Incorrect: expecting original to change!\nnumbers = [3, 1, 2]\nsorted(numbers)\nprint(numbers)  # [3, 1, 2], original is unchanged\n```",
+    "file_path": "Python-cheat-sheet\\docs\\lists\\functions\\sorted_function.md"
+  },
+  {
+    "id": "append",
+    "title": "append()",
+    "section": "List Methods",
+    "tags": [
+      "list",
+      "method",
+      "in-place",
+      "add",
+      "mutable"
+    ],
+    "content": "# append\n\n**Used with:**\nList\n**Construct:**\nMethod\n**Library:**\nBuilt-in\n**Iterable:**\nYes (but only on lists; argument itself can be any object)\n**Time Complexity:**\nAverage: O(1) (amortized constant time)\n\n## Description\n\n`append()` is a built-in list method that adds a single element to the end of the list. It modifies the original list in place and always returns `None`. Only one argument can be added per call. The element can be any object—string, number, another list, dict, etc.  \n**Common use:** Grow a list by adding new items to its end during loops or dynamic operations.\n\n## Usable With\n\n- Lists only (not tuples, sets, dicts, or strings)\n\n## Syntax\n\n```python\nlist.append(element)\n```\n\n## Arguments\n\n**Required:**\n\n- `element` (any type): The item to add at the end of the list.\n\n**Optional:**\n\n- None.\n\n**Maximum:**\n\n- Only one argument allowed (besides self).\n\n- Required:\n\n```python\nfruits = [\"apple\", \"banana\"]\nfruits.append(\"cherry\")  # adds \"cherry\"\n```\n\n- Optional:\n\n```python\n# append() does not take optional arguments\n```\n\n- Maximum\n\n```python\n# list.append(element) - only 1 element at a time\n```\n\n## Examples\n\n- **Basic append**\n\n```python\nnumbers = [1, 2, 3]\nnumbers.append(4)\n# numbers = [1, 2, 3, 4]\n```\n\n- **Appending a list as a single element**\n\n```python\nlst = [1, 2]\nlst.append([3, 4])\n# lst = [1, 2, [3, 4]]\n```\n\n- **Appending any data type**\n\n```python\ndata = []\ndata.append(\"hello\")\ndata.append(42)\ndata.append({\"a\": 1})\n# data = [\"hello\", 42, {\"a\": 1}]\n```\n\n **Note:**  \nThe `append()` method always modifies the original list. It does **not** return a new list, and always returns `None`.\n\n## Tips & Common mistakes\n\n- `append()` can only add one item per call.  \n- To add multiple items, use `extend()` or a loop.  \n- `append()` does **not** return the new list (it returns `None`).  \n- Appending a list does **not** merge—results in a nested list.\n\n```python\n# Wrong way (returns None)\nresult = mylist.append(5)\n# result is None, mylist is updated\n\n# Correct way:\nmylist.append(5)\n```",
+    "file_path": "Python-cheat-sheet\\docs\\lists\\methods\\append_method.md"
+  },
+  {
+    "id": "extend",
+    "title": "extend()",
+    "section": "List Methods",
+    "tags": [
+      "list",
+      "method",
+      "in-place",
+      "add",
+      "iterable",
+      "mutable"
+    ],
+    "content": "# extend\n\n**Used with:**  \nList\n**Construct:**  \nMethod\n**Library:**  \nBuilt-in\n**Iterable:**  \nYes (argument must be iterable, e.g. list, tuple, set, string, or a variable referencing any iterable)\n\n**Time Complexity:**  \nO(k), where k = number of elements added\n\n## Description\n\n`extend()` is a built-in list method that takes an iterable (like a list, tuple, set, string, etc.) and adds each of its elements to the end of the original list. The argument can be a variable that refers to any iterable, not just a literal.  \n**Common use:** Combine or concatenate lists, or add multiple elements to a list in a single operation.\n\n## Usable With\n\n- Lists only (as the object being extended)\n- Any iterable (including variables referencing lists, tuples, sets, strings, etc.) as the argument\n\n## Syntax\n\n```python\nlist.extend(iterable)\n```\n\n## Arguments\n\n**Required:**\n\n- `iterable` (any iterable): The items to be added to the end of the list.  \n  This can be a literal iterable (e.g. `[3, 4]`) or a variable containing any iterable (such as a list variable).\n\n**Optional:**\n\n- None.\n\n**Maximum:**\n\n- Only one argument (the iterable) besides self.\n\n- Required:\n\n```python\nnums = [1, 2]\nto_add = [3, 4]\nnums.extend(to_add)\n# nums = [1, 2, 3, 4]\n```\n\n- Optional:\n\n```python\n# extend() does not take optional arguments\n```\n\n- Maximum\n\n```python\n# list.extend(iterable) - only 1 iterable at a time\n```\n\n## Examples\n\n- **Extend with another list variable**\n\n```python\na = [1, 2]\nmore = [3, 4]\na.extend(more)\n# a = [1, 2, 3, 4]\n```\n\n- **Extend with a tuple**\n\n```python\na = [1, 2]\nt = (3, 4)\na.extend(t)\n# a = [1, 2, 3, 4]\n```\n\n- **Extend with a string**\n\n```python\nchars = ['a', 'b']\ns = \"cd\"\nchars.extend(s)\n# chars = ['a', 'b', 'c', 'd']\n```\n\n**Note:**  \nThe `extend()` method modifies the original list in place and always returns `None`.  \nThe argument can be a variable referencing any iterable, not just a literal.\n\n## Tips & Common mistakes\n\n- The argument must be **iterable**.  \n- Extending with a string adds each character separately.  \n- `extend()` is not the same as `append()`—`append()` adds the entire argument as one element; `extend()` iterates and adds each element individually.  \n- The argument can be a variable containing a list or any iterable.  \n- Does not return a new list—always returns `None`.\n\n```python\n# Common mistake: using append instead of extend\nlst = [1, 2]\nto_add = [3, 4]\nlst.append(to_add)\n# lst == [1, 2, [3, 4]]  # wrong\n\nlst = [1, 2]\nto_add = [3, 4]\nlst.extend(to_add)\n# lst == [1, 2, 3, 4]    # correct\n```",
+    "file_path": "Python-cheat-sheet\\docs\\lists\\methods\\extend_method.md"
+  },
+  {
+    "id": "index",
+    "title": "index()",
+    "section": "Sequence Methods",
+    "tags": [
+      "list",
+      "tuple",
+      "string",
+      "method",
+      "search",
+      "sequence"
+    ],
+    "see_also": [
+      "find()",
+      "count()"
+    ],
+    "works_with": [
+      "list",
+      "tuple",
+      "string"
+    ],
+    "content": "# index\n\n**Used with:**  \nlists, strings, tuples  \n**Construct:**  \nMethod  \n**Library:**  \nBuilt-in  \n**Iterable:**  \nYes  \n**Time Complexity:**  \nO(n) (worst case, scans up to the end of the sequence)\n\n## Description\n\nReturns the first index of the specified value in the sequence.  \nSearches the sequence from the beginning (or from the optional start index) to the end (or up to, but not including, the optional stop index).  \nRaises `ValueError` if the value is not found.\n\n## Usable With\n\nPython `list`, `str`, and `tuple` objects.\n\n## Syntax\n\n```python\nsequence.index(value, start=0, stop=len(sequence))\n```\n\n- **explanation:**\n  - `sequence`: The list, tuple, or string to search.\n  - `.index()`: Method to find the first occurrence of a value.\n  - `value`: The item to search for (required).\n  - `start=0`: (Optional) The position to start searching (defaults to 0, the beginning).\n  - `stop=len(sequence)`: (Optional) The position to stop searching (defaults to the end of the sequence).\n  - Returns the index of the first occurrence of `value` within the specified range.\n  - Raises `ValueError` if `value` is not found.\n\n## Arguments\n\n**Required:** 1 (`value`)  \n**Optional:** 2 (`start`, `stop`)  \n**Maximum:** 3\n\n- Required:\n\n```python\nvalue  # The value to search for.\n# Example:\n[10, 20, 30, 20].index(20)  # returns 1\n```\n\n- Optional:\n\n```python\nstart  # (Optional) The index to start searching from.\n# Example:\n[10, 20, 30, 20].index(20, 2)  # returns 3\n\nstop   # (Optional) The index to stop searching (non-inclusive).\n# Example:\n[10, 20, 30, 20].index(20, 0, 2)  # returns 1\n```\n\n- Maximum\n\n```python\n# Using all arguments:\ndata = [1, 2, 3, 2, 4]\ndata.index(2, 2, 5)  # returns 3 (searches from index 2 to 4)\n```\n\n## Examples\n\n- **Find index of a value in a list**\n\n```python\nnumbers = [10, 20, 30, 20]\nidx = numbers.index(20)\n# idx is 1\n```\n\n- **Find index after a certain position**\n\n```python\nnumbers = [10, 20, 30, 20]\nidx = numbers.index(20, 2)\n# idx is 3\n```\n\n- **Find index within a range**\n\n```python\nletters = ['a', 'b', 'c', 'b']\nidx = letters.index('b', 2)\n# idx is 3\n```\n\n- **Find index in a string**\n\n```python\ntext = \"banana\"\npos = text.index('a')\n# pos is 1\n```\n\n- **Find index with start and stop**\n\n```python\nnumbers = [1, 2, 3, 2, 5]\nidx = numbers.index(2, 2, 5)\n# idx is 3\n```\n\n **Note:**\n\n- If the value does not exist in the specified range, a `ValueError` is raised.\n- Only the first occurrence is found, even if there are multiple.\n\n## Tips & Common mistakes\n\n- **Raises `ValueError`** if the value is not found—wrap in `try/except` if unsure.\n- Only returns the first match; to find all, use a loop or list comprehension.\n- Works for lists, tuples, and strings with identical syntax.\n- `start` and `stop` are **inclusive** of `start`, **exclusive** of `stop`.\n- Negative indices are supported.\n\n```python\n# Handling missing value:\nnums = [1, 2, 3]\ntry:\n    idx = nums.index(4)\nexcept ValueError:\n    idx = -1  # or handle error as needed\n```",
+    "file_path": "Python-cheat-sheet\\docs\\lists\\methods\\index_method.md"
+  },
+  {
+    "id": "insert",
+    "title": "insert()",
+    "section": "List Methods",
+    "tags": [
+      "list",
+      "method",
+      "in-place",
+      "add",
+      "mutable",
+      "position"
+    ],
+    "see_also": [
+      "append()",
+      "extend()"
+    ],
+    "works_with": [
+      "list"
+    ],
+    "content": "# insert\n\n**Used with:**  \nlists  \n**Construct:**  \nMethod  \n**Library:**  \nBuilt-in  \n**Iterable:**  \nNo (modifies list in place)  \n**Time Complexity:**  \nO(n) (worst-case, as elements may be shifted)\n\n## Description\n\nInserts an item at a given position in the list.  \nAll items at or after the given index are shifted to the right.  \nThe method modifies the original list and returns `None`.\n\n## Usable With\n\nPython `list` objects.\n\n## Syntax\n\n```python\nlist.insert(index, item)\n```\n\n- **explanation:**\n  - `list`: The list you want to modify.\n  - `.insert()`: Method that inserts an element.\n  - `index`: The position where you want to insert the item. If negative, counts from the end. If greater than the list length, the item is added at the end.\n  - `item`: The element you want to insert at the given index.\n  - Returns `None`. List is modified in place.\n\n## Arguments\n\n**Required:** 2 (`index`, `item`)  \n**Optional:** 0  \n**Maximum:** 2\n\n- Required:\n\n```python\nindex  # The position in the list to insert at.\nitem   # The object to insert.\n# Example:\nnumbers = [1, 2, 4]\nnumbers.insert(2, 3)  # [1, 2, 3, 4]\n```\n\n- Optional:\n\n```python\n# No optional arguments for insert()\n```\n\n- Maximum\n\n```python\n# Must always provide index and item.\n# Example:\nletters = ['a', 'c', 'd']\nletters.insert(1, 'b')  # ['a', 'b', 'c', 'd']\n```\n\n## Examples\n\n- **Insert at a specific index**\n\n```python\nnumbers = [1, 2, 4]\nnumbers.insert(2, 3)\n# numbers is now [1, 2, 3, 4]\n```\n\n- **Insert at the beginning**\n\n```python\nletters = ['b', 'c', 'd']\nletters.insert(0, 'a')\n# letters is now ['a', 'b', 'c', 'd']\n```\n\n- **Insert at the end (index > length)**\n\n```python\nfruits = ['apple', 'banana']\nfruits.insert(10, 'cherry')\n# fruits is now ['apple', 'banana', 'cherry']\n```\n\n- **Insert with negative index (from the end)**\n\n```python\ndata = [0, 1, 2]\ndata.insert(-1, 99)\n# data is now [0, 1, 99, 2]\n```\n\n **Note:**\n\n- The original list is always modified.\n- If `index` is larger than the length of the list, `item` is appended at the end.\n- If `index` is negative, it is treated as `len(list) + index`.\n\n## Tips & Common mistakes\n\n- Remember: `insert()` returns `None`, not the new list.\n- If you use an index greater than the list length, item is added at the end.\n- Negative indices can be used for insertion, but may be confusing—test first.\n- For adding to the end, `append()` is faster and clearer.\n- Frequent insertions at the beginning or middle of large lists can be slow (O(n) time).\n\n```python\n# Incorrect: expecting insert() to return the list!\nnums = [1, 2]\nresult = nums.insert(1, 5)\nprint(result)  # Output: None\n```",
+    "file_path": "Python-cheat-sheet\\docs\\lists\\methods\\insert_method.md"
+  },
+  {
+    "id": "sort",
+    "title": "sort()",
+    "section": "List Methods",
+    "tags": [
+      "list",
+      "method",
+      "in-place",
+      "sort",
+      "mutable",
+      "order"
+    ],
+    "see_also": [
+      "sorted()",
+      "reverse()"
+    ],
+    "works_with": [
+      "list"
+    ],
+    "content": "# sort()\n\n**Used with:**\n  lists  \n**Construct:**\n  Method  \n**Library:**\n Built-in  \n**Iterable:**\n Yes (the list itself is sorted in place)  \n**Time Complexity:**\n O(n log n)\n\n## Description\n\nSorts the items of a list in ascending order by default.  \nThis method sorts the list **in place** and returns `None`.\n\n## Usable With\n\nPython `list` objects.\n\n## Syntax\n\n```python\nlist.sort(*, key=None, reverse=False)\n```\n\n## Arguments\n\n**Required:** 0  \n**Optional:** 2 (keyword-only: `key`, `reverse`)  \n**Maximum:** 2\n\n- Required:\n\n```python\n# No required positional arguments.\n# Example:\nnumbers = [3, 1, 2]\nnumbers.sort()  # sorts in ascending order\n```\n\n- Optional:\n\n```python\nkey      # (Optional) Function to extract a comparison key from each list element.\n# Example:\nwords = ['pear', 'apple', 'banana']\nwords.sort(key=len)  # sorts by string length\n\nreverse  # (Optional) If True, sorts the list in descending order.\n# Example:\nnumbers = [1, 2, 3]\nnumbers.sort(reverse=True)  # [3, 2, 1]\n```\n\n- Maximum\n\n```python\n# Maximum arguments: key and reverse (both optional).\n# Example using both:\nwords = ['pear', 'apple', 'banana']\nwords.sort(key=len, reverse=True)  # longest to shortest\n```\n\n## Examples\n\n- **Sort a list of numbers in ascending order**\n\n```python\nnumbers = [3, 1, 4, 2]\nnumbers.sort()\n# numbers is now [1, 2, 3, 4]\n```\n\n- **Sort in descending order**\n\n```python\nnumbers = [3, 1, 4, 2]\nnumbers.sort(reverse=True)\n# numbers is now [4, 3, 2, 1]\n```\n\n- **Sort using a key function (sort by string length)**\n\n```python\nwords = ['apple', 'fig', 'banana']\nwords.sort(key=len)\n# words is now ['fig', 'apple', 'banana']\n```\n\n- **Sort using both key and reverse**\n\n```python\nwords = ['apple', 'fig', 'banana']\nwords.sort(key=len, reverse=True)\n# words is now ['banana', 'apple', 'fig']\n```\n\n **Note:**  \n`sort()` modifies the original list and **returns `None`**.  \nTo get a new sorted list without modifying the original, use `sorted()`.\n\n## Tips & Common mistakes\n\n- `sort()` sorts the list in place; **it does NOT return the sorted list**.\n- For non-destructive sorting, use `sorted(list)` instead.\n- The `key` argument expects a function that takes one argument and returns a value to use for sorting.\n- Only works with lists—not with tuples or other iterables.\n- Avoid mixing data types in the list; may raise `TypeError`.\n\n```python\n# Incorrect usage: returns None!\nnumbers = [3, 1, 2]\nsorted_numbers = numbers.sort()\nprint(sorted_numbers)  # Output: None\n```",
+    "file_path": "Python-cheat-sheet\\docs\\lists\\methods\\sort_method.md"
+  },
+  {
+    "id": "split",
+    "title": "split()",
+    "section": "String Methods",
+    "tags": [
+      "string",
+      "method",
+      "split",
+      "delimiter",
+      "text",
+      "conversion"
+    ],
+    "see_also": [
+      "join()",
+      "partition()",
+      "rsplit()"
+    ],
+    "works_with": [
+      "string"
+    ],
+    "content": "# split\n\n**Used with:**  \nstrings  \n**Construct:**  \nMethod  \n**Library:**  \nBuilt-in  \n**Iterable:**  \nYes (returns a list)  \n**Time Complexity:**  \nO(n) (where n is the length of the string)\n\n## Description\n\nSplits a string into a list of substrings based on a separator (delimiter).  \nIf no separator is specified, it splits on any whitespace by default.\n\n## Usable With\n\nPython `str` objects.\n\n## Syntax\n\n```python\nstr.split(sep=None, maxsplit=-1)\n```\n\n- **explanation:**\n  - `str`: Your string variable (e.g., `\"hello world\"`).\n  - `.split()`: Method called on the string.\n  - `sep=None`: (Optional) String delimiter to split by. If not specified or `None`, splits on whitespace.\n  - `maxsplit=-1`: (Optional) Maximum number of splits. `-1` means no limit.\n  - Returns a **list** of substrings.\n\n## Arguments\n\n**Required:** 0 (both arguments are optional)  \n**Optional:** 2 (`sep`, `maxsplit`)  \n**Maximum:** 2\n\n- Required:\n\n```python\n# No required arguments; can be used with none.\n\"hello world\".split()  # ['hello', 'world']\n```\n\n- Optional:\n\n```python\nsep  # (Optional) The delimiter to split by.\n# Example:\n\"one,two,three\".split(',')  # ['one', 'two', 'three']\n\nmaxsplit  # (Optional) Maximum splits to do.\n# Example:\n\"a b c d\".split(' ', 2)  # ['a', 'b', 'c d']\n```\n\n- Maximum\n\n```python\n# Using both arguments:\n\"apple,banana,cherry\".split(',', 1)  # ['apple', 'banana,cherry']\n```\n\n## Examples\n\n- **Split a string by whitespace**\n\n```python\nsentence = \"hello world\"\nwords = sentence.split()\n# words is ['hello', 'world']\n```\n\n- **Split by a specific delimiter**\n\n```python\ndata = \"apple,banana,cherry\"\nfruits = data.split(',')\n# fruits is ['apple', 'banana', 'cherry']\n```\n\n- **Split with a maxsplit limit**\n\n```python\ntext = \"a b c d\"\nparts = text.split(' ', 2)\n# parts is ['a', 'b', 'c d']\n```\n\n **Note:**  \n\n- If `sep` is not specified or is `None`, consecutive whitespace is treated as a single separator.\n- If the string starts or ends with the separator, the result will include empty strings at the ends.\n\n## Tips & Common mistakes\n\n- Using `split()` with no argument splits on *any* whitespace (spaces, tabs, newlines).\n- If the delimiter does not occur in the string, `split()` returns a list containing the original string.\n- If `maxsplit=0`, no splitting occurs, returns the whole string in a single-element list.\n- Works only on strings; use `re.split()` for regular expression splits.\n- Trailing delimiters produce empty strings in the result.\n\n```python\n# Example with trailing delimiter:\n\"one,two,\".split(',')  # ['one', 'two', '']\n```",
+    "file_path": "Python-cheat-sheet\\docs\\lists\\methods\\split_method.md"
+  },
+  {
+    "content": "# Name\n\n**Used with:**  \n**Construct:**  \n**Library:**  \n**Iterable:**  \n**Time Complexity:**\n\n## Description\n\nwrite description here\n\n## Usable With\n\nwhat to use with\n\n## Syntax\n\n```python\n```\n\n- **explanation:**\n\n## Arguments\n\n**Required:**\n**Optional:**\n**Maximum:**\n\n- Required:\n\n```python\n```\n\n- Optional:\n\n```Python\n```\n\n- Maximum\n\n```Python\n```\n\n## Examples\n\n- **name of example**\n\n```python\n```\n\n- **name of example**\n\n```python\n```\n\n- **name of example**\n\n```python\n```\n\n **Note:**\n\n## Tips & Common mistakes\n\n-\n-\n-\n\n```python\n```",
+    "file_path": "Python-cheat-sheet\\templates\\function_method_template.md"
+  }
+]

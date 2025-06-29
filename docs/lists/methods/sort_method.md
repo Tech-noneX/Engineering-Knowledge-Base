@@ -1,10 +1,24 @@
+---
+id: sort
+title: "sort()"
+section: "List Methods"
+tags: ["list", "method", "in-place", "sort", "mutable", "order"]
+see_also: ["sorted()", "reverse()"]
+works_with: ["list"]
+---
+
 # sort()
 
-**Used with:**  lists  
-**Construct:**  Method  
-**Library:**  Built-in  
-**Iterable:**  Yes (the list itself is sorted in place)  
-**Time Complexity:**  O(n log n)
+**Used with:**
+  lists  
+**Construct:**
+  Method  
+**Library:**
+ Built-in  
+**Iterable:**
+ Yes (the list itself is sorted in place)  
+**Time Complexity:**
+ O(n log n)
 
 ## Description
 

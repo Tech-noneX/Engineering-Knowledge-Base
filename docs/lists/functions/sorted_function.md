@@ -1,3 +1,10 @@
+---
+id: sorted
+title: "sorted()"
+section: "List Function"
+tags: ["list", "Returns new list", "Function", "sort"]
+---
+
 # sorted
 
 **Used with:**  
