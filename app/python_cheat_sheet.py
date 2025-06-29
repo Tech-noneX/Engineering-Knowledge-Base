@@ -18,6 +18,7 @@ class PythonCheatSheet:
                                                     'upper': string_methods['upper'],
                                                     'lower': string_methods['lower'],
                                                     'title': string_methods['title'],
+                                                    'lstrip': string_methods['lstrip'],
                                           }
                                           }
         self.dict_sheet = {'functions & methods': {'get': dict_methods_paths['get']}}
