@@ -28,4 +28,5 @@ string_methods = {
     'rstrip': Path(__file__).parent.parent/'docs'/'strings'/'methods'/'rstrip_method.md',
     'strip': Path(__file__).parent.parent/'docs'/'strings'/'methods'/'strip_method.md',
     'removeprefix': Path(__file__).parent.parent/'docs'/'strings'/'methods'/'removeprefix_method.md',
+    'removesuffix': Path(__file__).parent.parent/'docs'/'strings'/'methods'/'removesuffix_method.md',
 }

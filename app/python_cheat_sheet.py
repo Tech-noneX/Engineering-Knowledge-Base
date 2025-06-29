@@ -29,6 +29,7 @@ class PythonCheatSheet:
                                                       'rstrip': string_methods['rstrip'],
                                                       'strip': string_methods['strip'],
                                                       'removeprefix': string_methods['removeprefix'],
+                                                      'removesuffix': string_methods['removesuffix'],
                                                     }}
         self.dict_sheet = {'functions & methods': {'get': dict_methods_paths['get']}}
 
