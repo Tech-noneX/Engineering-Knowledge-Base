@@ -3,6 +3,8 @@ id: sorted
 title: "sorted()"
 section: "List Function"
 tags: ["list", "Returns new list", "Function", "sort"]
+see_also: ["sort"]
+work_with: ["lists", "tuples", "strings", "dictionaries", "sets",]
 ---
 
 # sorted
@@ -126,3 +128,7 @@ numbers = [3, 1, 2]
 sorted(numbers)
 print(numbers)  # [3, 1, 2], original is unchanged
 ```
+
+## See Also
+
+- `sort()`

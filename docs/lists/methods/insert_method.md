@@ -9,15 +9,15 @@ works_with: ["list"]
 
 # insert
 
-**Used with:**  
+- **Used with:**  
 lists  
-**Construct:**  
+- **Construct:**  
 Method  
-**Library:**  
+- **Library:**  
 Built-in  
-**Iterable:**  
+- **Iterable:**  
 No (modifies list in place)  
-**Time Complexity:**  
+- **Time Complexity:**  
 O(n) (worst-case, as elements may be shifted)
 
 ## Description
@@ -128,3 +128,8 @@ nums = [1, 2]
 result = nums.insert(1, 5)
 print(result)  # Output: None
 ```
+
+## See Also
+
+- `append()`
+- `extend()`

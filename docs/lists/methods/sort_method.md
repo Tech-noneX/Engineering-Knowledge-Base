@@ -9,15 +9,15 @@ works_with: ["list"]
 
 # sort()
 
-**Used with:**
+- **Used with:**
   lists  
-**Construct:**
+- **Construct:**
   Method  
-**Library:**
+- **Library:**
  Built-in  
-**Iterable:**
+- **Iterable:**
  Yes (the list itself is sorted in place)  
-**Time Complexity:**
+- **Time Complexity:**
  O(n log n)
 
 ## Description
@@ -125,3 +125,8 @@ numbers = [3, 1, 2]
 sorted_numbers = numbers.sort()
 print(sorted_numbers)  # Output: None
 ```
+
+## See Also
+
+- `sorted()`  
+- `reverse()`

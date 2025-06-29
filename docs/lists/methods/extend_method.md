@@ -3,20 +3,21 @@ id: extend
 title: "extend()"
 section: "List Methods"
 tags: ["list", "method", "in-place", "add", "iterable", "mutable"]
+see_also: ["add()", "append()", "insert()"]
+works_with: ["lists", "tuples", "sets", "strings"]
 ---
 
 # extend
 
-**Used with:**  
+- **Used with:**  
 List
-**Construct:**  
+- **Construct:**  
 Method
-**Library:**  
+- **Library:**  
 Built-in
-**Iterable:**  
+- **Iterable:**  
 Yes (argument must be iterable, e.g. list, tuple, set, string, or a variable referencing any iterable)
-
-**Time Complexity:**  
+- **Time Complexity:**  
 O(k), where k = number of elements added
 
 ## Description
@@ -124,3 +125,9 @@ to_add = [3, 4]
 lst.extend(to_add)
 # lst == [1, 2, 3, 4]    # correct
 ```
+
+## See Also
+
+- `append()`
+- `extend()`
+- `add()`

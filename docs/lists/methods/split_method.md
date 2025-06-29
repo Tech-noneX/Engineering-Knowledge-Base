@@ -9,15 +9,15 @@ works_with: ["string"]
 
 # split
 
-**Used with:**  
+- **Used with:**  
 strings  
-**Construct:**  
+- **Construct:**  
 Method  
-**Library:**  
+- **Library:**  
 Built-in  
-**Iterable:**  
+- **Iterable:**  
 Yes (returns a list)  
-**Time Complexity:**  
+- **Time Complexity:**  
 O(n) (where n is the length of the string)
 
 ## Description

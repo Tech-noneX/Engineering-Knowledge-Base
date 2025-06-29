@@ -1,27 +1,25 @@
 ---
+
 id: get
 title: "get()"
 section: "Dictionary Methods"
 tags: ["dict", "dictionary", "method", "safe access", "default", "lookup"]
-see_also: ["[]", "setdefault()", "keys()", "values()"]
+see_also: ["setdefault()", "keys()", "values()"]
 works_with: ["dict"]
+
 ---
 
 # get()
 
-**Used with:**
-Dictionary `dict`
-
-  **Construct:**  
+- **Used with:**
+Dictionary (`dict`)
+- **Construct:**  
 Method
-
-  **Library:**  
+- **Library:**  
 Built-in
-
-  **Iterable:**  
+- **Iterable:**  
 Yes (but for key access, not value iteration)
-
-  **Time Complexity:**  
+- **Time Complexity:**  
 Average: O(1) (constant time lookup)
 
 ## Description
@@ -47,10 +45,41 @@ dictionary.get(key, default=None)
 
 ## Arguments
 
-| Argument | Type         | Required | Default | Description                      |
-| -------- | ------------ | -------- | ------- | -------------------------------- |
-| key      | any hashable | Yes      |         | Key to search for                |
-| default  | any          | No       | None    | Value to return if key not found |
+- **Required:** 1 (`key`)
+- **Optional:** 1 (`default`)
+- **Maximum:** 2 (`key, default`)
+
+- Required:
+  - `key`
+  - The dictionary key you want to look up.
+
+```python
+d = {"a": 1, "b": 2}
+print(d.get("a"))  # Output: 1
+```
+
+*Looks for the key "a" and returns its value.*
+
+- Optional:
+  - `default`
+  - The value to return if the key is not found. Defaults to `None` if not given.
+
+```Python
+d = {"a": 1}
+print(d.get("z", 100))  # Output: 100
+```
+
+*Returns 100 instead of None since "z" is missing.*
+
+- Maximum
+  - Two arguments: key (`required`), default (`optional`).
+
+```Python
+d = {"a": 1}
+print(d.get("b", 0))  # Output: 0
+```
+
+*You can use up to two arguments with get()—the key and a default value.*
 
 ## Examples
 
@@ -73,6 +102,6 @@ print(d.get('z', 999))    # 999
 
 ## See Also
 
-- `setdefault()` (adds key with default if missing)
-- Bracket access `[]`
-- `keys()`, `values()`
+- `setdefault()`
+- `keys()`
+- `values()`

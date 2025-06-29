@@ -3,20 +3,22 @@ id: append
 title: "append()"
 section: "List Methods"
 tags: ["list", "method", "in-place", "add", "mutable"]
+see_also: ['add()', 'extend()', 'insert()']
+works_with: ['lists', 'strings'] 
 ---
 
 # append
 
-**Used with:**
+- **Used with:**
 List
-**Construct:**
+- **Construct:**
 Method
-**Library:**
-Built-in
-**Iterable:**
-Yes (but only on lists; argument itself can be any object)
-**Time Complexity:**
-Average: O(1) (amortized constant time)
+- **Library:**
+ Built-in
+- **Iterable:**
+ Yes (but only on lists; argument itself can be any object)
+- **Time Complexity:**
+ Average: O(1) (amortized constant time)
 
 ## Description
 
@@ -112,3 +114,9 @@ result = mylist.append(5)
 # Correct way:
 mylist.append(5)
 ```
+
+## See Also
+
+- `extend()`
+- `add()`
+- `insert()`

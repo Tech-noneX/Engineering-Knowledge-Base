@@ -1,7 +1,7 @@
 import os
 import random
 from greetings_function import greetings
-from md_paths import lists_methods_paths, lists_function_paths,dict_methods_paths
+from md_paths import lists_methods_paths, lists_function_paths,dict_methods_paths, string_methods
 
 
 class PythonCheatSheet:
@@ -15,6 +15,9 @@ class PythonCheatSheet:
                                                     'split': lists_methods_paths['split'],
                                                     'insert': lists_methods_paths['insert'],
                                                     'index': lists_methods_paths['index'],
+                                                    'upper': string_methods['upper'],
+                                                    'lower': string_methods['lower'],
+                                                    'title': string_methods['title'],
                                           }
                                           }
         self.dict_sheet = {'functions & methods': {'get': dict_methods_paths['get']}}

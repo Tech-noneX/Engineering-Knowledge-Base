@@ -19,3 +19,9 @@ lists_function_paths ={
 dict_methods_paths = {
     'get': Path(__file__).parent.parent/'docs'/'dictionaries'/'methods'/'get_method.md'
 }
+
+string_methods = {
+    'upper': Path(__file__).parent.parent/'docs'/'strings'/'methods'/'upper_method.md',    
+    'lower': Path(__file__).parent.parent/'docs'/'strings'/'methods'/'lower_method.md',
+    'title': Path(__file__).parent.parent/'docs'/'strings'/'methods'/'title_method.md',
+}

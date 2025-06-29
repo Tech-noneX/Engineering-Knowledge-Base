@@ -9,15 +9,15 @@ works_with: ["list", "tuple", "string"]
 
 # index
 
-**Used with:**  
+- **Used with:**  
 lists, strings, tuples  
-**Construct:**  
-Method  
-**Library:**  
+- **Construct**
+Method
+- **Library**
 Built-in  
-**Iterable:**  
+- **Iterable:**  
 Yes  
-**Time Complexity:**  
+- **Time Complexity:**  
 O(n) (worst case, scans up to the end of the sequence)
 
 ## Description
@@ -47,9 +47,9 @@ sequence.index(value, start=0, stop=len(sequence))
 
 ## Arguments
 
-**Required:** 1 (`value`)  
-**Optional:** 2 (`start`, `stop`)  
-**Maximum:** 3
+- **Required:** 1 (`value`)  
+- **Optional:** 2 (`start`, `stop`)  
+- **Maximum:** 3
 
 - Required:
 
@@ -142,3 +142,8 @@ try:
 except ValueError:
     idx = -1  # or handle error as needed
 ```
+
+## See Also
+
+- `find()`
+- `count()`

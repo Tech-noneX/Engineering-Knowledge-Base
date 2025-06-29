@@ -1,10 +1,19 @@
+---
+id: 
+title: 
+section:
+tags: 
+see_also: 
+works_with: 
+---
+
 # Name
 
-**Used with:**  
-**Construct:**  
-**Library:**  
-**Iterable:**  
-**Time Complexity:**
+- **Used with:**
+- **Construct:** (method or function)
+- **Library:**  
+- **Iterable:**  
+- **Time Complexity:**
 
 ## Description
 
@@ -23,9 +32,9 @@ what to use with
 
 ## Arguments
 
-**Required:**
-**Optional:**
-**Maximum:**
+- **Required:**
+- **Optional:**
+- **Maximum:**
 
 - Required:
 
@@ -59,7 +68,7 @@ what to use with
 ```python
 ```
 
- **Note:**
+**Note:**
 
 ## Tips & Common mistakes
 
@@ -69,3 +78,9 @@ what to use with
 
 ```python
 ```
+
+## See Also
+
+-
+-
+-
