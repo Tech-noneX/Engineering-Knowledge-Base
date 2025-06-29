@@ -30,6 +30,8 @@ class PythonCheatSheet:
                                                       'strip': string_methods['strip'],
                                                       'removeprefix': string_methods['removeprefix'],
                                                       'removesuffix': string_methods['removesuffix'],
+                                                      'replace': string_methods['replace'],
+                                                      'capitalize': string_methods['capitalize']
                                                     }}
         self.dict_sheet = {'functions & methods': {'get': dict_methods_paths['get']}}
 
