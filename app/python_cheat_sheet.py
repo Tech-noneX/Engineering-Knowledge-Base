@@ -27,7 +27,7 @@ class PythonCheatSheet:
                                                       'title': string_methods['title'],
                                                       'lstrip': string_methods['lstrip'],
                                                       'rstrip': string_methods['rstrip'],
-
+                                                      'strip': string_methods['strip']
                                                     }}
         self.dict_sheet = {'functions & methods': {'get': dict_methods_paths['get']}}
 
@@ -45,6 +45,7 @@ class PythonCheatSheet:
         
         elif find_function in self.string_sheet['functions & methods']:
             os.startfile(self.string_sheet['functions & methods'][find_function])
+        
         else:
             print("Function not found!")
 
