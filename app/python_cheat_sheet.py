@@ -13,6 +13,7 @@ class PythonCheatSheet:
                                            'len': built_in['len'],
                                            'sum': built_in['sum'],
                                            'range': built_in['range'],
+                                           'reversed': built_in['reversed'],
         }}
 
         self.lists_sheet = {'functions & methods': {'append': lists_methods_paths['append'],
