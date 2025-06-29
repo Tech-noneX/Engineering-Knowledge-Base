@@ -1,7 +1,7 @@
 import os
 import random
 from greetings_function import greetings
-from md_paths import lists_methods_paths, lists_function_paths,dict_methods_paths, string_methods,built_in
+from md_paths import lists_methods_paths, lists_function_paths,dict_methods_paths, string_methods,built_in, modules
 
 
 class PythonCheatSheet:
@@ -14,7 +14,10 @@ class PythonCheatSheet:
                                            'sum': built_in['sum'],
                                            'range': built_in['range'],
                                            'reversed': built_in['reversed'],
+                                           'round': built_in['round'],
+                                           'enumerate': built_in['enumerate']
         }}
+
 
         self.lists_sheet = {'functions & methods': {'append': lists_methods_paths['append'],
                                                     'extend': lists_methods_paths['extend'],
@@ -47,6 +50,10 @@ class PythonCheatSheet:
         
         self.dict_sheet = {'functions & methods': {'get': dict_methods_paths['get']}}
 
+
+        self.modules_in = {'functools': {'reduce': modules['functools']['reduce']
+        
+        }}
     def main_menu(self):
         pass
 

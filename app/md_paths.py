@@ -42,6 +42,13 @@ built_in = {
     'sum': Path(__file__).parent.parent/'docs'/'builtins'/'sum_function.md',
     'range': Path(__file__).parent.parent/'docs'/'builtins'/'range_function.md',
     'reversed': Path(__file__).parent.parent/'docs'/'builtins'/'reversed_function.md',
+     'round': Path(__file__).parent.parent/'docs'/'builtins'/'round_function.md',
+     'enumerate': Path(__file__).parent.parent/'docs'/'builtins'/'enumerate_function.md',
 }
+
+
+modules = {'functools':{'reduce': Path(__file__).parent.parent/'docs'/'modules'/'functools'/'reduce_functools.md'
+                        }}
+
 
 print(len(lists_function_paths) + len(lists_methods_paths) + len(dict_methods_paths) + len(built_in) + len(string_methods))
