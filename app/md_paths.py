@@ -20,6 +20,7 @@ dict_methods_paths = {
     'get': Path(__file__).parent.parent/'docs'/'dictionaries'/'methods'/'get_method.md'
 }
 
+
 string_methods = {
     'upper': Path(__file__).parent.parent/'docs'/'strings'/'methods'/'upper_method.md',    
     'lower': Path(__file__).parent.parent/'docs'/'strings'/'methods'/'lower_method.md',
@@ -31,4 +32,9 @@ string_methods = {
     'removesuffix': Path(__file__).parent.parent/'docs'/'strings'/'methods'/'removesuffix_method.md',
     'replace': Path(__file__).parent.parent/'docs'/'strings'/'methods'/'replace_method.md',
     'capitalize': Path(__file__).parent.parent/'docs'/'strings'/'methods'/'capitalize_method.md',
+}
+
+
+built_in = {
+    'min': Path(__file__).parent.parent/'docs'/'builtins'/'min_function.md'
 }
