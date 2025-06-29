@@ -9,6 +9,10 @@ class PythonCheatSheet:
 
     def __init__(self):
         self.builtin_sheet = {'functions':{'min': built_in['min'],
+                                           'max': built_in['max'],
+                                           'len': built_in['len'],
+                                           'sum': built_in['sum'],
+                                           'range': built_in['range'],
         }}
 
         self.lists_sheet = {'functions & methods': {'append': lists_methods_paths['append'],

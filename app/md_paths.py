@@ -36,5 +36,11 @@ string_methods = {
 
 
 built_in = {
-    'min': Path(__file__).parent.parent/'docs'/'builtins'/'min_function.md'
+    'min': Path(__file__).parent.parent/'docs'/'builtins'/'min_function.md',
+    'max': Path(__file__).parent.parent/'docs'/'builtins'/'max_function.md',
+    'len': Path(__file__).parent.parent/'docs'/'builtins'/'len_function.md',
+    'sum': Path(__file__).parent.parent/'docs'/'builtins'/'sum_function.md',
+    'range': Path(__file__).parent.parent/'docs'/'builtins'/'range_function.md',
 }
+
+print(len(lists_function_paths) + len(lists_methods_paths) + len(dict_methods_paths) + len(built_in) + len(string_methods))
