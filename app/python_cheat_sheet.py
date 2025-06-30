@@ -51,7 +51,8 @@ class PythonCheatSheet:
         self.dict_sheet = {'functions & methods': {'get': dict_methods_paths['get']}}
 
 
-        self.modules_in = {'functools': {'reduce': modules['functools']['reduce']
+        self.modules_in = {'functools': {'reduce': modules['functools module']['reduce'],
+                                         'functools': modules['functools module']['functools'],
         
         }}
     def main_menu(self):
@@ -61,19 +62,22 @@ class PythonCheatSheet:
     def functions_menu(self):
         find_function = input(f"{random.choice(greetings)}\n:").lower().strip()
         if find_function in self.lists_sheet['functions & methods']:
-            os.startfile(self.lists_sheet['functions & methods'][find_function])
+            return os.startfile(self.lists_sheet['functions & methods'][find_function])
 
         elif find_function in self.dict_sheet['functions & methods']:
-            os.startfile(self.dict_sheet['functions & methods'][find_function])
+            return os.startfile(self.dict_sheet['functions & methods'][find_function])
         
         elif find_function in self.string_sheet['functions & methods']:
-            os.startfile(self.string_sheet['functions & methods'][find_function])
+            return os.startfile(self.string_sheet['functions & methods'][find_function])
         
         elif find_function in self.builtin_sheet['functions']:
-            os.startfile(self.builtin_sheet['functions'][find_function])
-
-        else:
-            print("Function not found!")
+            return os.startfile(self.builtin_sheet['functions'][find_function])
+        
+        for modules,functions in self.modules_in.items():
+            if find_function in functions:
+                return os.startfile(self.modules_in[modules][find_function])
+        
+        print("Function not found!")
 
 
 

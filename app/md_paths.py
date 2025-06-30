@@ -47,7 +47,8 @@ built_in = {
 }
 
 
-modules = {'functools':{'reduce': Path(__file__).parent.parent/'docs'/'modules'/'functools'/'reduce_functools.md'
+modules = {'functools module':{'reduce': Path(__file__).parent.parent/'docs'/'modules'/'functools'/'reduce_functools.md',
+                               'functools': Path(__file__).parent.parent/'docs'/'modules'/'functools'/'functools_module.md',
                         }}
 
 
