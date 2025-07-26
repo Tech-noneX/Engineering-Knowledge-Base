@@ -2,23 +2,27 @@
 id: insert
 title: "insert()"
 section: "List Methods"
+module: "built-in"
+difficulty: beginner
+subscription: free
+reference: "Inserts an item at a specific index in a list, shifting elements to the right"
 tags: ["list", "method", "in-place", "add", "mutable", "position"]
-see_also: ["append()", "extend()"]
+see_also: ["append()", "extend()", "pop()", "insert() insert priority task **R.W.E**"]
 works_with: ["list"]
 ---
 
 # insert
 
 - **Used with:**  
-lists  
+  lists  
 - **Construct:**  
-Method  
+  Method  
 - **Library:**  
-Built-in  
+  Built-in  
 - **Iterable:**  
-No (modifies list in place)  
+  No (modifies list in place)  
 - **Time Complexity:**  
-O(n) (worst-case, as elements may be shifted)
+  O(n) (worst-case, as elements may be shifted)
 
 ## Description
 
@@ -133,3 +137,5 @@ print(result)  # Output: None
 
 - `append()`
 - `extend()`
+- `pop()`
+- `insert() insert priority task` **R.W.E**

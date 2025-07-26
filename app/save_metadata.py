@@ -2,7 +2,7 @@ import os
 import json
 import yaml
 
-def extract_metadata_and_content(md_path):
+def extract_metadata_and_content(md_path, root_dir):
     with open(md_path, 'r', encoding='utf-8') as f:
         text = f.read()
     # Split YAML front matter and content
@@ -18,7 +18,8 @@ def extract_metadata_and_content(md_path):
     # Always add content to metadata as 'content' field
     metadata['content'] = content.strip()
     # Add the relative file path for traceability
-    metadata['file_path'] = md_path
+    rel_path = os.path.relpath(md_path, root_dir)
+    metadata['file_path'] = os.path.join("docs", rel_path).replace("\\", "/")
     return metadata
 
 def scan_cards(root_dir):
@@ -27,14 +28,16 @@ def scan_cards(root_dir):
         for filename in files:
             if filename.endswith('.md'):
                 md_path = os.path.join(dirpath, filename)
-                card_data = extract_metadata_and_content(md_path)
+                card_data = extract_metadata_and_content(md_path, root_dir)
                 card_list.append(card_data)
     return card_list
 
 if __name__ == "__main__":
     # Set this to the root folder of your cards (e.g., 'Python-cheat-sheet')
-    CARDS_ROOT = "Python-cheat-sheet"
-    OUTPUT_JSON = os.path.join(CARDS_ROOT, "meta-data", "python_metadata.json")
+    PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    CARDS_ROOT = os.path.join(PROJECT_ROOT, "docs")
+    OUTPUT_JSON = os.path.join(PROJECT_ROOT, "meta-data", "python_metadata.json")
+    os.makedirs(os.path.dirname(OUTPUT_JSON), exist_ok=True)
 
     all_cards = scan_cards(CARDS_ROOT)
     with open(OUTPUT_JSON, 'w', encoding='utf-8') as f:

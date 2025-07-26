@@ -2,7 +2,7 @@
 id: min
 title: "min()"
 section: "Built-in Functions"
-module: "build-in"
+module: "built-in"
 difficulty: beginner
 subscription: free
 reference: "Returns the smallest item in an iterable or among given values"

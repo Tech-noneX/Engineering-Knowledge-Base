@@ -2,9 +2,13 @@
 id: extend
 title: "extend()"
 section: "List Methods"
-tags: ["list", "method", "in-place", "add", "iterable", "mutable"]
-see_also: ["add()", "append()", "insert()"]
-works_with: ["lists", "tuples", "sets", "strings"]
+module: "Built-in"
+difficulty: beginner
+subscription: free
+reference: "Adds all items from an iterable to the end of a list in place"
+tags: ["list", "method", "in-place", "add", "iterable", "mutable", "extend() merge datasets **R.W.E**"]
+see_also: ["add()", "append()", "insert()", "pop()", "extend() merge datasets **R.W.E**"]
+works_with: ["lists"]
 ---
 
 # extend
@@ -129,5 +133,6 @@ lst.extend(to_add)
 ## See Also
 
 - `append()`
-- `extend()`
 - `add()`
+- `pop()`
+- `extend() merge datasets` **R.W.E**

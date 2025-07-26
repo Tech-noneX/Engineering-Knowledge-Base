@@ -2,9 +2,13 @@
 id: append
 title: "append()"
 section: "List Methods"
+module: "Built-in"
+difficulty: beginner
+subscription: free
+reference: "Adds a single item to the end of a list in place"
 tags: ["list", "method", "in-place", "add", "mutable"]
-see_also: ['add()', 'extend()', 'insert()']
-works_with: ['lists', 'strings'] 
+see_also: ['add()', 'extend()', 'insert()', 'pop()', "append() build shopping cart **R.W.E**"]
+works_with: ['lists'] 
 ---
 
 # append
@@ -120,3 +124,5 @@ mylist.append(5)
 - `extend()`
 - `add()`
 - `insert()`
+- `pop()`
+- `append() build shopping cart` **R.W.E**

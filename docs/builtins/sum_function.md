@@ -2,7 +2,7 @@
 id: sum
 title: "sum()"
 section: "Built-in Functions"
-module: "build-in"
+module: "built-in"
 difficulty: beginner
 subscription: free
 reference: "Adds up all numeric items in an iterable, with optional start value"

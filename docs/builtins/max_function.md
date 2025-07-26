@@ -2,7 +2,7 @@
 id: max
 title: "max()"
 section: "Built-in Functions"
-module: "build-in"
+module: "built-in"
 difficulty: beginner
 subscription: free
 reference: "Returns the largest item in an iterable or among given values"

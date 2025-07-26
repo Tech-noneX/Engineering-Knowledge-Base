@@ -2,7 +2,7 @@
 id: reversed
 title: "reversed()"
 section: "Built-in Functions"
-module: "build-in"
+module: "built-in"
 difficulty: beginner
 subscription: free
 reference: Returns an iterator that yields items in reverse order

@@ -3,8 +3,12 @@
 id: get
 title: "get()"
 section: "Dictionary Methods"
+module: "built-in"
+difficulty: beginner
+subscription: free
+reference: "Safely gets the value for a key in a dictionary, returns default if missing"
 tags: ["dict", "dictionary", "method", "safe access", "default", "lookup"]
-see_also: ["setdefault()", "keys()", "values()"]
+see_also: ["setdefault()", "keys()", "values()", "get() user profile lookup **R.W.E**"]
 works_with: ["dict"]
 
 ---
@@ -105,3 +109,4 @@ print(d.get('z', 999))    # 999
 - `setdefault()`
 - `keys()`
 - `values()`
+- `get() user profile lookup` **R.W.E**

@@ -2,8 +2,12 @@
 id: sort
 title: "sort()"
 section: "List Methods"
+module: "built-in"
+difficulty: beginner
+subscription: free
+reference: "Sorts the items of a list in place; original list is changed"
 tags: ["list", "method", "in-place", "sort", "mutable", "order"]
-see_also: ["sorted()", "reverse()"]
+see_also: ["sorted()", "reverse()", "pop()", "sort()", "sort() leaderboard update **R.W.E**"]
 works_with: ["list"]
 ---
 
@@ -130,3 +134,5 @@ print(sorted_numbers)  # Output: None
 
 - `sorted()`  
 - `reverse()`
+- `pop()`
+- `sort() leaderboard update` **R.W.E**

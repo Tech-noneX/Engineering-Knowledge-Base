@@ -1,9 +1,13 @@
 ---
 id: index
 title: "index()"
-section: "Sequence Methods"
+section: "List Methods"
+module: "built-in"
+difficulty: beginner
+subscription: free
+reference: "Returns the index of the first occurrence of a value in a sequence"
 tags: ["list", "tuple", "string", "method", "search", "sequence"]
-see_also: ["find()", "count()"]
+see_also: ["find()", "count()", "pop()", "enumerate()", "index() error handling **R.W.E**"]
 works_with: ["list", "tuple", "string"]
 ---
 
@@ -147,3 +151,5 @@ except ValueError:
 
 - `find()`
 - `count()`
+- `pop()`
+- `index() error handling` **R.W.E**

@@ -1,10 +1,14 @@
 ---
 id: sorted
 title: "sorted()"
-section: "List Function"
-tags: ["list", "Returns new list", "Function", "sort"]
-see_also: ["sort"]
-work_with: ["lists", "tuples", "strings", "dictionaries", "sets",]
+section: "List Functions"
+module: "built-in"
+difficulty: beginner
+subscription: free
+reference: "Returns a new sorted list from any iterable, original is unchanged"
+tags: ["list", "function", "sort", "returns new list", "iterable", "sequence", "order"]
+see_also: ["sort", "reverse()", "sorted() custom key"]
+works_with: ["lists", "tuples", "strings", "dictionaries", "sets",]
 ---
 
 # sorted
@@ -132,3 +136,5 @@ print(numbers)  # [3, 1, 2], original is unchanged
 ## See Also
 
 - `sort()`
+- `reverse()`
+- `sorted() custom key` **R.W.E**

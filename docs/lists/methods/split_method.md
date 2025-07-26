@@ -2,8 +2,12 @@
 id: split
 title: "split()"
 section: "String Methods"
+module: "built-in"
+difficulty: beginner
+subscription: free
+reference: "Splits a string into a list of substrings using a delimiter"
 tags: ["string", "method", "split", "delimiter", "text", "conversion"]
-see_also: ["join()", "partition()", "rsplit()"]
+see_also: ["join()", "partition()", "rsplit()", "split() csv line parser **R.W.E**"]
 works_with: ["string"]
 ---
 
@@ -117,3 +121,10 @@ parts = text.split(' ', 2)
 # Example with trailing delimiter:
 "one,two,".split(',')  # ['one', 'two', '']
 ```
+
+## See Also
+
+- `join()`
+- `partition()`
+- `rsplit()`
+- `split() csv line parser` **R.W.E**

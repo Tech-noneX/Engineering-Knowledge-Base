@@ -2,7 +2,7 @@
 id: range
 title: "range()"
 section: "Built-in Functions"
-module: "build-in"
+module: "built-in"
 difficulty: beginner
 subscription: free
 reference: "Generates a sequence of numbers for looping or indexing"
