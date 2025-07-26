@@ -10,19 +10,18 @@
 - `keys()`
 - `values()`
 - `add()`
-- `pop()`
 - `find()`
 - `count()`
 - `reverse()`
 - `join()`
 - `partition()`
-- `rsplit()`
 - `map()`
 - `filter()`
-- `input()`
-- `print()`
 - `casefold()`
 - `startswith()`
+- `id()`
+- `isinstance()`
+- `del()`
 
 ## loops
 
@@ -87,8 +86,8 @@
 - `input() — get user input`done
 - `append() — add item to end of list` done
 - `extend() — add all items from another iterable` done
-- `pop() — remove and return item by index`
-- `remove() — remove item by value`
+- `pop() — remove and return item by index`done
+- `remove() — remove item by value`done
 - `sort() — sort list in place` done
 - `split() — split string into list by delimiter` done
 - `strip() — remove whitespace from both ends` done

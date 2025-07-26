@@ -1,13 +1,13 @@
 ---
 id: type
-title: type()
-section: Built-in Functions
-module: built-in
+title: 'type()'
+section: 'Built-in Functions'
+module: 'built-in'
 subscription: free
 difficulty: beginner
-reference: Returns the type of an object or creates a new type/class
-tags: [built-in, function, type, introspection, class, object, reflection]
-see_also: [isinstance(), str(), print(), id(), type() custom class **R.W.E**]
+reference: 'Returns the type of an object or creates a new type/class'
+tags: ['built-in', 'function', 'type', 'introspection', 'class', 'object', 'reflection']
+see_also: ['isinstance()', 'str()', 'print()', 'id()', 'type() custom class **R.W.E**']
 works_with: [any object]
 ---
 
@@ -22,6 +22,7 @@ works_with: [any object]
 ## Description
 
 The `type()` function serves two purposes:
+
 - **(1) Type check:** With one argument, it returns the type/class of the given object.
 - **(2) Dynamic type creation:** With three arguments, it creates a new type (class) at runtime (advanced use).
 
@@ -46,7 +47,9 @@ type(name, bases, dict)
 ## Arguments
 
 - **Required:** 1 (`object`) OR 3 (`name`, `bases`, `dict`)
+
 - **Optional:** None
+
 - **Maximum:** 3
 
 - Required:

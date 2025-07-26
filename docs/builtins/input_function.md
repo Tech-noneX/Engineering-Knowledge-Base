@@ -40,7 +40,9 @@ input([prompt])
 ## Arguments
 
 - **Required:** 0
+
 - **Optional:** 1 (`prompt`, str)
+
 - **Maximum:** 1
 
 - Required:

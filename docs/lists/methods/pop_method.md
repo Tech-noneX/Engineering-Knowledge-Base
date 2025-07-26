@@ -112,7 +112,7 @@ while stack:
 
 ## See Also
 
-- 'append()'
-- 'remove()'
-- 'del'
-- 'pop() last item **R.W.E**'
+- `append()`
+- `remove()`
+- `del`
+- `pop() last item` **R.W.E**

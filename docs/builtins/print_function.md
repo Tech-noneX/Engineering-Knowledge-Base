@@ -43,7 +43,9 @@ print(*objects, sep=' ', end='\n', file=sys.stdout, flush=False)
 ## Arguments
 
 - **Required:** 0 (can be empty: `print()`)
+
 - **Optional:** Unlimited (`*objects`, `sep`, `end`, `file`, `flush`)
+
 - **Maximum:** Unlimited objects + 4 keyword-only args
 
 - Required:

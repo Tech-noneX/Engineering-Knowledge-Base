@@ -18,7 +18,8 @@ class PythonCheatSheet:
                                            'enumerate': built_in['enumerate'],
                                            'print': built_in['print'],
                                            'type': built_in['type'],
-                                           'input': built_in['input']
+                                           'input': built_in['input'],
+                                           'zip': built_in['zip']
         }}
 
 
@@ -29,11 +30,7 @@ class PythonCheatSheet:
                                                     'split': lists_methods_paths['split'],
                                                     'insert': lists_methods_paths['insert'],
                                                     'index': lists_methods_paths['index'],
-                                                    'upper': string_methods['upper'],
-                                                    'lower': string_methods['lower'],
-                                                    'title': string_methods['title'],
-                                                    'lstrip': string_methods['lstrip'],
-                                                    'rstrip': string_methods['rstrip'],
+                                                    'remove': lists_methods_paths['remove'],
 
                                                     }}
         
@@ -48,6 +45,7 @@ class PythonCheatSheet:
                                                       'removesuffix': string_methods['removesuffix'],
                                                       'replace': string_methods['replace'],
                                                       'capitalize': string_methods['capitalize']
+
                                                     }}
         
         

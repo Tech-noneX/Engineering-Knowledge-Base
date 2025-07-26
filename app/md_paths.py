@@ -9,6 +9,7 @@ lists_methods_paths = {
     'insert': Path(__file__).parent.parent/'docs'/'lists'/'methods'/'insert_method.md',
     'index': Path(__file__).parent.parent/'docs'/'lists'/'methods'/'index_method.md',
     'pop': Path(__file__).parent.parent/'docs'/'lists'/'methods'/'pop_method.md',
+    'remove': Path(__file__).parent.parent/'docs'/'lists'/'methods'/'remove_method.md',
     }
 
 
@@ -48,6 +49,7 @@ built_in = {
     'print': Path(__file__).parent.parent/'docs'/'builtins'/'print_function.md',
     'type': Path(__file__).parent.parent/'docs'/'builtins'/'type_function.md',
     'input': Path(__file__).parent.parent/'docs'/'builtins'/'input_function.md',
+    'zip': Path(__file__).parent.parent/'docs'/'builtins'/'zip_function.md',
 }
 
 
