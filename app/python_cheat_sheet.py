@@ -1,7 +1,7 @@
 import os
 import random
 from greetings_function import greetings
-from md_paths import lists_methods_paths, lists_function_paths,dict_methods_paths, string_methods,built_in, modules
+from md_paths import lists_methods_paths, lists_function_paths,dict_methods_paths, string_methods,built_in, modules, set_method
 
 
 class PythonCheatSheet:
@@ -21,6 +21,7 @@ class PythonCheatSheet:
                                            'input': built_in['input'],
                                            'zip': built_in['zip'],
                                            'map': built_in['map'],
+                                           'filter': built_in['filter'],
         }}
 
 
@@ -32,6 +33,7 @@ class PythonCheatSheet:
                                                     'insert': lists_methods_paths['insert'],
                                                     'index': lists_methods_paths['index'],
                                                     'remove': lists_methods_paths['remove'],
+                                                    'count': lists_methods_paths['count'],
 
                                                     }}
         
@@ -52,12 +54,19 @@ class PythonCheatSheet:
         
         
         self.dict_sheet = {'functions & methods': {'get': dict_methods_paths['get']}}
-
+        
+        
+        self.set_sheet = {'method': {'add': set_method['add'],
+                          
+                          }}
+        
 
         self.modules_in = {'functools': {'reduce': modules['functools module']['reduce'],
                                          'functools': modules['functools module']['functools'],
+                                        }}
+
+
         
-        }}
     def main_menu(self):
         pass
 
@@ -78,6 +87,9 @@ class PythonCheatSheet:
                 continue
             elif find_function in self.builtin_sheet['functions']:
                 os.startfile(self.builtin_sheet['functions'][find_function])
+                continue
+            elif find_function in self.set_sheet['method']:
+                os.startfile(self.set_sheet['method'][find_function])
                 continue
             for modules,functions in self.modules_in.items():
                 if find_function in functions:

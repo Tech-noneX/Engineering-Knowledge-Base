@@ -10,6 +10,7 @@ lists_methods_paths = {
     'index': Path(__file__).parent.parent/'docs'/'lists'/'methods'/'index_method.md',
     'pop': Path(__file__).parent.parent/'docs'/'lists'/'methods'/'pop_method.md',
     'remove': Path(__file__).parent.parent/'docs'/'lists'/'methods'/'remove_method.md',
+    'count': Path(__file__).parent.parent/'docs'/'lists'/'methods'/'count_method.md',
     }
 
 
@@ -52,12 +53,16 @@ built_in = {
     'input': Path(__file__).parent.parent/'docs'/'builtins'/'input_function.md',
     'zip': Path(__file__).parent.parent/'docs'/'builtins'/'zip_function.md',
     'map': Path(__file__).parent.parent/'docs'/'builtins'/'map_function.md',
+    'filter': Path(__file__).parent.parent/'docs'/'builtins'/'filter_function.md',
 }
 
+set_method = {'add': Path(__file__).parent.parent/'docs'/'sets'/'method'/'add_method.md',
+
+}
 
 modules = {'functools module':{'reduce': Path(__file__).parent.parent/'docs'/'modules'/'functools'/'reduce_functools.md',
                                'functools': Path(__file__).parent.parent/'docs'/'modules'/'functools'/'functools_module.md',
                         }}
 
 
-print(len(lists_function_paths) + len(lists_methods_paths) + len(dict_methods_paths) + len(built_in) + len(string_methods))
+print(len(lists_function_paths) + len(lists_methods_paths) + len(dict_methods_paths) + len(built_in) + len(string_methods) + len(set_method))
