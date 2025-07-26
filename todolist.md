@@ -2,7 +2,6 @@
 
 ## functions and methods
 
-- `zip()`
 - `list()`
 - `math.ceil()`
 - `math.floor()`
@@ -13,9 +12,7 @@
 - `find()`
 - `count()`
 - `reverse()`
-- `join()`
 - `partition()`
-- `map()`
 - `filter()`
 - `casefold()`
 - `startswith()`

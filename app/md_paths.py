@@ -34,6 +34,7 @@ string_methods = {
     'removesuffix': Path(__file__).parent.parent/'docs'/'strings'/'methods'/'removesuffix_method.md',
     'replace': Path(__file__).parent.parent/'docs'/'strings'/'methods'/'replace_method.md',
     'capitalize': Path(__file__).parent.parent/'docs'/'strings'/'methods'/'capitalize_method.md',
+    'join': Path(__file__).parent.parent/'docs'/'strings'/'methods'/'join_method.md',
 }
 
 
@@ -50,6 +51,7 @@ built_in = {
     'type': Path(__file__).parent.parent/'docs'/'builtins'/'type_function.md',
     'input': Path(__file__).parent.parent/'docs'/'builtins'/'input_function.md',
     'zip': Path(__file__).parent.parent/'docs'/'builtins'/'zip_function.md',
+    'map': Path(__file__).parent.parent/'docs'/'builtins'/'map_function.md',
 }
 
 

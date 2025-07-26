@@ -19,7 +19,8 @@ class PythonCheatSheet:
                                            'print': built_in['print'],
                                            'type': built_in['type'],
                                            'input': built_in['input'],
-                                           'zip': built_in['zip']
+                                           'zip': built_in['zip'],
+                                           'map': built_in['map'],
         }}
 
 
@@ -44,7 +45,8 @@ class PythonCheatSheet:
                                                       'removeprefix': string_methods['removeprefix'],
                                                       'removesuffix': string_methods['removesuffix'],
                                                       'replace': string_methods['replace'],
-                                                      'capitalize': string_methods['capitalize']
+                                                      'capitalize': string_methods['capitalize'],
+                                                      'join': string_methods['join'],
 
                                                     }}
         
