@@ -2,8 +2,12 @@
 id: upper
 title: "upper()"
 section: "String Methods"
+module: "built-in"
+difficulty: beginner
+subscription: free
+reference: "Returns a copy of the string with all letters converted to uppercase"
 tags: ["string", "method", "case", "uppercase", "text"]
-see_also: ["lower()", "capitalize()", "title()", "casefold()"]
+see_also: ["lower()", "capitalize()", "title()", "casefold()", "upper() normalize codes **R.W.E**"]
 works_with: ["str"]
 ---
 
@@ -98,3 +102,4 @@ text.upper("wrong")  # TypeError: upper() takes no arguments
 - `capitalize()`
 - `title()`
 - `casefold()`
+- `upper() normalize codes` **R.W.E**

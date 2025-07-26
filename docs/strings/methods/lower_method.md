@@ -2,8 +2,12 @@
 id: lower
 title: "lower()"
 section: "String Methods"
+module: "built-in"
+difficulty: beginner
+subscription: free
+reference: "Returns a copy of the string with all letters converted to lowercase"
 tags: ["string", "method", "case", "text", "immutable"]
-see_also: ["upper()", "capitalize()", "casefold()"]
+see_also: ["upper()", "capitalize()", "casefold()", "lower() normalize user input **R.W.E**"]
 works_with: ["str"]
 ---
 
@@ -91,3 +95,4 @@ print(word)          # "hello"
 - `upper()`
 - `capitalize()`
 - `casefold()`
+- `lower() normalize user input` **R.W.E**

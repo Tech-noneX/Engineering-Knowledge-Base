@@ -4,7 +4,7 @@ title: "insert()"
 section: "List Methods"
 module: "built-in"
 difficulty: beginner
-subscription: free
+subscription: premium
 reference: "Inserts an item at a specific index in a list, shifting elements to the right"
 tags: ["list", "method", "in-place", "add", "mutable", "position"]
 see_also: ["append()", "extend()", "pop()", "insert() insert priority task **R.W.E**"]

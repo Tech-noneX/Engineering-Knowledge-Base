@@ -8,7 +8,7 @@ subscription: free
 reference: "Splits a string into a list of substrings using a delimiter"
 tags: ["string", "method", "split", "delimiter", "text", "conversion"]
 see_also: ["join()", "partition()", "rsplit()", "split() csv line parser **R.W.E**"]
-works_with: ["string"]
+works_with: ["str"]
 ---
 
 # split

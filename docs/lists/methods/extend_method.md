@@ -2,13 +2,13 @@
 id: extend
 title: "extend()"
 section: "List Methods"
-module: "Built-in"
+module: "built-in"
 difficulty: beginner
 subscription: free
 reference: "Adds all items from an iterable to the end of a list in place"
-tags: ["list", "method", "in-place", "add", "iterable", "mutable", "extend() merge datasets **R.W.E**"]
+tags: ["list", "method", "in-place", "add", "iterable", "mutable",]
 see_also: ["add()", "append()", "insert()", "pop()", "extend() merge datasets **R.W.E**"]
-works_with: ["lists"]
+works_with: ["list"]
 ---
 
 # extend

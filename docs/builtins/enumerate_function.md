@@ -4,7 +4,7 @@ title: "enumerate()"
 section: "Built-in Functions"
 module: "built-in"
 difficulty: beginner 
-subscription: free
+subscription: premium
 reference: "Adds index to each item when looping over an iterable"
 tags: ["built-in", "function", "enumerate", "loop", "index", "iterator", "for"]
 see_also: ["zip()", "range()", "list()", "for", "enumerate() quiz generator"]

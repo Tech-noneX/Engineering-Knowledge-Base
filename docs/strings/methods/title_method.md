@@ -2,8 +2,12 @@
 id: title
 title: "title()"
 section: "String Methods"
+module: "built-in"
+difficulty: beginner
+subscription: premium
+reference: "Returns a new string with the first letter of each word capitalized (title case)"
 tags: ["string", "method", "case", "capitalize", "titlecase", "immutable"]
-see_also: ["capitalize()", "lower()", "upper()"]
+see_also: ["capitalize()", "lower()", "upper()", "title() format book titles **R.W.E**"]
 works_with: ["str"]
 ---
 
@@ -87,3 +91,4 @@ print(phrase)            # "python is fun"
 - `capitalize()`
 - `lower()`
 - `upper()`
+- `title() format book titles` **R.W.E**

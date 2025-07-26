@@ -2,8 +2,12 @@
 id: strip
 title: "strip()"
 section: "String Methods"
+module: "built-in"
+difficulty: beginner
+subscription: free
+reference: "Returns a new string with leading and trailing whitespace or specified characters removed"
 tags: ["string", "method", "whitespace", "strip", "immutable", "both ends"]
-see_also: ["lstrip()", "rstrip()", "replace()"]
+see_also: ["lstrip()", "rstrip()", "replace()", "strip() clean user input **R.W.E**"]
 works_with: ["str"]
 ---
 
@@ -90,3 +94,4 @@ print(line.rstrip("-"))   # "---Hello"
 - `lstrip()`
 - `rstrip()`
 - `replace()`
+- `strip() clean user input` **R.W.E**

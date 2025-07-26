@@ -2,8 +2,12 @@
 id: replace
 title: "replace()"
 section: "String Methods"
+module: "built-in"
+difficulty: beginner
+subscription: free
+reference: "Returns a new string with all (or a limited number of) occurrences of a substring replaced"
 tags: ["string", "method", "replace", "immutable", "substring", "count"]
-see_also: ["removeprefix()", "removesuffix()", "strip()"]
+see_also: ["removeprefix()", "removesuffix()", "strip()", "replace() clean CSV values **R.W.E**"]
 works_with: ["str"]
 ---
 
@@ -93,3 +97,4 @@ print(s.replace(" ", ""))  # "helloworld"
 - `removeprefix()`
 - `removesuffix()`
 - `strip()`
+- `replace() clean CSV values` **R.W.E**

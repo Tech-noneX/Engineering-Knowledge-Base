@@ -2,8 +2,12 @@
 id: capitalize
 title: "capitalize()"
 section: "String Methods"
+module: "built-in"
+difficulty: beginner
+subscription: premium
+reference: "Returns a copy of the string with the first character uppercase and the rest lowercase"
 tags: ["string", "method", "case", "capitalize", "immutable", "sentence case"]
-see_also: ["title()", "upper()", "lower()"]
+see_also: ["title()", "upper()", "lower()", "capitalize() format user input **R.W.E**"]
 works_with: ["str"]
 ---
 
@@ -88,3 +92,4 @@ print(name.title())        # "John Doe"
 - `title()`
 - `upper()`
 - `lower()`
+- `capitalize() format user input` **R.W.E**

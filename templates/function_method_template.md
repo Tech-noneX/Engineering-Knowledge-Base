@@ -1,11 +1,14 @@
 ---
 id: 
-title: 
-section:
-module: (build-in or name)
-tags: 
-see_also: 
-works_with: 
+title: ''
+section: ''
+module: '(build-in or name)'
+subscription: free/premium 
+difficulty: beginner/intermediate/advance
+reference: '(short description write here)'
+tags: ['']
+see_also: [''] 
+works_with: ['']
 ---
 
 # Name

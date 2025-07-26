@@ -7,7 +7,8 @@ lists_methods_paths = {
     'sort': Path(__file__).parent.parent/'docs'/'lists'/'methods'/'sort_method.md',
     'split': Path(__file__).parent.parent/'docs'/'lists'/'methods'/'split_method.md',
     'insert': Path(__file__).parent.parent/'docs'/'lists'/'methods'/'insert_method.md',
-    'index': Path(__file__).parent.parent/'docs'/'lists'/'methods'/'index_method.md'
+    'index': Path(__file__).parent.parent/'docs'/'lists'/'methods'/'index_method.md',
+    'pop': Path(__file__).parent.parent/'docs'/'lists'/'methods'/'pop_method.md',
     }
 
 
@@ -42,8 +43,11 @@ built_in = {
     'sum': Path(__file__).parent.parent/'docs'/'builtins'/'sum_function.md',
     'range': Path(__file__).parent.parent/'docs'/'builtins'/'range_function.md',
     'reversed': Path(__file__).parent.parent/'docs'/'builtins'/'reversed_function.md',
-     'round': Path(__file__).parent.parent/'docs'/'builtins'/'round_function.md',
-     'enumerate': Path(__file__).parent.parent/'docs'/'builtins'/'enumerate_function.md',
+    'round': Path(__file__).parent.parent/'docs'/'builtins'/'round_function.md',
+    'enumerate': Path(__file__).parent.parent/'docs'/'builtins'/'enumerate_function.md',
+    'print': Path(__file__).parent.parent/'docs'/'builtins'/'print_function.md',
+    'type': Path(__file__).parent.parent/'docs'/'builtins'/'type_function.md',
+    'input': Path(__file__).parent.parent/'docs'/'builtins'/'input_function.md',
 }
 
 

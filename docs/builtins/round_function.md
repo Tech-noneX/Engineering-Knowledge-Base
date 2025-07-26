@@ -4,7 +4,7 @@ title: "round()"
 section: "Built-in Functions"
 module: "built-in"
 difficulty: beginner
-subscription: free
+subscription: premium
 reference: "Rounds a number to the nearest integer or specified decimal place"
 tags: ["built-in", "function", "round", "float", "decimal", "precision", "number"]
 see_also: ["int()", "float()", "math.ceil()", "math.floor()", "round() currency formatting"]

@@ -15,7 +15,10 @@ class PythonCheatSheet:
                                            'range': built_in['range'],
                                            'reversed': built_in['reversed'],
                                            'round': built_in['round'],
-                                           'enumerate': built_in['enumerate']
+                                           'enumerate': built_in['enumerate'],
+                                           'print': built_in['print'],
+                                           'type': built_in['type'],
+                                           'input': built_in['input']
         }}
 
 

@@ -2,8 +2,12 @@
 id: rstrip
 title: "rstrip()"
 section: "String Methods"
+module: "built-in"
+difficulty: beginner
+subscription: premium
+reference: "Returns a new string with trailing (right) whitespace or specified characters removed"
 tags: ["string", "method", "whitespace", "strip", "immutable", "right"]
-see_also: ["lstrip()", "strip()", "replace()"]
+see_also: ["lstrip()", "strip()", "replace()", "rstrip() clean user-submitted data **R.W.E**"]
 works_with: ["str"]
 ---
 
@@ -90,3 +94,4 @@ print(line.strip("-"))    # "Hello"
 - `lstrip()`
 - `strip()`
 - `replace()`
+- `rstrip() clean user-submitted data` **R.W.E**

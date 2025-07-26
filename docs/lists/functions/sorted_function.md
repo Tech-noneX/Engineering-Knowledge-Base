@@ -7,8 +7,8 @@ difficulty: beginner
 subscription: free
 reference: "Returns a new sorted list from any iterable, original is unchanged"
 tags: ["list", "function", "sort", "returns new list", "iterable", "sequence", "order"]
-see_also: ["sort", "reverse()", "sorted() custom key"]
-works_with: ["lists", "tuples", "strings", "dictionaries", "sets",]
+see_also: ["sort()", "reverse()", "sorted() custom key"]
+works_with: ["list", "tuple", "str", "dict", "set",]
 ---
 
 # sorted

@@ -2,8 +2,12 @@
 id: removeprefix
 title: "removeprefix()"
 section: "String Methods"
+module: "built-in"
+difficulty: beginner
+subscription: premium
+reference: "Returns a new string with the specified prefix removed, if present"
 tags: ["string", "method", "prefix", "remove", "immutable", "python3.9+"]
-see_also: ["removesuffix()", "replace()", "strip()"]
+see_also: ["removesuffix()", "replace()", "strip()", "removeprefix() clean log output **R.W.E**"]
 works_with: ["str"]
 ---
 
@@ -92,3 +96,4 @@ print(s)  # "test"
 - `removesuffix()`
 - `replace()`
 - `strip()`
+- `removeprefix() clean log output` **R.W.E**
