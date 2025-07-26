@@ -2,8 +2,12 @@
 id: len
 title: "len()"
 section: "Built-in Functions"
+module: "built-in"
+difficulty: beginner
+subscription: free
+reference: "Returns the number of items in a sequence or collection"
 tags: ["built-in", "function", "length", "size", "iterable", "collection"]
-see_also: ["list", "tuple", "str", "dict", "sum()"]
+see_also: ["list", "tuple", "str", "dict", "sum()", "len() input validation"]
 works_with: ["list", "tuple", "str", "dict", "set", "range", "iterable"]
 ---
 
@@ -107,3 +111,4 @@ print(len(rng))  # Output: 10
 - `str`
 - `dict`
 - `sum()`
+- `len() input validation` **R.W.E**

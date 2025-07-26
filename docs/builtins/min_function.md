@@ -2,8 +2,12 @@
 id: min
 title: "min()"
 section: "Built-in Functions"
+module: "build-in"
+difficulty: beginner
+subscription: free
+reference: "Returns the smallest item in an iterable or among given values"
 tags: ["built-in", "function", "minimum", "iterable", "comparison", "numeric", "string"]
-see_also: ["max()", "sorted()", "sum()"]
+see_also: ["max()", "sorted()", "sum()", "min() slowest response"]
 works_with: ["list", "tuple", "str", "set", "dict", "iterable"]
 ---
 
@@ -108,3 +112,4 @@ print(min(nums, key=abs))  # -3 (smallest absolute value is 2, so result is 2)
 - `max()`
 - `sorted()`
 - `sum()`
+- `min() slowest response` **R.W.E**

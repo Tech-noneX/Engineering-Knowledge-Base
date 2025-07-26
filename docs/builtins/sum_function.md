@@ -2,8 +2,12 @@
 id: sum
 title: "sum()"
 section: "Built-in Functions"
+module: "build-in"
+difficulty: beginner
+subscription: free
+reference: "Adds up all numeric items in an iterable, with optional start value"
 tags: ["built-in", "function", "sum", "numeric", "iterable", "addition"]
-see_also: ["min()", "max()", "len()", "reduce()"]
+see_also: ["min()", "max()", "len()", "reduce()", "sum() total invoice calculation"]
 works_with: ["list", "tuple", "set", "dict", "iterable", "range"]
 ---
 
@@ -28,6 +32,7 @@ Use `sum()` with lists, tuples, sets, ranges, and other iterables containing num
 ```python
 sum(iterable, start=0)
 ```
+
 - **explanation:** Pass an iterable of numbers to sum. The optional `start` value is added to the total (default is `0`).
 
 ## Arguments
@@ -95,3 +100,4 @@ print(sum(nums, 100))  # Output: 115
 - `max()`
 - `len()`
 - `reduce()`
+- `sum() total invoice calculation` **R.W.E**

@@ -2,9 +2,12 @@
 id: round
 title: "round()"
 section: "Built-in Functions"
-module: built-in
+module: "built-in"
+difficulty: beginner
+subscription: free
+reference: "Rounds a number to the nearest integer or specified decimal place"
 tags: ["built-in", "function", "round", "float", "decimal", "precision", "number"]
-see_also: ["int()", "float()", "math.ceil()", "math.floor()"]
+see_also: ["int()", "float()", "math.ceil()", "math.floor()", "round() currency formatting"]
 works_with: ["int", "float", "numeric"]
 ---
 
@@ -104,3 +107,4 @@ print(math.floor(2.7))  # 2
 - `float()`
 - `math.ceil()`
 - `math.floor()`
+- `round() currency formatting` **R.W.E**

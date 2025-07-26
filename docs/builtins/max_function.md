@@ -2,8 +2,12 @@
 id: max
 title: "max()"
 section: "Built-in Functions"
+module: "build-in"
+difficulty: beginner
+subscription: free
+reference: "Returns the largest item in an iterable or among given values"
 tags: ["built-in", "function", "maximum", "iterable", "comparison", "numeric", "string"]
-see_also: ["min()", "sorted()", "sum()"]
+see_also: ["min()", "sorted()", "sum()", "max() top performer"]
 works_with: ["list", "tuple", "str", "set", "dict", "iterable"]
 ---
 
@@ -108,3 +112,4 @@ print(max(nums, key=abs))  # 7 (largest absolute value)
 - `min()`
 - `sorted()`
 - `sum()`
+- `max() top performer` **R.W.E**

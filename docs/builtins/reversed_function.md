@@ -2,8 +2,12 @@
 id: reversed
 title: "reversed()"
 section: "Built-in Functions"
+module: "build-in"
+difficulty: beginner
+subscription: free
+reference: Returns an iterator that yields items in reverse order
 tags: ["built-in", "function", "reverse", "sequence", "iteration", "for loop", "iterator"]
-see_also: ["list()", "range()", "for", "sorted()"]
+see_also: ["list()", "range()", "for", "sorted()", "reversed() undo navigation"]
 works_with: ["list", "tuple", "str", "range", "sequence", "iterable"]
 ---
 
@@ -91,3 +95,4 @@ print(list(reversed(tup)))  # [3, 2, 1]
 - `range()`
 - `for`
 - `sorted()`
+- `reversed() undo navigation` **R.W.E**

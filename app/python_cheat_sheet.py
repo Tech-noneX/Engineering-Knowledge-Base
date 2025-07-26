@@ -60,24 +60,27 @@ class PythonCheatSheet:
 
     
     def functions_menu(self):
-        find_function = input(f"{random.choice(greetings)}\n:").lower().strip()
-        if find_function in self.lists_sheet['functions & methods']:
-            return os.startfile(self.lists_sheet['functions & methods'][find_function])
-
-        elif find_function in self.dict_sheet['functions & methods']:
-            return os.startfile(self.dict_sheet['functions & methods'][find_function])
-        
-        elif find_function in self.string_sheet['functions & methods']:
-            return os.startfile(self.string_sheet['functions & methods'][find_function])
-        
-        elif find_function in self.builtin_sheet['functions']:
-            return os.startfile(self.builtin_sheet['functions'][find_function])
-        
-        for modules,functions in self.modules_in.items():
-            if find_function in functions:
-                return os.startfile(self.modules_in[modules][find_function])
-        
-        print("Function not found!")
+        while True:
+            find_function = input(f"{random.choice(greetings)}\n:").lower().strip()
+            if "q" == find_function:
+                break
+            if find_function in self.lists_sheet['functions & methods']:
+                os.startfile(self.lists_sheet['functions & methods'][find_function])
+                continue
+            elif find_function in self.dict_sheet['functions & methods']:
+                os.startfile(self.dict_sheet['functions & methods'][find_function])
+                continue
+            elif find_function in self.string_sheet['functions & methods']:
+                os.startfile(self.string_sheet['functions & methods'][find_function])
+                continue
+            elif find_function in self.builtin_sheet['functions']:
+                os.startfile(self.builtin_sheet['functions'][find_function])
+                continue
+            for modules,functions in self.modules_in.items():
+                if find_function in functions:
+                    os.startfile(self.modules_in[modules][find_function])
+                    continue
+            print("Function not found!")
 
 
 

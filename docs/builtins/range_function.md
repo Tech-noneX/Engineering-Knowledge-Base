@@ -2,8 +2,12 @@
 id: range
 title: "range()"
 section: "Built-in Functions"
+module: "build-in"
+difficulty: beginner
+subscription: free
+reference: "Generates a sequence of numbers for looping or indexing"
 tags: ["built-in", "function", "range", "sequence", "iteration", "for loop", "integer"]
-see_also: ["list()", "for", "enumerate()", "reversed()"]
+see_also: ["list()", "for", "enumerate()", "reversed()", "range() pagination"]
 works_with: ["int", "for loop", "iteration"]
 ---
 
@@ -109,3 +113,4 @@ print(list(range(5, 0, -1)))  # [5, 4, 3, 2, 1]
 - `for`
 - `enumerate()`
 - `reversed()`
+- `range() pagination` **R.W.E**

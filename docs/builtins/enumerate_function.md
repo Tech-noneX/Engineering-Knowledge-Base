@@ -2,9 +2,12 @@
 id: enumerate
 title: "enumerate()"
 section: "Built-in Functions"
-module: built-in
+module: "built-in"
+difficulty: beginner 
+subscription: free
+reference: "Adds index to each item when looping over an iterable"
 tags: ["built-in", "function", "enumerate", "loop", "index", "iterator", "for"]
-see_also: ["zip()", "range()", "list()", "for"]
+see_also: ["zip()", "range()", "list()", "for", "enumerate() quiz generator"]
 works_with: ["list", "tuple", "str", "set", "iterable", "sequence"]
 ---
 
@@ -133,3 +136,4 @@ for idx, val in enumerate(d.values(), start=10):
 - `range()`
 - `list()`
 - `for`
+- `enumerate() quiz generator` **R.W.E**
