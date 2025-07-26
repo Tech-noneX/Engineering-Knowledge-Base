@@ -1,10 +1,13 @@
 ---
 id: reduce
 title: "reduce()"
-section: "Built-in Functions"
+section: "Modules functools"
 module: 'functools'
-tags: ["built-in", "function", "reduce", "iteration", "functools", "aggregation", "fold"]
-see_also: ["sum()", "map()", "filter()", "functools"]
+difficulty: intermediate
+subscription: premium
+reference: "Cumulatively applies a function to items in an iterable, reducing to a single value"
+tags: ["standard library", "function", "reduce", "iteration", "functools", "aggregation", "fold"]
+see_also: ["sum()", "map()", "filter()", "functools", "reduce() invoice total calculation **R.W.E**"]
 works_with: ["list", "tuple", "set", "iterable"]
 ---
 
@@ -108,3 +111,4 @@ print(reduce(lambda x, y: x + y, []))  # TypeError
 - `map()`
 - `filter()`
 - `functools`
+- `reduce() invoice total calculation` **R.W.E**

@@ -17,6 +17,10 @@
 - `join()`
 - `partition()`
 - `rsplit()`
+- `map()`
+- `filter()`
+- `input()`
+- `print()`
 
 ## loops
 
@@ -51,3 +55,9 @@
 - `int()`
 - `float()`
 
+## standard library
+
+- `itertools`
+- `operator`
+- `collections`
+- `math`

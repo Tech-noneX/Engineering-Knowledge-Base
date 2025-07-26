@@ -2,7 +2,10 @@
 id: functools
 title: "functools"
 section: "Modules"
-module: "standard"
+module: "standard library"
+difficulty: intermediate
+subscription: premium
+reference: "Higher-order functions and utilities for functional programming and decorators"
 tags: [ "standard library", "functional", "decorator", "caching", "tools" ]
 see_also: [ "itertools", "operator", "collections" ]
 works_with: [ "functions", "callables", "iterables" ]
