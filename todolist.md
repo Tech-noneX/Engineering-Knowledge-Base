@@ -8,8 +8,6 @@
 - `setdefault()`
 - `keys()`
 - `values()`
-- `find()`
-- `count()`
 - `reverse()`
 - `partition()`
 - `casefold()`

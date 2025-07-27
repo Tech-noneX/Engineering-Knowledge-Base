@@ -36,6 +36,7 @@ string_methods = {
     'replace': Path(__file__).parent.parent/'docs'/'strings'/'methods'/'replace_method.md',
     'capitalize': Path(__file__).parent.parent/'docs'/'strings'/'methods'/'capitalize_method.md',
     'join': Path(__file__).parent.parent/'docs'/'strings'/'methods'/'join_method.md',
+    'find': Path(__file__).parent.parent/'docs'/'strings'/'methods'/'find_method.md',
 }
 
 

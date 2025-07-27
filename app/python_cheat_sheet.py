@@ -49,6 +49,7 @@ class PythonCheatSheet:
                                                       'replace': string_methods['replace'],
                                                       'capitalize': string_methods['capitalize'],
                                                       'join': string_methods['join'],
+                                                      'find': string_methods['find'],
 
                                                     }}
         
