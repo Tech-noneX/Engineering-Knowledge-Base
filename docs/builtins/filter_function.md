@@ -117,7 +117,7 @@ filtered = list(filter(None, nums))
 
 ## See Also
 
-- `map()`
-- `list()`
-- `comprehension`
-- `filter() with lambda` **R.W.E**
+- [`map()`](map)
+- [`list()`](list)
+- [`comprehension`](comprehension)
+- [`filter() with lambda` **R.W.E**](filter_rwe)

@@ -104,8 +104,8 @@ except ValueError:
 
 ## See Also
 
-- `print()`
-- `str()`
-- `int()`
-- `type()`
-- `input() input validation` **R.W.E**
+- [`print()`](print)
+- [`str()`](str)
+- [`int()`](int)
+- [`type()`](type)
+- [`input() input validation` **R.W.E**](input_rwe)

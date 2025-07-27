@@ -109,7 +109,7 @@ print(max(nums, key=abs))  # 7 (largest absolute value)
 
 ## See Also
 
-- `min()`
-- `sorted()`
-- `sum()`
-- `max() top performer` **R.W.E**
+- [`min()`](min)
+- [`sorted()`](sorted)
+- [`sum()`](sum)
+- [`max() top performer` **R.W.E**](max_rwe)

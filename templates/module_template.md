@@ -1,20 +1,24 @@
 ---
-id:
-title:
-section: "Modules"
-module: (standard | built-in | third-party | name)
-tags:
-see_also:
-works_with:
+id:                     # unique id, e.g. append
+title: ''               # function or method name, e.g. append()
+section: ''             # Built-in Functions, List Methods, etc.
+module: ''              # built-in or module name (e.g. 'str', 'math')
+subscription:           # free/premium 
+difficulty:             # beginner/intermediate/advanced
+reference: ''           # one-line summary for app preview
+tags: ['']              # list of tags, e.g. ['function', 'list', 'mutate']
+see_also: ['']          # list of related ids (no need to link here, just id)
+works_with: ['']        # relevant data types, e.g. ['list', 'dict']
+file_path: ''           # relative path, e.g. docs/lists/append_method.md
 ---
 
 # Name
 
-- **Category:** (standard library, built-in, third-party, custom)
-- **Installation & Import:**
-- **Common Use Cases:**  
-- **Key Classes/Functions:**  
-- **Time Complexity:** (if applicable)
+- **Category:** # Standard library, built-in, third-party, or custom
+- **Installation & Import:** # How to install (if not built-in), and import patterns
+- **Common Use Cases:** # Most typical reasons to use this module
+- **Key Classes/Functions:** # Most important features/functions/classes in this module
+- **Time Complexity:** # (if relevant, or leave blank)
 
 ## Description
 
@@ -99,11 +103,9 @@ Mention any key behaviors, compatibility, or pitfalls.
 - Advice for avoiding bugs or misuse.
 
 ```python
-# Optional: relevant code snippet highlighting a tip or mistake
+# relevant code snippet highlighting a tip or mistake
 ```
 
 ## See Also
 
-- Related modules
-- Common alternatives
-- pip refer to the tool
+➡️ List related types, key methods, modules,tools, and concepts in label format.- [`tuple`](tuple)

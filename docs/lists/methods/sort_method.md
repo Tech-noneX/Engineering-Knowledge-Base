@@ -132,7 +132,7 @@ print(sorted_numbers)  # Output: None
 
 ## See Also
 
-- `sorted()`  
-- `reverse()`
-- `pop()`
-- `sort() leaderboard update` **R.W.E**
+- [`sorted()`](sorted)  
+- [`reverse()`](reverse)
+- [`pop()`](pop)
+- [`sort() leaderboard update` **R.W.E**](sort_rwe)

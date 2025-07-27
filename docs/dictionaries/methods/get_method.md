@@ -94,19 +94,25 @@ print(d.get('z'))         # None
 print(d.get('z', 999))    # 999
 ```
 
-## Tips
+## Tips & Common mistakes
 
 - **No KeyError:** Unlike `dict[key]`, `get()` never raises an error if the key doesn't exist.
 - Use the `default` parameter to avoid having to check if a key is in the dictionary first.
-
-## Common Mistakes
-
 - Forgetting to use the `default` parameter and assuming you'll always get a value back.
 - Thinking `get()` works with lists or other types—it’s for dictionaries only.
 
+```python
+my_dict = {"name": "Alice"}
+
+# Common mistake: forgetting to use default
+age = my_dict.get("age")
+print(age)  # Output: None (might cause bugs if you expect an int)
+print(age + 1)  # ❌ TypeError: unsupported operand type(s) for +: 'NoneType' and 'int'
+```
+
 ## See Also
 
-- `setdefault()`
-- `keys()`
-- `values()`
-- `get() user profile lookup` **R.W.E**
+- [`setdefault()`](setdefault)
+- [`keys()`](keys)
+- [`values()`](values)
+- [`get() user profile lookup` **R.W.E**](get_rwe)

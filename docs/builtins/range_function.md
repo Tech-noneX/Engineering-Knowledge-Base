@@ -109,8 +109,8 @@ print(list(range(5, 0, -1)))  # [5, 4, 3, 2, 1]
 
 ## See Also
 
-- `list()`
-- `for`
-- `enumerate()`
-- `reversed()`
-- `range() pagination` **R.W.E**
+- [`list()`](list)
+- [`for`](for)
+- [`enumerate()`](enumerate)
+- [`reversed()`](reversed)
+- [`range() pagination` **R.W.E**](range_rwe)

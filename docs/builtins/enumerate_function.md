@@ -132,8 +132,8 @@ for idx, val in enumerate(d.values(), start=10):
 
 ## See Also
 
-- `zip()`
-- `range()`
-- `list()`
-- `for`
-- `enumerate() quiz generator` **R.W.E**
+- [`zip()`](zip)
+- [`range()`](range)
+- [`list()`](list)
+- [`for`](for)
+- [`enumerate() quiz generator` **R.W.E**](enumerate_rwe)

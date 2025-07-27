@@ -1,13 +1,17 @@
 import os
 import random
 from greetings_function import greetings
-from md_paths import lists_methods_paths, lists_function_paths,dict_methods_paths, string_methods,built_in, modules, set_method
+from md_paths import lists_methods_paths, lists_function_paths,dict_methods_paths, string_methods,built_in, modules, set_method, datatypes_paths
 
 
 class PythonCheatSheet:
 
 
     def __init__(self):
+
+        self.datatypes_sheet = {'list': datatypes_paths['list']
+        }
+
         self.builtin_sheet = {'functions':{'min': built_in['min'],
                                            'max': built_in['max'],
                                            'len': built_in['len'],
@@ -34,6 +38,7 @@ class PythonCheatSheet:
                                                     'index': lists_methods_paths['index'],
                                                     'remove': lists_methods_paths['remove'],
                                                     'count': lists_methods_paths['count'],
+                                                    'reverse': lists_methods_paths['reverse'],
 
                                                     }}
         
@@ -91,6 +96,9 @@ class PythonCheatSheet:
                 continue
             elif find_function in self.set_sheet['method']:
                 os.startfile(self.set_sheet['method'][find_function])
+                continue
+            elif find_function in self.datatypes_sheet:
+                os.startfile(self.datatypes_sheet[find_function])
                 continue
             for modules,functions in self.modules_in.items():
                 if find_function in functions:

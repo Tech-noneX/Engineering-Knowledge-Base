@@ -111,8 +111,8 @@ with open("output.txt", "w") as f:
 
 ## See Also
 
-- `input()`
-- `str()`
-- `type()`
-- `format()`
-- `print() logging` **R.W.E**
+- [`input()`](input)
+- [`str()`](str)
+- [`type()`](type)
+- [`format()`](format)
+- [`print() logging` **R.W.E**](print_rwe)

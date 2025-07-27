@@ -11,18 +11,19 @@ lists_methods_paths = {
     'pop': Path(__file__).parent.parent/'docs'/'lists'/'methods'/'pop_method.md',
     'remove': Path(__file__).parent.parent/'docs'/'lists'/'methods'/'remove_method.md',
     'count': Path(__file__).parent.parent/'docs'/'lists'/'methods'/'count_method.md',
+    'reverse': Path(__file__).parent.parent/'docs'/'lists'/'methods'/'reverse_method.md',
     }
 
+datatypes_paths = {'list': Path(__file__).parent.parent/'docs'/'datatypes'/'list_datatype.md'
+}
 
 lists_function_paths = {
     'sorted': Path(__file__).parent.parent/'docs'/'lists'/'functions'/'sorted_function.md',
     }
 
-
 dict_methods_paths = {
     'get': Path(__file__).parent.parent/'docs'/'dictionaries'/'methods'/'get_method.md'
 }
-
 
 string_methods = {
     'upper': Path(__file__).parent.parent/'docs'/'strings'/'methods'/'upper_method.md',    
@@ -38,7 +39,6 @@ string_methods = {
     'join': Path(__file__).parent.parent/'docs'/'strings'/'methods'/'join_method.md',
     'find': Path(__file__).parent.parent/'docs'/'strings'/'methods'/'find_method.md',
 }
-
 
 built_in = {
     'min': Path(__file__).parent.parent/'docs'/'builtins'/'min_function.md',
@@ -66,4 +66,12 @@ modules = {'functools module':{'reduce': Path(__file__).parent.parent/'docs'/'mo
                         }}
 
 
-print(len(lists_function_paths) + len(lists_methods_paths) + len(dict_methods_paths) + len(built_in) + len(string_methods) + len(set_method))
+print(len(lists_function_paths) + 
+    len(lists_methods_paths) + 
+    len(dict_methods_paths) + 
+    len(built_in) + 
+    len(string_methods) + 
+    len(set_method) +
+    len(datatypes_paths) +
+    len(modules)
+)

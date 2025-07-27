@@ -8,7 +8,6 @@
 - `setdefault()`
 - `keys()`
 - `values()`
-- `reverse()`
 - `partition()`
 - `casefold()`
 - `startswith()`
@@ -52,7 +51,7 @@
 
 ## data types
 
-- `list()`
+- `list()` done
 - `tuple()`
 - `str()`
 - `dict()`
@@ -88,3 +87,18 @@
 - `lower() — convert string to lowercase` done
 - `upper() — convert string to uppercase` done
 - `get() — safely retrieve value by key` done
+
+## logic gates
+
+- `not`
+- `and`
+- `or`
+
+## keywords
+
+- `in`
+- `is`
+
+## coding stiles
+
+- `slicing`

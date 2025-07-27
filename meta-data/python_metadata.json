@@ -35,6 +35,71 @@
     "file_path": "docs/builtins/enumerate_function.md"
   },
   {
+    "id": "filter",
+    "title": "filter()",
+    "section": "Built-in Functions",
+    "module": "built-in",
+    "subscription": "premium",
+    "difficulty": "beginner",
+    "reference": "Filters elements of an iterable, keeping only those for which a function returns True",
+    "tags": [
+      "built-in",
+      "function",
+      "filter",
+      "iterator",
+      "condition",
+      "iterable"
+    ],
+    "see_also": [
+      "map()",
+      "list()",
+      "comprehension",
+      "filter() with lambda **R.W.E**"
+    ],
+    "works_with": [
+      "list",
+      "tuple",
+      "str",
+      "set",
+      "range",
+      "iterable"
+    ],
+    "content": "# filter()\n\n- **Used with:** Any iterable (list, tuple, set, etc.) and a function\n- **Construct:** function (returns an iterator)\n- **Library:** Built-in\n- **Iterable:** Yes (returns an iterator)\n- **Time Complexity:** O(n), where n = length of iterable\n\n## Description\n\nThe `filter()` function applies a function to each item in an iterable and returns an iterator containing only the items for which the function returns `True`.  \nCommonly used for selecting or filtering data based on conditions.  \nWrap in `list()` to get a list of results.\n\n## Usable With\n\nUse with any function that takes a single argument and returns a boolean, plus any iterable (list, tuple, set, string, etc.).\n\n## Syntax\n\n```python\nfilter(function, iterable)\n```\n\n- **explanation:**  \n  - `function`: Function that returns `True` or `False` for each item (can use `None` for identity test).\n  - `iterable`: Any iterable to filter.\n  - Returns an iterator with items where `function(item)` is `True`.\n\n## Arguments\n\n- **Required:** 2 (`function`, `iterable`)\n\n- **Optional:** 0\n\n- **Maximum:** 2\n\n- Required:\n\n```python\ndef is_even(x):\n    return x % 2 == 0\n\nnums = [1, 2, 3, 4]\nevens = filter(is_even, nums)  # iterator of 2, 4\n```\n\n- Optional:\n\n```python\n# function can be None (keeps items that are true in a boolean context)\ndata = ['', 'hi', None, 'bye']\nfiltered = filter(None, data)\n# filtered yields 'hi', 'bye'\n```\n\n- Maximum\n\n```python\n# Only two arguments allowed: function and iterable\n```\n\n## Examples\n\n- **Filter even numbers with a function**\n\n```python\nnums = [1, 2, 3, 4]\nevens = list(filter(lambda x: x % 2 == 0, nums))\n# evens is [2, 4]\n```\n\n- **Filter truthy values with None**\n\n```python\ndata = ['', 'apple', None, 'banana']\nresult = list(filter(None, data))\n# result is ['apple', 'banana']\n```\n\n- **Filter words by length**\n\n```python\nwords = ['hi', 'hello', 'a', 'world']\nlong_words = list(filter(lambda w: len(w) > 2, words))\n# long_words is ['hello', 'world']\n```\n\n**Note:**  \n`filter()` returns an iterator—wrap in `list()` or use a loop to access results.\n\n## Tips & Common mistakes\n\n- Use `list(filter(...))` to get a list result in Python 3.\n- `function` must return `True` or `False`; use lambdas for quick, custom logic.\n- List comprehensions are often clearer and more Pythonic for simple filtering.\n- Using `None` as the function keeps only \"truthy\" items.\n\n```python\nnums = [0, 1, 2, '', None, 3]\nfiltered = list(filter(None, nums))\n# filtered is [1, 2, 3]\n```\n\n## See Also\n\n- `map()`\n- `list()`\n- `comprehension`\n- `filter() with lambda` **R.W.E**",
+    "file_path": "docs/builtins/filter_function.md"
+  },
+  {
+    "id": "input",
+    "title": "input()",
+    "section": "Built-in Functions",
+    "module": "built-in",
+    "subscription": "free",
+    "difficulty": "beginner",
+    "reference": "Gets a line of user input as a string from the console",
+    "tags": [
+      "built-in",
+      "function",
+      "input",
+      "user",
+      "string",
+      "console",
+      "prompt"
+    ],
+    "see_also": [
+      "print()",
+      "str()",
+      "int()",
+      "type()",
+      "input() input validation **R.W.E**"
+    ],
+    "works_with": [
+      "str",
+      "user",
+      "console"
+    ],
+    "content": "# input()\n\n- **Used with:** Console/user input (returns string)\n- **Construct:** function\n- **Library:** Built-in\n- **Iterable:** No (returns a single string)\n- **Time Complexity:** O(n), where n = length of input\n\n## Description\n\nThe `input()` function pauses program execution, displays an optional prompt, and waits for the user to enter text, which is returned as a string. Common for collecting information or choices from the user in CLI apps. Always returns a string—convert to other types as needed (e.g., `int()`).\n\n## Usable With\n\nUse `input()` to read text entered by the user at the keyboard. The input is always a string, even if the user types a number.\n\n## Syntax\n\n```python\ninput([prompt])\n```\n\n- **explanation:**  \n  - `prompt` (optional): String displayed to the user before input.  \n  - Returns: The entered text as a string.\n\n## Arguments\n\n- **Required:** 0\n\n- **Optional:** 1 (`prompt`, str)\n\n- **Maximum:** 1\n\n- Required:\n\n```python\nname = input()\n```\n\n- Optional:\n\n```python\nage = input(\"Enter your age: \")\n```\n\n- Maximum\n\n```python\ncolor = input(\"What is your favorite color? \")\n```\n\n## Examples\n\n- **Basic input (no prompt)**\n\n```python\ntext = input()\nprint(\"You entered:\", text)\n```\n\n- **Input with a prompt**\n\n```python\nname = input(\"What is your name? \")\nprint(\"Hello,\", name)\n```\n\n- **Convert input to another type**\n\n```python\nnum = int(input(\"Enter a number: \"))\nprint(\"Twice your number:\", num * 2)\n```\n\n**Note:**  \n`input()` always returns a string, even if the user enters numbers. Use `int()` or `float()` to convert as needed.\n\n## Tips & Common mistakes\n\n- `input()` always returns a **string**—convert to `int` or `float` if you need numbers.\n- Don’t forget to add prompts so users know what to enter.\n- Be ready for errors: if user input is not what you expect (e.g., letters instead of numbers), your program may crash—use `try/except` for safe conversion.\n\n```python\ntry:\n    age = int(input(\"Enter your age: \"))\nexcept ValueError:\n    print(\"That was not a valid number!\")\n```\n\n## See Also\n\n- `print()`\n- `str()`\n- `int()`\n- `type()`\n- `input() input validation` **R.W.E**",
+    "file_path": "docs/builtins/input_function.md"
+  },
+  {
     "id": "len",
     "title": "len()",
     "section": "Built-in Functions",
@@ -69,6 +134,41 @@
     ],
     "content": "# len()\n\n- **Used with:** Strings, lists, tuples, sets, dictionaries, ranges, bytes, most collections\n- **Construct:** function\n- **Library:** Built-in\n- **Iterable:** Yes\n- **Time Complexity:** O(1) for built-in types\n\n## Description\n\nThe `len()` function returns the number of items in an object. It works with most built-in Python collections and types, including strings, lists, tuples, sets, dictionaries, ranges, and more. For dictionaries, `len()` returns the number of keys.\n\n## Usable With\n\nUse `len()` to check the size of sequences (strings, lists, tuples), collections (sets, dictionaries), or custom objects that define a `__len__` method.\n\n## Syntax\n\n```python\nlen(object)\n```\n\n- **explanation:** Pass any sequence or collection to `len()` to get the count of items.\n\n## Arguments\n\n- **Required:** 1 (`object`: the collection or sequence whose length you want)\n- **Optional:** 0\n- **Maximum:** 1\n\n```python\n# String length\nname = \"Python\"\nprint(len(name))  # 6\n\n# List length\nnums = [1, 2, 3]\nprint(len(nums))  # 3\n\n# Dictionary length (number of keys)\ndata = {\"a\": 1, \"b\": 2}\nprint(len(data))  # 2\n```\n\n## Examples\n\n- **Get the length of a string**\n\n```python\nmsg = \"hello\"\nprint(len(msg))  # Output: 5\n```\n\n- **Find the number of items in a list**\n\n```python\nitems = [10, 20, 30, 40]\nprint(len(items))  # Output: 4\n```\n\n- **Check dictionary size (number of keys)**\n\n```python\ngrades = {\"math\": 90, \"english\": 85}\nprint(len(grades))  # Output: 2\n```\n\n- **Works with sets, tuples, ranges**\n\n```python\nunique = set([1, 2, 3, 3])\nprint(len(unique))  # Output: 3\n\ntup = (4, 5, 6)\nprint(len(tup))  # Output: 3\n\nrng = range(10)\nprint(len(rng))  # Output: 10\n```\n\n**Note:** If the object does not define a length, `TypeError` is raised.\n\n## Tips & Common mistakes\n\n- Only pass objects that are sequences, collections, or define a `__len__` method.\n- `len()` returns the number of **top-level** elements only (not nested).\n- Does **not** work on numbers or objects without a defined length.\n\n```python\n# Common error\n# print(len(5))  # TypeError: object of type 'int' has no len()\n```\n\n## See Also\n\n- `list`\n- `tuple`\n- `str`\n- `dict`\n- `sum()`\n- `len() input validation` **R.W.E**",
     "file_path": "docs/builtins/len_function.md"
+  },
+  {
+    "id": "map",
+    "title": "map()",
+    "section": "Built-in Functions",
+    "module": "built-in",
+    "subscription": "premium",
+    "difficulty": "beginner",
+    "reference": "Applies a function to every item in one or more iterables, returning an iterator",
+    "tags": [
+      "built-in",
+      "function",
+      "map",
+      "apply",
+      "iterator",
+      "iterable",
+      "transformation"
+    ],
+    "see_also": [
+      "filter()",
+      "zip()",
+      "list()",
+      "comprehension",
+      "map() real-world **R.W.E**"
+    ],
+    "works_with": [
+      "list",
+      "tuple",
+      "str",
+      "set",
+      "range",
+      "iterable"
+    ],
+    "content": "# map()\n\n- **Used with:** Iterables (lists, tuples, strings, sets, etc.)\n- **Construct:** function (returns an iterator)\n- **Library:** Built-in\n- **Iterable:** Yes (returns an iterator)\n- **Time Complexity:** O(n), where n = length of the shortest iterable\n\n## Description\n\nThe `map()` function applies a given function to each item of one or more iterables (like lists or tuples) and returns an iterator with the results.  \nCommonly used for transforming data, converting types, or applying calculations to all items in a sequence.  \nStops at the shortest input if multiple iterables are provided.\n\n## Usable With\n\nUse `map()` with any function (can be built-in, lambda, or custom) and any iterable(s): lists, tuples, strings, sets, etc.\n\n## Syntax\n\n```python\nmap(function, iterable, ...)\n```\n\n- **explanation:**  \n  - `function` (required): Function to apply to each item (must take as many arguments as there are iterables).\n  - `iterable` (required): One or more iterables (lists, tuples, etc.).\n  - Returns an iterator with results.\n\n## Arguments\n\n- **Required:** 2 (function, iterable)\n- **Optional:** Unlimited (can add more iterables)\n- **Maximum:** Unlimited\n\n- Required:\n\n```python\nnums = [1, 2, 3]\ndoubled = map(lambda x: x * 2, nums)  # iterator of 2, 4, 6\n```\n\n- Optional:\n\n```python\n# Multiple iterables: function must take as many arguments\na = [1, 2, 3]\nb = [10, 20, 30]\nsummed = map(lambda x, y: x + y, a, b)  # 11, 22, 33\n```\n\n- Maximum\n\n```python\n# map() works with as many iterables as you want, function must accept that many args\nresult = map(lambda x, y, z: x + y + z, [1, 2], [3, 4], [5, 6])\n# result yields 9, 12\n```\n\n## Examples\n\n- **Apply a function to each item in a list**\n\n```python\nnums = [1, 2, 3]\nsquares = list(map(lambda x: x ** 2, nums))\n# squares is [1, 4, 9]\n```\n\n- **Convert all strings to integers**\n\n```python\ndata = ['1', '2', '3']\nints = list(map(int, data))\n# ints is [1, 2, 3]\n```\n\n- **Map with multiple iterables**\n\n```python\na = [1, 2, 3]\nb = [10, 20, 30]\nresult = list(map(lambda x, y: x + y, a, b))\n# result is [11, 22, 33]\n```\n\n**Note:**  \n`map()` returns an **iterator**—wrap in `list()` or loop to access results.  \nStops when the shortest iterable is exhausted.\n\n## Tips & Common mistakes\n\n- Always use `list(map(...))` or a loop if you want the results as a list (especially in Python 3).\n- For simple transformations, list comprehensions are often clearer and more Pythonic.\n- The function must accept as many arguments as there are iterables.\n- Stops at the shortest input; extra items in longer iterables are ignored.\n\n```python\nwords = ['a', 'b', 'c']\nupper = list(map(str.upper, words))\n# upper is ['A', 'B', 'C']\n```\n\n## See Also\n\n- `filter()`\n- `zip()`\n- `list()`\n- `comprehension`\n- `map() real-world` **R.W.E**",
+    "file_path": "docs/builtins/map_function.md"
   },
   {
     "id": "max",
@@ -137,6 +237,42 @@
     ],
     "content": "# min()\n\n- **Used with:** Any iterable (list, tuple, string, set, dict, etc.), or two or more arguments\n- **Construct:** function\n- **Library:** Built-in\n- **Iterable:** Yes\n- **Time Complexity:** O(n) (n = number of elements)\n\n## Description\n\nThe `min()` function returns the smallest item in an iterable or the smallest of two or more arguments. If an iterable is empty and no default value is provided, it raises a `ValueError`. You can also pass a `key` function to control how values are compared.\n\n## Usable With\n\nUse `min()` with lists, tuples, sets, strings, dictionaries (to find the minimum key), or pass multiple arguments directly. Works with numbers, strings, or any comparable objects.\n\n## Syntax\n\n```python\nmin(iterable, *[, key, default])\nmin(arg1, arg2, *args[, key])\n```\n\n- **explanation:** Call `min()` with an iterable or with two or more arguments. Optional `key` allows custom sorting. Optional `default` is used if the iterable is empty.\n\n## Arguments\n\n- **Required:**\n  - 1 iterable **or** 2+ arguments to compare\n- **Optional:**\n  - `key` (function): a function to customize comparison\n  - `default` (any): value to return if the iterable is empty (only allowed with iterables)\n- **Maximum:** Unlimited positional arguments or 1 iterable + 2 keyword arguments\n\n```python\n# With an iterable\nnums = [4, 2, 8, 6]\nprint(min(nums))  # 2\n\n# With multiple arguments\nprint(min(4, 2, 8, 6))  # 2\n\n# With key\nwords = [\"apple\", \"banana\", \"pear\"]\nprint(min(words, key=len))  # \"pear\"\n\n# With default\nempty = []\nprint(min(empty, default=\"No items\"))  # \"No items\"\n```\n\n## Examples\n\n- **Find minimum value in a list**\n\n```python\nprices = [15.99, 23.50, 9.99]\nprint(min(prices))  # Output: 9.99\n```\n\n- **Get the alphabetically first string**\n\n```python\nletters = [\"b\", \"a\", \"c\"]\nprint(min(letters))  # Output: \"a\"\n```\n\n- **Use key to find the shortest string**\n\n```python\nnames = [\"Eve\", \"Bob\", \"Alice\"]\nprint(min(names, key=len))  # Output: \"Eve\"\n```\n\n- **Use default with empty iterable**\n\n```python\nitems = []\nprint(min(items, default=\"empty\"))  # Output: \"empty\"\n```\n\n**Note:** Passing an empty iterable with no default raises a `ValueError`.\n\n## Tips & Common mistakes\n\n- Passing an empty iterable without `default` causes a `ValueError`.\n- Use `key` for custom comparisons (e.g., by length, absolute value, etc.).\n- For dictionaries, `min(d)` returns the minimum key. To get the minimum value: `min(d.values())`.\n- If comparing different types (e.g., int and str), `TypeError` will be raised.\n\n```python\n# Custom comparison\nnums = [-3, 2, -5, 7]\nprint(min(nums, key=abs))  # -3 (smallest absolute value is 2, so result is 2)\n```\n\n## See Also\n\n- `max()`\n- `sorted()`\n- `sum()`\n- `min() slowest response` **R.W.E**",
     "file_path": "docs/builtins/min_function.md"
+  },
+  {
+    "id": "print",
+    "title": "print()",
+    "section": "Built-in Functions",
+    "module": "built-in",
+    "subscription": "free",
+    "difficulty": "beginner",
+    "reference": "Outputs values to the screen or another stream, separated by spaces",
+    "tags": [
+      "built-in",
+      "function",
+      "output",
+      "display",
+      "stream",
+      "console",
+      "print"
+    ],
+    "see_also": [
+      "input()",
+      "str()",
+      "type()",
+      "format()",
+      "print() logging **R.W.E**"
+    ],
+    "works_with": [
+      "str",
+      "int",
+      "float",
+      "list",
+      "tuple",
+      "dict",
+      "any object"
+    ],
+    "content": "# print()\n\n- **Used with:** All Python objects (str, int, float, list, dict, etc.)\n- **Construct:** function\n- **Library:** Built-in\n- **Iterable:** Yes (can print any iterable or unpacked arguments)\n- **Time Complexity:** O(n) for n arguments (plus I/O)\n\n## Description\n\nThe `print()` function displays one or more values to the console or standard output. By default, each item is separated by a space and the output ends with a newline. You can change the separator and ending, print to files, and unpack collections with `*`. Widely used for debugging, output, and user interaction.\n\n## Usable With\n\nUse `print()` for any type you want to display: strings, numbers, lists, dictionaries, or custom objects. Can print multiple items, unpack iterables, and redirect output to files.\n\n## Syntax\n\n```python\nprint(*objects, sep=' ', end='\\n', file=sys.stdout, flush=False)\n```\n\n- **explanation:**\n  - `*objects`: One or more objects to print (separated by commas)\n  - `sep`: String inserted between objects (default: space)\n  - `end`: String printed at end (default: newline)\n  - `file`: Output stream (default: console)\n  - `flush`: Whether to forcibly flush the stream (default: False)\n\n## Arguments\n\n- **Required:** 0 (can be empty: `print()`)\n\n- **Optional:** Unlimited (`*objects`, `sep`, `end`, `file`, `flush`)\n\n- **Maximum:** Unlimited objects + 4 keyword-only args\n\n- Required:\n\n```python\nprint(\"Hello, world!\")   # Prints: Hello, world!\nprint()                  # Prints a blank line\n```\n\n- Optional:\n\n```python\nprint(\"A\", \"B\", sep=\"-\")                 # A-B\nprint(\"No newline\", end=\"...\")           # No newline...\nprint(1, 2, 3, sep=\", \", end=\" END\\n\")   # 1, 2, 3 END\n```\n\n- Maximum:\n\n```python\nimport sys\nprint(\"Error!\", file=sys.stderr, flush=True)\n```\n\n## Examples\n\n- **Basic output**\n\n```python\nprint(\"Welcome to Python!\")  # Output: Welcome to Python!\n```\n\n- **Print multiple objects**\n\n```python\nx, y = 5, 7\nprint(\"x =\", x, \"y =\", y)  # Output: x = 5 y = 7\n```\n\n- **Custom separator and end**\n\n```python\nprint(\"A\", \"B\", \"C\", sep=\"-\", end=\"!?!\\n\")  # Output: A-B-C!?!\n```\n\n**Note:**  \nYou can print nothing (`print()`) for a blank line.  \nNon-string objects are automatically converted with `str()`.\n\n## Tips & Common mistakes\n\n- `print()` can take any number of arguments of any type.\n- Use `sep=\"\"` for no spaces; use `end=\"\"` to avoid a newline.\n- Redirect output by setting `file` to a writable stream or file object.\n- For debugging, use `print(repr(obj))` to see the raw value.\n- Printing large data or in a loop may slow your program due to I/O.\n- `print()` returns `None`, not the string—can’t assign result.\n\n```python\nwith open(\"output.txt\", \"w\") as f:\n    print(\"Save this to file\", file=f)\n```\n\n## See Also\n\n- `input()`\n- `str()`\n- `type()`\n- `format()`\n- `print() logging` **R.W.E**",
+    "file_path": "docs/builtins/print_function.md"
   },
   {
     "id": "range",
@@ -272,6 +408,72 @@
     "file_path": "docs/builtins/sum_function.md"
   },
   {
+    "id": "type",
+    "title": "type()",
+    "section": "Built-in Functions",
+    "module": "built-in",
+    "subscription": "free",
+    "difficulty": "beginner",
+    "reference": "Returns the type of an object or creates a new type/class",
+    "tags": [
+      "built-in",
+      "function",
+      "type",
+      "introspection",
+      "class",
+      "object",
+      "reflection"
+    ],
+    "see_also": [
+      "isinstance()",
+      "str()",
+      "print()",
+      "id()",
+      "type() custom class **R.W.E**"
+    ],
+    "works_with": [
+      "any object"
+    ],
+    "content": "# type()\n\n- **Used with:** Any object (variable, value, custom type, etc.)\n- **Construct:** function\n- **Library:** Built-in\n- **Iterable:** No\n- **Time Complexity:** O(1) for type checking; creating new types depends on body size\n\n## Description\n\nThe `type()` function serves two purposes:\n\n- **(1) Type check:** With one argument, it returns the type/class of the given object.\n- **(2) Dynamic type creation:** With three arguments, it creates a new type (class) at runtime (advanced use).\n\nCommonly used to check the type of a variable or object, especially for debugging or introspection.\n\n## Usable With\n\nUse `type()` with any Python object (number, string, list, user-defined class, etc.).  \nAdvanced: Create new types by passing name, bases, and dict.\n\n## Syntax\n\n```python\ntype(object)\ntype(name, bases, dict)\n```\n\n- **explanation:**\n  - `type(object)`: Returns the type of the given object.\n  - `type(name, bases, dict)`: Creates a new class named `name`, inheriting from `bases`, with attributes from `dict`.\n\n## Arguments\n\n- **Required:** 1 (`object`) OR 3 (`name`, `bases`, `dict`)\n\n- **Optional:** None\n\n- **Maximum:** 3\n\n- Required:\n\n```python\nx = 7\nprint(type(x))  # <class 'int'>\n```\n\n- Optional:\n\n```python\n# No optional arguments; use 1 or 3 required arguments\n```\n\n- Maximum:\n\n```python\n# Create a new type (advanced)\nMyClass = type('MyClass', (object,), {'x': 5})\nobj = MyClass()\nprint(type(obj))         # <class '__main__.MyClass'>\nprint(obj.x)             # 5\n```\n\n## Examples\n\n- **Check the type of a variable**\n\n```python\nvalue = [1, 2, 3]\nprint(type(value))  # Output: <class 'list'>\n```\n\n- **Check the type for custom objects**\n\n```python\nclass Dog: pass\nd = Dog()\nprint(type(d))  # Output: <class '__main__.Dog'>\n```\n\n- **Create a class dynamically**\n\n```python\nPerson = type('Person', (), {'greet': lambda self: \"Hi!\"})\np = Person()\nprint(p.greet())  # Output: Hi!\n```\n\n**Note:**  \nFor most code, use `type(object)` to check types.  \nDynamic class creation is for advanced/rare use cases.\n\n## Tips & Common mistakes\n\n- Prefer `isinstance(obj, t)` for type *comparison* (handles inheritance).\n- `type(obj)` returns the object's direct class; won't match subclasses unless using `isinstance()`.\n- Creating classes with `type()` is an advanced feature—rarely needed in regular code.\n- You can use `type()` to check types of variables, containers, and even functions.\n\n```python\nprint(type(3.14))       # <class 'float'>\nprint(type(\"hi\"))       # <class 'str'>\nprint(type(len))        # <class 'builtin_function_or_method'>\n```\n\n## See Also\n\n- `isinstance()`\n- `str()`\n- `print()`\n- `id()`\n- `type() custom class` **R.W.E**",
+    "file_path": "docs/builtins/type_function.md"
+  },
+  {
+    "id": "zip",
+    "title": "zip()",
+    "section": "Built-in Functions",
+    "module": "built-in",
+    "subscription": "premium",
+    "difficulty": "beginner",
+    "reference": "Combines multiple iterables element-wise into tuples",
+    "tags": [
+      "built-in",
+      "function",
+      "zip",
+      "combine",
+      "iterator",
+      "tuple",
+      "parallel"
+    ],
+    "see_also": [
+      "enumerate()",
+      "map()",
+      "list()",
+      "dict()",
+      "zip() real-world pairing **R.W.E**"
+    ],
+    "works_with": [
+      "list",
+      "tuple",
+      "str",
+      "set",
+      "range",
+      "iterable",
+      "sequence"
+    ],
+    "content": "# zip()\n\n- **Used with:** Iterables (lists, tuples, strings, sets, etc.)\n- **Construct:** function (returns an iterator)\n- **Library:** Built-in\n- **Iterable:** Yes\n- **Time Complexity:** O(n), where n is the length of the shortest input\n\n## Description\n\nThe `zip()` function takes two or more iterables (like lists, tuples, strings) and returns an iterator of tuples, where each tuple contains the elements from each iterable at the same position. Stops when the shortest input is exhausted.  \nCommonly used to combine data, loop in parallel, or pair items together.\n\n## Usable With\n\nUse `zip()` with any combination of iterables—lists, tuples, strings, sets, ranges, etc. Each tuple in the result contains one element from each input at the same index.\n\n## Syntax\n\n```python\nzip(iterable1, iterable2, ...)\n```\n\n- **explanation:**  \n  - Pass two or more iterables to combine their elements by index.\n  - Returns an iterator of tuples; convert to a list or loop over it.\n\n## Arguments\n\n- **Required:** 2 or more iterables\n- **Optional:** Unlimited (as many iterables as you want)\n- **Maximum:** Unlimited\n\n- Required:\n\n```python\na = [1, 2, 3]\nb = ['x', 'y', 'z']\nz = zip(a, b)  # pairs: (1, 'x'), (2, 'y'), (3, 'z')\n```\n\n- Optional:\n\n```python\n# zip() works with any number of iterables, not just two\nnames = ['Tom', 'Sue']\nscores = [90, 85]\nids = [101, 102]\nzipped = zip(names, scores, ids)\n```\n\n- Maximum\n\n```python\n# zip() supports unlimited iterables; stops at shortest\na = [1, 2, 3]\nb = [4, 5]\nc = [6, 7, 8]\nprint(list(zip(a, b, c)))  # [(1, 4, 6), (2, 5, 7)]\n```\n\n## Examples\n\n- **Pair items from two lists**\n\n```python\nnames = ['Anna', 'Bob']\nscores = [8, 9]\nfor name, score in zip(names, scores):\n    print(name, score)\n# Output:\n# Anna 8\n# Bob 9\n```\n\n- **Convert zipped pairs to a list or dict**\n\n```python\nids = [1, 2, 3]\nletters = ['a', 'b', 'c']\npaired = list(zip(ids, letters))\n# paired is [(1, 'a'), (2, 'b'), (3, 'c')]\n\nmapping = dict(zip(ids, letters))\n# mapping is {1: 'a', 2: 'b', 3: 'c'}\n```\n\n- **Unzip with * operator**\n\n```python\npairs = [(1, 'a'), (2, 'b')]\nnums, chars = zip(*pairs)\n# nums = (1, 2), chars = ('a', 'b')\n```\n\n**Note:**  \nIf the iterables are different lengths, `zip()` stops at the shortest.  \nUse `itertools.zip_longest()` if you want to fill missing values.\n\n## Tips & Common mistakes\n\n- Result is an **iterator**; convert to a list to reuse or index.\n- Stops at the shortest input—no error or filling!\n- To \"unzip,\" use the unpacking operator: `zip(*zipped)`.\n- Use with any number of iterables (not just two).\n\n```python\n# zip() with 3 iterables, convert to list\nresult = list(zip([1, 2], [3, 4], [5, 6]))\n# Output: [(1, 3, 5), (2, 4, 6)]\n```\n\n## See Also\n\n- `enumerate()`\n- `map()`\n- `list()`\n- `dict()`\n- `zip() real-world pairing` **R.W.E**",
+    "file_path": "docs/builtins/zip_function.md"
+  },
+  {
     "id": "get",
     "title": "get()",
     "section": "Dictionary Methods",
@@ -360,6 +562,34 @@
     "file_path": "docs/lists/methods/append_method.md"
   },
   {
+    "id": "count",
+    "title": "count()",
+    "section": "List Methods",
+    "module": "built-in",
+    "subscription": "premium",
+    "difficulty": "beginner",
+    "reference": "Returns the number of times a value appears in a list",
+    "tags": [
+      "list",
+      "method",
+      "count",
+      "search",
+      "value",
+      "frequency"
+    ],
+    "see_also": [
+      "index()",
+      "len()",
+      "collections.Counter",
+      "count() all types **R.W.E**"
+    ],
+    "works_with": [
+      "list"
+    ],
+    "content": "# count()\n\n- **Used with:** list\n- **Construct:** method\n- **Library:** Built-in\n- **Iterable:** No (returns a number, does not iterate for you)\n- **Time Complexity:** O(n), where n = number of items in the list\n\n## Description\n\nThe `count()` method returns the number of times a specified value appears in a list.  \nUseful for finding duplicates, checking frequency, or simple data analysis.\n\n## Usable With\n\nLists only (also works on strings and tuples, but this card is for list usage).\n\n## Syntax\n\n```python\nlist.count(value)\n```\n\n- **explanation:**  \n  - `value`: The item to count (required).  \n  - Returns the number of times `value` appears in the list.\n\n## Arguments\n\n- **Required:** 1 (`value`)\n\n- **Optional:** 0\n\n- **Maximum:** 1\n\n- Required:\n\n```python\nnums = [1, 2, 2, 3, 2]\nnums.count(2)  # returns 3\n```\n\n- Optional:\n\n```python\n# No optional arguments; only value is required\n```\n\n- Maximum\n\n```python\n# Only one argument allowed (the value)\n```\n\n## Examples\n\n- **Count occurrences in a list**\n\n```python\ncolors = ['red', 'blue', 'red', 'green', 'red']\nred_count = colors.count('red')\n# red_count is 3\n```\n\n- **Count a value not present (returns 0)**\n\n```python\nwords = ['hello', 'world']\nwords.count('hi')  # returns 0\n```\n\n- **Count booleans or numbers**\n\n```python\ndata = [True, False, True, True]\ntrue_count = data.count(True)\n# true_count is 3\n```\n\n**Note:**  \nThe search is linear; use `collections.Counter` for large lists or many values.\n\n## Tips & Common mistakes\n\n- `count()` only counts exact matches (`==`), not similar or partial matches.\n- Use for simple cases—`Counter` is more efficient for counting many items.\n- Works on lists, tuples, and strings (but not on sets or dicts).\n- Returns `0` if the value is not found (no error).\n\n```python\nnums = [1, 1, 2, 3]\nfrom collections import Counter\nCounter(nums)\n# Counter({1: 2, 2: 1, 3: 1})\n```\n\n## See Also\n\n- `index()`\n- `len()`\n- `collections.Counter`\n- `count() all types` **R.W.E**",
+    "file_path": "docs/lists/methods/count_method.md"
+  },
+  {
     "id": "extend",
     "title": "extend()",
     "section": "List Methods",
@@ -446,6 +676,90 @@
     ],
     "content": "# insert\n\n- **Used with:**  \n  lists  \n- **Construct:**  \n  Method  \n- **Library:**  \n  Built-in  \n- **Iterable:**  \n  No (modifies list in place)  \n- **Time Complexity:**  \n  O(n) (worst-case, as elements may be shifted)\n\n## Description\n\nInserts an item at a given position in the list.  \nAll items at or after the given index are shifted to the right.  \nThe method modifies the original list and returns `None`.\n\n## Usable With\n\nPython `list` objects.\n\n## Syntax\n\n```python\nlist.insert(index, item)\n```\n\n- **explanation:**\n  - `list`: The list you want to modify.\n  - `.insert()`: Method that inserts an element.\n  - `index`: The position where you want to insert the item. If negative, counts from the end. If greater than the list length, the item is added at the end.\n  - `item`: The element you want to insert at the given index.\n  - Returns `None`. List is modified in place.\n\n## Arguments\n\n**Required:** 2 (`index`, `item`)  \n**Optional:** 0  \n**Maximum:** 2\n\n- Required:\n\n```python\nindex  # The position in the list to insert at.\nitem   # The object to insert.\n# Example:\nnumbers = [1, 2, 4]\nnumbers.insert(2, 3)  # [1, 2, 3, 4]\n```\n\n- Optional:\n\n```python\n# No optional arguments for insert()\n```\n\n- Maximum\n\n```python\n# Must always provide index and item.\n# Example:\nletters = ['a', 'c', 'd']\nletters.insert(1, 'b')  # ['a', 'b', 'c', 'd']\n```\n\n## Examples\n\n- **Insert at a specific index**\n\n```python\nnumbers = [1, 2, 4]\nnumbers.insert(2, 3)\n# numbers is now [1, 2, 3, 4]\n```\n\n- **Insert at the beginning**\n\n```python\nletters = ['b', 'c', 'd']\nletters.insert(0, 'a')\n# letters is now ['a', 'b', 'c', 'd']\n```\n\n- **Insert at the end (index > length)**\n\n```python\nfruits = ['apple', 'banana']\nfruits.insert(10, 'cherry')\n# fruits is now ['apple', 'banana', 'cherry']\n```\n\n- **Insert with negative index (from the end)**\n\n```python\ndata = [0, 1, 2]\ndata.insert(-1, 99)\n# data is now [0, 1, 99, 2]\n```\n\n **Note:**\n\n- The original list is always modified.\n- If `index` is larger than the length of the list, `item` is appended at the end.\n- If `index` is negative, it is treated as `len(list) + index`.\n\n## Tips & Common mistakes\n\n- Remember: `insert()` returns `None`, not the new list.\n- If you use an index greater than the list length, item is added at the end.\n- Negative indices can be used for insertion, but may be confusing—test first.\n- For adding to the end, `append()` is faster and clearer.\n- Frequent insertions at the beginning or middle of large lists can be slow (O(n) time).\n\n```python\n# Incorrect: expecting insert() to return the list!\nnums = [1, 2]\nresult = nums.insert(1, 5)\nprint(result)  # Output: None\n```\n\n## See Also\n\n- `append()`\n- `extend()`\n- `pop()`\n- `insert() insert priority task` **R.W.E**",
     "file_path": "docs/lists/methods/insert_method.md"
+  },
+  {
+    "id": "pop",
+    "title": "pop()",
+    "section": "List Methods",
+    "module": "built-in",
+    "subscription": "free",
+    "difficulty": "beginner",
+    "reference": "Removes and returns item at given index (default last) from a list",
+    "tags": [
+      "list",
+      "method",
+      "remove",
+      "return",
+      "index",
+      "mutable"
+    ],
+    "see_also": [
+      "append()",
+      "remove()",
+      "del",
+      "pop() last item **R.W.E**"
+    ],
+    "works_with": [
+      "list"
+    ],
+    "content": "# pop()\n\n- **Used with:** list\n- **Construct:** method\n- **Library:** Built-in\n- **Iterable:** No (acts on a single item)\n- **Time Complexity:** O(1) for last item, O(n) for index (n = number of elements)\n\n## Description\n\nRemoves and returns the item at the given index from a list. If no index is specified, removes and returns the last item.  \nModifies the original list and returns the removed value.  \nRaises `IndexError` if the list is empty or the index is out of range.\n\n## Usable With\n\nLists only. Works on mutable lists (not strings, tuples, or sets).\n\n## Syntax\n\n```python\nlist.pop([index])\n```\n\n- **explanation:**\n  - `index` (optional): position to remove and return. Defaults to last item (`-1`).\n\n## Arguments\n\n- **Required:** 0\n- **Optional:** 1 (`index`, int)\n- **Maximum:** 1\n\n- Required:\n\n```python\nnumbers = [1, 2, 3]\nitem = numbers.pop()   # removes and returns 3\n```\n\n- Optional:\n\n```python\nletters = ['a', 'b', 'c', 'd']\nitem = letters.pop(1)  # removes and returns 'b'\n```\n\n- Maximum\n\n```python\ndata = [10, 20, 30]\nitem = data.pop(-2)    # removes and returns 20\n```\n\n## Examples\n\n- **Remove last item**\n\n```python\nnums = [10, 20, 30]\nremoved = nums.pop()\n# removed is 30, nums is now [10, 20]\n```\n\n- **Remove item at specific index**\n\n```python\nwords = ['cat', 'dog', 'bird']\nremoved = words.pop(0)\n# removed is 'cat', words is now ['dog', 'bird']\n```\n\n- **Handle empty list (IndexError)**\n\n```python\nlst = []\ntry:\n    lst.pop()\nexcept IndexError:\n    print(\"Cannot pop from empty list!\")\n```\n\n**Note:**  \nIf the index is out of range, `IndexError` is raised. Use `try/except` to handle this safely.\n\n## Tips & Common mistakes\n\n- `pop()` both removes **and** returns the item (unlike `del` which just removes).\n- O(1) for the last item, but O(n) for removing elsewhere in the list.\n- Only works on lists—not strings, tuples, or sets.\n- Don’t forget: modifying a list while iterating can cause logic errors.\n\n```python\nstack = [1, 2, 3]\nwhile stack:\n    print(stack.pop())\n# prints 3, then 2, then 1\n```\n\n## See Also\n\n- `append()`\n- `remove()`\n- `del`\n- `pop() last item` **R.W.E**",
+    "file_path": "docs/lists/methods/pop_method.md"
+  },
+  {
+    "id": "remove",
+    "title": "remove()",
+    "section": "List Methods",
+    "module": "built-in",
+    "subscription": "free",
+    "difficulty": "beginner",
+    "reference": "Removes the first occurrence of a value from a list",
+    "tags": [
+      "list",
+      "method",
+      "remove",
+      "value",
+      "in-place",
+      "mutable"
+    ],
+    "see_also": [
+      "pop()",
+      "del",
+      "clear()",
+      "remove() all occurrences **R.W.E**"
+    ],
+    "works_with": [
+      "list"
+    ],
+    "content": "# remove()\n\n- **Used with:** list\n- **Construct:** method\n- **Library:** Built-in\n- **Iterable:** No (removes by value, not index)\n- **Time Complexity:** O(n), where n is the number of items in the list\n\n## Description\n\nRemoves the **first occurrence** of the specified value from the list.  \nModifies the original list and returns `None`.  \nRaises a `ValueError` if the value is not found.\n\n## Usable With\n\nLists only (not strings, tuples, sets, or dicts).\n\n## Syntax\n\n```python\nlist.remove(value)\n```\n\n- **explanation:**  \n  - `value` (required): The item to remove. Only the first matching item is removed.\n\n## Arguments\n\n- **Required:** 1 (`value`)\n\n- **Optional:** 0\n\n- **Maximum:** 1\n\n- Required:\n\n```python\nnums = [1, 2, 3, 2]\nnums.remove(2)   # removes the first 2; nums is now [1, 3, 2]\n```\n\n- Optional:\n\n```python\n# No optional arguments for remove()\n```\n\n- Maximum\n\n```python\n# Only one argument allowed: value\n```\n\n## Examples\n\n- **Remove first occurrence of a value**\n\n```python\nitems = ['apple', 'banana', 'apple']\nitems.remove('apple')\n# items is now ['banana', 'apple']\n```\n\n- **Remove an item not in the list (raises ValueError)**\n\n```python\nlst = [1, 2, 3]\ntry:\n    lst.remove(99)\nexcept ValueError:\n    print(\"Value not found!\")\n```\n\n- **Remove in a loop (removes first matching each time)**\n\n```python\ndata = [2, 2, 2]\nwhile 2 in data:\n    data.remove(2)\n# data is now []\n```\n\n**Note:**  \nOnly the **first** matching item is removed. For all occurrences, use a loop or list comprehension.\n\n## Tips & Common mistakes\n\n- `remove()` returns `None`, not the removed value.\n- Raises `ValueError` if the value is not found—handle with `try/except` if unsure.\n- Use a loop or list comprehension to remove **all** occurrences.\n- Only works with lists (not tuples, sets, or dicts).\n\n```python\nnums = [1, 2, 2, 3]\nnums = [n for n in nums if n != 2]\n# nums is now [1, 3]\n```\n\n## See Also\n\n- `pop()`\n- `del`\n- `clear()`\n- `remove() all occurrences` **R.W.E**",
+    "file_path": "docs/lists/methods/remove_method.md"
+  },
+  {
+    "id": "reverse",
+    "title": "reverse()",
+    "section": "List Methods",
+    "module": "built-in",
+    "subscription": "premium",
+    "difficulty": "beginner",
+    "reference": "Reverses the elements of a list in place",
+    "tags": [
+      "list",
+      "method",
+      "reverse",
+      "in-place",
+      "mutable",
+      "order"
+    ],
+    "see_also": [
+      "reversed()",
+      "sort()",
+      "slice",
+      "reverse() string **R.W.E**"
+    ],
+    "works_with": [
+      "list"
+    ],
+    "content": "# reverse()\n\n- **Used with:** list\n- **Construct:** method\n- **Library:** Built-in\n- **Iterable:** No (operates in place)\n- **Time Complexity:** O(n), where n = number of items in the list\n\n## Description\n\nThe `reverse()` method reverses the items of a list **in place** (modifies the original list, no copy).  \nReturns `None`.  \nEfficient for changing order, but remember: it only works on lists.\n\n## Usable With\n\nLists only (not strings, tuples, or sets).  \nCall on a list to reverse its order.\n\n## Syntax\n\n```python\nlist.reverse()\n```\n\n- **explanation:**  \n  - No arguments.  \n  - Reverses the list in place; returns `None`.\n\n## Arguments\n\n- **Required:** 0\n\n- **Optional:** 0\n\n- **Maximum:** 0\n\n- Required:\n\n```python\nnums = [1, 2, 3]\nnums.reverse()\n# nums is now [3, 2, 1]\n```\n\n- Optional:\n\n```python\n# No optional arguments\n```\n\n- Maximum\n\n```python\n# Only works on lists, no arguments accepted\n```\n\n## Examples\n\n- **Reverse a list in place**\n\n```python\ncolors = ['red', 'green', 'blue']\ncolors.reverse()\n# colors is now ['blue', 'green', 'red']\n```\n\n- **Returns None, not the reversed list**\n\n```python\nnums = [1, 2, 3]\nresult = nums.reverse()\nprint(result)  # prints None\n```\n\n- **Reverse twice to restore original order**\n\n```python\nlst = [1, 2, 3]\nlst.reverse()\nlst.reverse()\n# lst is back to [1, 2, 3]\n```\n\n**Note:**  \nFor a reversed copy, use `reversed(list)` or slicing: `list[::-1]`.\n\n## Tips & Common mistakes\n\n- Works **only** on lists (not tuples or strings).\n- Modifies the list in place—original is changed!\n- Does **not** return the reversed list; returns `None`.\n- For a non-mutating reverse, use `reversed(list)` or `list[::-1]`.\n\n```python\nlst = [1, 2, 3]\nprint(list(reversed(lst)))  # [3, 2, 1]\nprint(lst[::-1])            # [3, 2, 1]\n```\n\n## See Also\n\n- `reversed()`\n- `sort()`\n- `slice`\n- `reverse() string` **R.W.E**",
+    "file_path": "docs/lists/methods/reverse_method.md"
   },
   {
     "id": "sort",
@@ -566,6 +880,34 @@
     "file_path": "docs/modules/functools/reduce_functools.md"
   },
   {
+    "id": "add",
+    "title": "add()",
+    "section": "Set Methods",
+    "module": "built-in",
+    "subscription": "premium",
+    "difficulty": "beginner",
+    "reference": "Adds a single element to a set if not already present",
+    "tags": [
+      "set",
+      "method",
+      "add",
+      "unique",
+      "collection",
+      "mutable"
+    ],
+    "see_also": [
+      "remove()",
+      "discard()",
+      "update()",
+      "add() set union **R.W.E**"
+    ],
+    "works_with": [
+      "set"
+    ],
+    "content": "# add()\n\n- **Used with:** set\n- **Construct:** method\n- **Library:** Built-in\n- **Iterable:** No (adds a single item per call)\n- **Time Complexity:** O(1) average (amortized), but can be worse in rare cases\n\n## Description\n\nThe `add()` method adds a single element to a set.  \nIf the element is already present, the set remains unchanged (no error, no duplicate).  \nDoes nothing if the value exists—sets only contain unique items.\n\n## Usable With\n\nUse with mutable sets only (`set`, not `frozenset`).  \nAccepts any hashable object (numbers, strings, tuples, etc.).\n\n## Syntax\n\n```python\nset.add(element)\n```\n\n- **explanation:**  \n  - `element`: The item to add to the set (must be hashable).\n\n## Arguments\n\n- **Required:** 1 (`element`)\n\n- **Optional:** 0\n\n- **Maximum:** 1\n\n- Required:\n\n```python\nnumbers = {1, 2, 3}\nnumbers.add(4)\n# numbers is now {1, 2, 3, 4}\n```\n\n- Optional:\n\n```python\n# No optional arguments; only the element is required\n```\n\n- Maximum\n\n```python\n# Only one argument allowed (the element)\n```\n\n## Examples\n\n- **Add a string to a set**\n\n```python\nletters = {'a', 'b'}\nletters.add('c')\n# letters is now {'a', 'b', 'c'}\n```\n\n- **Try to add an existing item (no error, no duplicate)**\n\n```python\ncolors = {'red', 'green'}\ncolors.add('red')\n# colors is still {'red', 'green'}\n```\n\n- **Add a tuple (hashable) but not a list (unhashable)**\n\n```python\npairs = set()\npairs.add((1, 2))  # OK\n# pairs.add([3, 4])  # Error: unhashable type: 'list'\n```\n\n**Note:**  \n`add()` returns `None` (it does not return the set).\n\n## Tips & Common mistakes\n\n- Only works with **sets** (not lists, dicts, or tuples).\n- Raises `TypeError` if the element is unhashable (e.g., list, dict, set).\n- For adding multiple items, use `set.update(iterable)` instead.\n- No error if the item already exists—set stays unchanged.\n\n```python\nnums = {1, 2}\nnums.add(2)\n# nums is still {1, 2}\n```\n\n## See Also\n\n- `remove()`\n- `discard()`\n- `update()`\n- `add() set union` **R.W.E**",
+    "file_path": "docs/sets/method/add_method.md"
+  },
+  {
     "id": "capitalize",
     "title": "capitalize()",
     "section": "String Methods",
@@ -592,6 +934,67 @@
     ],
     "content": "# capitalize()\n\n- **Used with:** `str` (string)\n- **Construct:** method\n- **Library:** Built-in\n- **Iterable:** No\n- **Time Complexity:** O(n) (n = length of the string)\n\n## Description\n\nThe `capitalize()` method returns a copy of the string with the first character capitalized (uppercase) and the rest of the characters lowercased. Useful for formatting text in “sentence case.” The original string is not modified (strings are immutable in Python).\n\n## Usable With\n\nUse `capitalize()` on any string, especially for formatting user input, names, or displaying single-sentence text in a standard way.\n\n## Syntax\n\n```python\nstring.capitalize()\n```\n\n- **explanation:** Call `capitalize()` on any string. Returns a new string with only the first character capitalized.\n\n## Arguments\n\n- **Required:** 0  \n- **Optional:** 0  \n- **Maximum:** 0\n\nThis method takes **no arguments**.\n\n```python\n# Basic usage\ns = \"hello world\"\nprint(s.capitalize())  # \"Hello world\"\n```\n\n## Examples\n\n- **Capitalize the first character, lower the rest**\n\n```python\nmsg = \"pYTHON is AWESOME!\"\nprint(msg.capitalize())  # Output: \"Python is awesome!\"\n```\n\n- **Works with strings starting with whitespace (only first letter after whitespace is affected)**\n\n```python\ndata = \"   hello\"\nprint(data.capitalize())  # Output: \"   hello\"\n```\n\n- **Single letter string**\n\n```python\nletter = \"x\"\nprint(letter.capitalize())  # Output: \"X\"\n```\n\n**Note:** Only the very first character is capitalized. All others are lowercased, which may not be ideal for names or titles.\n\n## Tips & Common mistakes\n\n- `capitalize()` does **not** modify the original string—always use or assign the return value.\n- Only the **first character** is capitalized, the rest are made lowercase. For title case (every word capitalized), use `title()`.\n- Does not handle multi-word proper nouns correctly (\"john DOE\" → \"John doe\").\n- Leading whitespace is preserved; only the first non-whitespace character is affected.\n\n```python\nname = \"jOhN dOE\"\nprint(name.capitalize())   # \"John doe\"\nprint(name.title())        # \"John Doe\"\n```\n\n## See Also\n\n- `title()`\n- `upper()`\n- `lower()`\n- `capitalize() format user input` **R.W.E**",
     "file_path": "docs/strings/methods/capitalize_method.md"
+  },
+  {
+    "id": "find",
+    "title": "find()",
+    "section": "String Methods",
+    "module": "built-in",
+    "subscription": "premium",
+    "difficulty": "beginner",
+    "reference": "Returns the lowest index of a substring, or -1 if not found",
+    "tags": [
+      "string",
+      "method",
+      "find",
+      "substring",
+      "index",
+      "search",
+      "text"
+    ],
+    "see_also": [
+      "index()",
+      "count()",
+      "replace()",
+      "find() all positions **R.W.E**"
+    ],
+    "works_with": [
+      "str"
+    ],
+    "content": "# find()\n\n- **Used with:** str\n- **Construct:** method\n- **Library:** Built-in\n- **Iterable:** No (searches internally, returns integer)\n- **Time Complexity:** O(n*m), where n = length of string, m = length of substring\n\n## Description\n\nThe `find()` string method returns the **lowest index** in the string where a specified substring is found.  \nReturns `-1` if the substring is not found.  \nSafe for searching, as it never raises an error (unlike `index()`).\n\n## Usable With\n\nStrings only.  \nSearches for a substring within another string.\n\n## Syntax\n\n```python\nstr.find(sub[, start[, end]])\n```\n\n- **explanation:**  \n  - `sub`: The substring to search for (required).\n  - `start`: The starting index to search from (optional).\n  - `end`: The ending index to search to (optional).\n  - Returns: The index of the first match, or `-1` if not found.\n\n## Arguments\n\n- **Required:** 1 (`sub`)\n\n- **Optional:** 2 (`start`, `end`)\n\n- **Maximum:** 3\n\n- Required:\n\n```python\ntext = \"hello world\"\ni = text.find(\"world\")  # returns 6\n```\n\n- Optional:\n\n```python\nmsg = \"banana\"\npos = msg.find('a', 2)  # returns 3 (finds 'a' after index 2)\n```\n\n- Maximum\n\n```python\ndata = \"abracadabra\"\nresult = data.find('a', 3, 7)  # returns 5\n```\n\n## Examples\n\n- **Find the position of a substring**\n\n```python\nphrase = \"cat and dog\"\npos = phrase.find(\"dog\")\n# pos is 8\n```\n\n- **Substring not found (returns -1)**\n\n```python\nline = \"hello\"\nprint(line.find(\"z\"))  # prints -1\n```\n\n- **Search within a range**\n\n```python\ns = \"abracadabra\"\nprint(s.find(\"a\", 2, 7))  # prints 5\n```\n\n**Note:**  \nReturns the lowest index only; for all positions, use a loop or regular expressions.\n\n## Tips & Common mistakes\n\n- Use `find()` if you don’t want an error when the substring is missing (returns `-1`).\n- For strict error handling, use `str.index()` (raises `ValueError` if not found).\n- Start and end are slice indexes (like with string slicing).\n- For all matches, use a loop or regex (`re.finditer`).\n\n```python\ns = \"aaa\"\npositions = []\ni = s.find(\"a\")\nwhile i != -1:\n    positions.append(i)\n    i = s.find(\"a\", i + 1)\n# positions is [0, 1, 2]\n```\n\n## See Also\n\n- `index()`\n- `count()`\n- `replace()`\n- `find() all positions` **R.W.E**",
+    "file_path": "docs/strings/methods/find_method.md"
+  },
+  {
+    "id": "join",
+    "title": "join()",
+    "section": "String Methods",
+    "module": "built-in",
+    "subscription": "premium",
+    "difficulty": "beginner",
+    "reference": "Concatenates items of an iterable into a single string with a separator",
+    "tags": [
+      "string",
+      "method",
+      "join",
+      "concatenate",
+      "separator",
+      "combine",
+      "text"
+    ],
+    "see_also": [
+      "split()",
+      "replace()",
+      "format()",
+      "join() CSV row **R.W.E**"
+    ],
+    "works_with": [
+      "str",
+      "list",
+      "tuple",
+      "iterable"
+    ],
+    "content": "# join()\n\n- **Used with:** str (as the separator), plus any iterable of strings (list, tuple, etc.)\n- **Construct:** method\n- **Library:** Built-in\n- **Iterable:** Yes (works with any iterable of strings)\n- **Time Complexity:** O(n), where n = total length of the final string\n\n## Description\n\nThe `join()` string method combines the elements of an iterable (such as a list or tuple of strings) into a single string, with the original string used as the separator.  \nEfficient for creating CSV lines, paths, or combining words and values.\n\n## Usable With\n\nCall on a string (used as the separator), passing any iterable of strings (e.g., list, tuple).  \nAll items in the iterable must be strings—use `str()` to convert other types.\n\n## Syntax\n\n```python\nseparator.join(iterable)\n```\n\n- **explanation:**  \n  - `separator`: The string to place between elements (e.g., ', ', '-', '').  \n  - `iterable`: An iterable of strings to join together.\n  - Returns: The concatenated string.\n\n## Arguments\n\n- **Required:** 1 (`iterable` of strings)\n- **Optional:** 0\n- **Maximum:** 1\n\n- Required:\n\n```python\nwords = ['Python', 'is', 'fun']\nresult = ' '.join(words)  # 'Python is fun'\n```\n\n- Optional:\n\n```python\n# No optional arguments; only the iterable is required\n```\n\n- Maximum\n\n```python\n# Only one argument allowed (the iterable)\n```\n\n## Examples\n\n- **Join words with a space**\n\n```python\nwords = ['AI', 'Python', 'Pocket']\nsentence = ' '.join(words)\n# sentence is 'AI Python Pocket'\n```\n\n- **Join with commas (CSV)**\n\n```python\nfields = ['name', 'age', 'city']\ncsv_line = ','.join(fields)\n# csv_line is 'name,age,city'\n```\n\n- **Join with no separator**\n\n```python\nletters = ['a', 'b', 'c']\njoined = ''.join(letters)\n# joined is 'abc'\n```\n\n**Note:**  \nAll items in the iterable **must be strings**. If not, use `str()` to convert them.\n\n## Tips & Common mistakes\n\n- Remember to call `join()` **on the separator**, not the iterable (e.g., `', '.join(list)`).\n- All items must be strings—use a generator or list comprehension for conversion:  \n  `', '.join(str(x) for x in items)`\n- Much more efficient than repeated `+` string concatenation, especially in loops.\n- Returns a new string; original data is unchanged.\n\n```python\nnums = [1, 2, 3]\nresult = ', '.join(str(n) for n in nums)\n# result is '1, 2, 3'\n```\n\n## See Also\n\n- `split()`\n- `replace()`\n- `format()`\n- `join() CSV row` **R.W.E**",
+    "file_path": "docs/strings/methods/join_method.md"
   },
   {
     "id": "lower",

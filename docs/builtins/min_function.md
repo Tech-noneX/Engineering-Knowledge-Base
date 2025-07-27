@@ -109,7 +109,7 @@ print(min(nums, key=abs))  # -3 (smallest absolute value is 2, so result is 2)
 
 ## See Also
 
-- `max()`
-- `sorted()`
-- `sum()`
-- `min() slowest response` **R.W.E**
+- [`max()`](max)
+- [`sorted()`](sorted)
+- [`sum()`](sum)
+- [`min() slowest response` **R.W.E**](min_rwe)

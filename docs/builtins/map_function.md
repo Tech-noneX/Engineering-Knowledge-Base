@@ -116,8 +116,8 @@ upper = list(map(str.upper, words))
 
 ## See Also
 
-- `filter()`
-- `zip()`
-- `list()`
-- `comprehension`
-- `map() real-world` **R.W.E**
+- [`filter()`](filter)
+- [`zip()`](zip)
+- [`list()`](list)
+- [`comprehension`](comprehension)
+- [`map() real-world` **R.W.E**](map_rwe)
