@@ -9,6 +9,7 @@ reference: "Returns the largest item in an iterable or among given values"
 tags: ["built-in", "function", "maximum", "iterable", "comparison", "numeric", "string"]
 see_also: ["min()", "sorted()", "sum()", "max() top performer"]
 works_with: ["list", "tuple", "str", "set", "dict", "iterable"]
+file path: 'docs\builtins\max_function.md'
 ---
 
 # max()

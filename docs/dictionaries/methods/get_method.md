@@ -10,7 +10,7 @@ reference: "Safely gets the value for a key in a dictionary, returns default if 
 tags: ["dict", "dictionary", "method", "safe access", "default", "lookup"]
 see_also: ["setdefault()", "keys()", "values()", "get() user profile lookup **R.W.E**"]
 works_with: ["dict"]
-
+file path: 'docs\dictionaries\methods\get_method.md'
 ---
 
 # get()

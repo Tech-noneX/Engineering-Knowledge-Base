@@ -9,6 +9,7 @@ reference: 'Returns the type of an object or creates a new type/class'
 tags: ['built-in', 'function', 'type', 'introspection', 'class', 'object', 'reflection']
 see_also: ['isinstance()', 'str()', 'print()', 'id()', 'type() custom class **R.W.E**']
 works_with: [any object]
+file path: 'docs\builtins\type_function.md'
 ---
 
 # type()
@@ -119,8 +120,8 @@ print(type(len))        # <class 'builtin_function_or_method'>
 
 ## See Also
 
-- `isinstance()`
-- `str()`
-- `print()`
-- `id()`
-- `type() custom class` **R.W.E**
+- [`isinstance()`](isinstance)
+- [`str()`](str)
+- [`print()`](print)
+- [`id()`](id)
+- [`type() custom class` **R.W.E**](type_rwe)

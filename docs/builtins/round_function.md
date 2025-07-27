@@ -9,6 +9,7 @@ reference: "Rounds a number to the nearest integer or specified decimal place"
 tags: ["built-in", "function", "round", "float", "decimal", "precision", "number"]
 see_also: ["int()", "float()", "math.ceil()", "math.floor()", "round() currency formatting"]
 works_with: ["int", "float", "numeric"]
+file path: 'docs\builtins\round_function.md'
 ---
 
 # round()
@@ -103,8 +104,8 @@ print(math.floor(2.7))  # 2
 
 ## See Also
 
-- `int()`
-- `float()`
-- `math.ceil()`
-- `math.floor()`
-- `round() currency formatting` **R.W.E**
+- [`int()`](int)
+- [`float()`](float)
+- [`ceil()`](ceil)
+- [`floor()`](floor)
+- [`round() currency formatting` **R.W.E**](round_rwe)

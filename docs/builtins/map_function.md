@@ -9,6 +9,7 @@ reference: 'Applies a function to every item in one or more iterables, returning
 tags: ['built-in', 'function', 'map', 'apply', 'iterator', 'iterable', 'transformation']
 see_also: ['filter()', 'zip()', 'list()', 'comprehension', 'map() real-world **R.W.E**']
 works_with: ['list', 'tuple', 'str', 'set', 'range', 'iterable']
+file path: 'docs\builtins\map_function.md'
 ---
 
 # map()

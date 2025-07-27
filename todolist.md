@@ -19,6 +19,9 @@
 
 - `for`
 - `while`
+- `quit`
+- `continue`
+- `break`
 
 ## real-word examples
 
@@ -57,6 +60,7 @@
 - `dict()`
 - `int()`
 - `float()`
+- `bool`
 
 ## standard library
 
@@ -102,3 +106,9 @@
 ## coding stiles
 
 - `slicing`
+
+## errors
+
+- `try`
+- `except`
+- `ValueError`

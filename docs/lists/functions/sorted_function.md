@@ -135,6 +135,6 @@ print(numbers)  # [3, 1, 2], original is unchanged
 
 ## See Also
 
-- `sort()`
-- `reverse()`
-- `sorted() custom key` **R.W.E**
+- [`sort()`](sort)
+- [`reverse()`](reverse)
+- [`sorted() custom key` **R.W.E**](sorted_rwe)

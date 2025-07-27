@@ -9,6 +9,7 @@ reference: "Returns the number of items in a sequence or collection"
 tags: ["built-in", "function", "length", "size", "iterable", "collection"]
 see_also: ["list", "tuple", "str", "dict", "sum()", "len() input validation"]
 works_with: ["list", "tuple", "str", "dict", "set", "range", "iterable"]
+file path: 'docs\builtins\input_function.md'
 ---
 
 # len()

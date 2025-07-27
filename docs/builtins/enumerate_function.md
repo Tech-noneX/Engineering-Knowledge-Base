@@ -9,6 +9,7 @@ reference: "Adds index to each item when looping over an iterable"
 tags: ["built-in", "function", "enumerate", "loop", "index", "iterator", "for"]
 see_also: ["zip()", "range()", "list()", "for", "enumerate() quiz generator"]
 works_with: ["list", "tuple", "str", "set", "iterable", "sequence"]
+file path: 'docs\builtins\enumerate_function.md'
 ---
 
 # enumerate()

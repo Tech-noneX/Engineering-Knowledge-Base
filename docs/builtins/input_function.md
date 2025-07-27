@@ -9,6 +9,7 @@ reference: 'Gets a line of user input as a string from the console'
 tags: ['built-in', 'function', 'input', 'user', 'string', 'console', 'prompt']
 see_also: ['print()', 'str()', 'int()', 'type()', 'input() input validation **R.W.E**']
 works_with: ['str', 'user', 'console']
+file path: 'docs\builtins\input_function.md'
 ---
 
 # input()

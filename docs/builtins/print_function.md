@@ -9,6 +9,7 @@ reference: "Outputs values to the screen or another stream, separated by spaces"
 tags: ['built-in', 'function', 'output', 'display', 'stream', 'console', 'print']
 see_also: ['input()', 'str()', 'type()', 'format()', 'print() logging **R.W.E**']
 works_with: ['str', 'int', 'float', 'list', 'tuple', 'dict', 'any object']
+file path: 'docs\builtins\print_function.md'
 ---
 
 # print()

@@ -9,6 +9,7 @@ reference: 'Combines multiple iterables element-wise into tuples'
 tags: ['built-in', 'function', 'zip', 'combine', 'iterator', 'tuple', 'parallel']
 see_also: ['enumerate()', 'map()', 'list()', 'dict()', 'zip() real-world pairing **R.W.E**']
 works_with: ['list', 'tuple', 'str', 'set', 'range', 'iterable', 'sequence']
+file path: 'docs\builtins\zip_function.md'
 ---
 
 # zip()
@@ -125,8 +126,8 @@ result = list(zip([1, 2], [3, 4], [5, 6]))
 
 ## See Also
 
-- `enumerate()`
-- `map()`
-- `list()`
-- `dict()`
-- `zip() real-world pairing` **R.W.E**
+- [`enumerate()`](enumerate)
+- [`map()`](map)
+- [`list()`](list)
+- [`dict()`](dict)
+- [`zip() real-world pairing` **R.W.E**](zip_rwe)

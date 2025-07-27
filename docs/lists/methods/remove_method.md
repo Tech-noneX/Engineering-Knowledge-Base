@@ -9,6 +9,7 @@ reference: 'Removes the first occurrence of a value from a list'
 tags: ['list', 'method', 'remove', 'value', 'in-place', 'mutable']
 see_also: ['pop()', 'del', 'clear()', 'remove() all occurrences **R.W.E**']
 works_with: ['list']
+file path: '\docs\lists\methods\remove_method.md'
 ---
 
 # remove()
@@ -106,13 +107,20 @@ Only the **first** matching item is removed. For all occurrences, use a loop or 
 
 ```python
 nums = [1, 2, 2, 3]
-nums = [n for n in nums if n != 2]
-# nums is now [1, 3]
+for n in nums:
+    if n == 2:
+        nums.remove(n)
+print(nums)  # Output: [1, 2, 3]  (not all 2s are removed!)
 ```
+
+- Why this is a mistake:
+  - When you remove an item from a list while iterating, Python changes the list length, which causes some elements to be skipped.
+
+  - Many beginners expect all `2`s to be removed, but only the first occurrence and every other matching value will be skipped!
 
 ## See Also
 
-- `pop()`
-- `del`
-- `clear()`
-- `remove() all occurrences` **R.W.E**
+- [`pop()`](pop)
+- [`del`](del)
+- [`clear()`](clear)
+- [`remove() all occurrences` **R.W.E**](remove_rwe)

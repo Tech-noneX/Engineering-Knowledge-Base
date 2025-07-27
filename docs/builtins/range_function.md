@@ -9,6 +9,7 @@ reference: "Generates a sequence of numbers for looping or indexing"
 tags: ["built-in", "function", "range", "sequence", "iteration", "for loop", "integer"]
 see_also: ["list()", "for", "enumerate()", "reversed()", "range() pagination"]
 works_with: ["int", "for loop", "iteration"]
+file path: 'docs\builtins\range_function.md'
 ---
 
 # range()

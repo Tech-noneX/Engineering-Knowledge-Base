@@ -9,6 +9,7 @@ reference: Returns an iterator that yields items in reverse order
 tags: ["built-in", "function", "reverse", "sequence", "iteration", "for loop", "iterator"]
 see_also: ["list()", "range()", "for", "sorted()", "reversed() undo navigation"]
 works_with: ["list", "tuple", "str", "range", "sequence", "iterable"]
+file path: 'docs\builtins\reversed_function.md'
 ---
 
 # reversed()
@@ -91,8 +92,8 @@ print(list(reversed(tup)))  # [3, 2, 1]
 
 ## See Also
 
-- `list()`
-- `range()`
-- `for`
-- `sorted()`
-- `reversed() undo navigation` **R.W.E**
+- [`list()`](list)
+- [`range()`](range)
+- [`for`](for)
+- [`sorted()`](sorted)
+- [`reversed() undo navigation` **R.W.E**](reversed_rwe)
