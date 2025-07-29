@@ -7,8 +7,9 @@ subscription: premium
 difficulty: beginner
 reference: 'Reverses the elements of a list in place'
 tags: ['list', 'method', 'reverse', 'in-place', 'mutable', 'order']
-see_also: ['reversed()', 'sort()', 'slice', 'reverse() string **R.W.E**']
+see_also: ['reversed()', 'sort()', 'slicing', 'reverse() string **R.W.E**']
 works_with: ['list']
+file path: 'docs\lists\methods\reverse_method.md'
 ---
 
 # reverse()
@@ -113,7 +114,7 @@ print(lst[::-1])            # [3, 2, 1]
 
 ## See Also
 
-- `reversed()`
-- `sort()`
-- `slice`
-- `reverse() string` **R.W.E**
+- [`reversed()`](reversed)
+- [`sort()`](sort)
+- [`slicing`](slicing)
+- [`reverse() string` **R.W.E**](reverse_rwe)

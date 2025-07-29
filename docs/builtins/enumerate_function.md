@@ -52,6 +52,7 @@ enumerate(iterable, start=0)
 fruits = ["apple", "banana", "cherry"]
 for idx, fruit in enumerate(fruits):
     print(idx, fruit)
+# output:
 # 0 apple
 # 1 banana
 # 2 cherry
@@ -62,6 +63,7 @@ for idx, fruit in enumerate(fruits):
 ```python
 for idx, char in enumerate("abc", start=1):
     print(idx, char)
+# output:
 # 1 a
 # 2 b
 # 3 c
@@ -73,6 +75,7 @@ for idx, char in enumerate("abc", start=1):
 items = ["x", "y", "z"]
 for i, item in enumerate(items, start=100):
     print(i, item)
+# output:
 # 100 x
 # 101 y
 # 102 z
@@ -127,6 +130,7 @@ print(indexed)  # Output: [(0, 'a'), (1, 'b'), (2, 'c')]
 d = {"a": 1, "b": 2}
 for idx, val in enumerate(d.values(), start=10):
     print(idx, val)
+# output:
 # 10 1
 # 11 2
 ```

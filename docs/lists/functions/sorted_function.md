@@ -7,8 +7,9 @@ difficulty: beginner
 subscription: free
 reference: "Returns a new sorted list from any iterable, original is unchanged"
 tags: ["list", "function", "sort", "returns new list", "iterable", "sequence", "order"]
-see_also: ["sort()", "reverse()", "sorted() custom key"]
+see_also: ["sort()", "reverse()", "lambda", "sorted() custom key"]
 works_with: ["list", "tuple", "str", "dict", "set",]
+file path: 'docs\lists\functions\sorted_function.md'
 ---
 
 # sorted
@@ -57,7 +58,9 @@ sorted(iterable, *, key=None, reverse=False)
 ```python
 # The iterable to sort.
 sorted([3, 1, 2])
+# output [1, 2, 3]
 sorted('hello')
+# output ['e', 'h', 'l', 'l', 'o']
 ```
 
 - Optional:
@@ -65,18 +68,21 @@ sorted('hello')
 ```python
 key      # (Optional) Function for custom sort order.
 # Example:
-sorted(['pear', ' 'apple', 'banana'], key=len)  # Sort by length
+sorted(['pear', 'apple', 'banana'], key=len)  # Sort by length
+# Output: ['pear', 'apple', 'banana']
 
 reverse  # (Optional) Sort in descending order.
 # Example:
-sorted([1, 2, 3], reverse=True)  # [3, 2, 1]
+sorted([1, 2, 3], reverse=True)
+# Output: [3, 2, 1]
 ```
 
 - Maximum
 
 ```python
 # All three arguments can be used together.
-sorted(['pear', 'apple', 'banana'], key=len, reverse=True)  # ['banana', 'apple', 'pear']
+sorted(['pear', 'apple', 'banana'], key=len, reverse=True)  
+# ['banana', 'apple', 'pear']
 ```
 
 ## Examples
@@ -113,6 +119,19 @@ result = sorted(words, key=len, reverse=True)
 # result is ['banana', 'apple', 'pear']
 ```
 
+- **Sort Words by Their Last Letter using `lambda`**
+
+  *See the lambda card for more custom key function patterns.*
+
+```python
+words = ['apple', 'banana', 'pear', 'grape']
+
+# Sort by the last character of each word
+sorted_words = sorted(words, key=lambda w: w[-1])
+print(sorted_words)
+# output ['banana', 'apple', 'grape', 'pear']
+```
+
  **Note:**
 
 - `sorted()` always returns a **new list**, even if input is another type.  
@@ -137,4 +156,5 @@ print(numbers)  # [3, 1, 2], original is unchanged
 
 - [`sort()`](sort)
 - [`reverse()`](reverse)
+- [`lambda`](lambda)
 - [`sorted() custom key` **R.W.E**](sorted_rwe)

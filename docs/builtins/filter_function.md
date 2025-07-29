@@ -7,7 +7,7 @@ subscription: premium
 difficulty: beginner
 reference: 'Filters elements of an iterable, keeping only those for which a function returns True'
 tags: ['built-in', 'function', 'filter', 'iterator', 'condition', 'iterable']
-see_also: ['map()', 'list()', 'comprehension', 'filter() with lambda **R.W.E**']
+see_also: ['map()', 'list()', 'comprehension', 'lambda', 'filter() with lambda **R.W.E**']
 works_with: ['list', 'tuple', 'str', 'set', 'range', 'iterable']
 file path: 'docs\builtins\filter_function.md'
 ---
@@ -24,11 +24,11 @@ file path: 'docs\builtins\filter_function.md'
 
 The `filter()` function applies a function to each item in an iterable and returns an iterator containing only the items for which the function returns `True`.  
 Commonly used for selecting or filtering data based on conditions.  
-Wrap in `list()` to get a list of results.
+Wrap in `list()`, `set()`, `tuple()` to get a results.
 
 ## Usable With
 
-Use with any function that takes a single argument and returns a boolean, plus any iterable (list, tuple, set, string, etc.).
+Use with any function that takes a single argument and returns a `boolean`, plus any iterable (`list`, `tuple`, `set`, `string`, etc.).
 
 ## Syntax
 
@@ -121,4 +121,5 @@ filtered = list(filter(None, nums))
 - [`map()`](map)
 - [`list()`](list)
 - [`comprehension`](comprehension)
+- [`lambda`](lambda)
 - [`filter() with lambda` **R.W.E**](filter_rwe)

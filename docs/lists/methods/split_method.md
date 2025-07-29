@@ -9,6 +9,7 @@ reference: "Splits a string into a list of substrings using a delimiter"
 tags: ["string", "method", "split", "delimiter", "text", "conversion"]
 see_also: ["join()", "partition()", "rsplit()", "split() csv line parser **R.W.E**"]
 works_with: ["str"]
+file path: 'docs\lists\methods\reverse_method.md'
 ---
 
 # split
@@ -124,7 +125,7 @@ parts = text.split(' ', 2)
 
 ## See Also
 
-- `join()`
-- `partition()`
-- `rsplit()`
-- `split() csv line parser` **R.W.E**
+- [`join()`
+- [`partition()`
+- [`rsplit()`
+- [`split() csv line parser` **R.W.E**

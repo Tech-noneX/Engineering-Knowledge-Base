@@ -25,12 +25,12 @@ cd python-cheat-sheet
 ```
 
 - Explore the folders:
-
+  
     app/ – Main Python scripts and code examples.
     docs/ – Markdown notes and explanations.
 
 - Run code samples:
-
+  
     Open any .py file in your editor (VS Code recommended) and run with:
 
 ```sh

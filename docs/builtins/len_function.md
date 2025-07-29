@@ -45,15 +45,15 @@ len(object)
 ```python
 # String length
 name = "Python"
-print(len(name))  # 6
+print(len(name))  # Output: 6
 
 # List length
 nums = [1, 2, 3]
-print(len(nums))  # 3
+print(len(nums))  # Output: 3
 
 # Dictionary length (number of keys)
 data = {"a": 1, "b": 2}
-print(len(data))  # 2
+print(len(data))  # Output: 2
 ```
 
 ## Examples

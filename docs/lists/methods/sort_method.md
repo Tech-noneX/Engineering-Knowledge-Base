@@ -9,6 +9,7 @@ reference: "Sorts the items of a list in place; original list is changed"
 tags: ["list", "method", "in-place", "sort", "mutable", "order"]
 see_also: ["sorted()", "reverse()", "pop()", "sort()", "sort() leaderboard update **R.W.E**"]
 works_with: ["list"]
+file path: 'docs\lists\methods\reverse_method.md'
 ---
 
 # sort()

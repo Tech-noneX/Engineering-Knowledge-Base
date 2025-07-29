@@ -22,7 +22,7 @@ file path: 'docs\builtins\input_function.md'
 
 ## Description
 
-The `input()` function pauses program execution, displays an optional prompt, and waits for the user to enter text, which is returned as a string. Common for collecting information or choices from the user in CLI apps. Always returns a string—convert to other types as needed (e.g., `int()`).
+The `input()` function pauses program execution, displays an optional prompt, and waits for the user to type text and press enter. The text the user enters is always returned as a string, even if they type numbers. Common for collecting information or choices from the user in CLI apps. Always returns a string—convert to other types as needed (e.g., `int()`).
 
 ## Usable With
 
@@ -31,7 +31,7 @@ Use `input()` to read text entered by the user at the keyboard. The input is alw
 ## Syntax
 
 ```python
-input([prompt])
+input(prompt)
 ```
 
 - **explanation:**  
@@ -40,28 +40,14 @@ input([prompt])
 
 ## Arguments
 
-- **Required:** 0
+- prompt (optional, str):
+  Text to display as a message to the user before waiting for input.
 
-- **Optional:** 1 (`prompt`, str)
-
-- **Maximum:** 1
-
-- Required:
+- If not given, no message is shown.
 
 ```python
-name = input()
-```
-
-- Optional:
-
-```python
-age = input("Enter your age: ")
-```
-
-- Maximum
-
-```python
-color = input("What is your favorite color? ")
+name = input() # no prompt
+name = input("Enter your name") # shows: Enter your name
 ```
 
 ## Examples
@@ -69,22 +55,25 @@ color = input("What is your favorite color? ")
 - **Basic input (no prompt)**
 
 ```python
-text = input()
+text = input() # user types: Hello World
 print("You entered:", text)
+# output: You entered: Hello World
 ```
 
 - **Input with a prompt**
 
 ```python
-name = input("What is your name? ")
+name = input("What is your name? ") # user types: Tomas
 print("Hello,", name)
+# output: Hello Tomas
 ```
 
 - **Convert input to another type**
 
 ```python
-num = int(input("Enter a number: "))
+num = int(input("Enter a number: ")) # user types: 6
 print("Twice your number:", num * 2)
+# output: 12
 ```
 
 **Note:**  
