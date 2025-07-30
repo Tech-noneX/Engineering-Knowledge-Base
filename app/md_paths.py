@@ -14,8 +14,15 @@ lists_methods_paths = {
     'reverse': Path(__file__).parent.parent/'docs'/'lists'/'methods'/'reverse_method.md',
     }
 
-datatypes_paths = {'list': Path(__file__).parent.parent/'docs'/'datatypes'/'list_datatype.md'
-}
+datatypes_paths = {'list': Path(__file__).parent.parent/'docs'/'datatypes'/'list_datatype.md',
+                   'bool': Path(__file__).parent.parent/'docs'/'datatypes'/'bool_datatype.md',
+                   'dict': Path(__file__).parent.parent/'docs'/'datatypes'/'dict_datatype.md',
+                   'float': Path(__file__).parent.parent/'docs'/'datatypes'/'float_datatype.md',
+                   'int': Path(__file__).parent.parent/'docs'/'datatypes'/'int_datatype.md',
+                   'set': Path(__file__).parent.parent/'docs'/'datatypes'/'set_datatype.md',
+                   'str': Path(__file__).parent.parent/'docs'/'datatypes'/'str_datatype.md',
+                   'tuple': Path(__file__).parent.parent/'docs'/'datatypes'/'tuple_datatype.md',
+                    }
 
 lists_function_paths = {
     'sorted': Path(__file__).parent.parent/'docs'/'lists'/'functions'/'sorted_function.md',
@@ -38,6 +45,8 @@ string_methods = {
     'capitalize': Path(__file__).parent.parent/'docs'/'strings'/'methods'/'capitalize_method.md',
     'join': Path(__file__).parent.parent/'docs'/'strings'/'methods'/'join_method.md',
     'find': Path(__file__).parent.parent/'docs'/'strings'/'methods'/'find_method.md',
+    'partition': Path(__file__).parent.parent/'docs'/'strings'/'methods'/'partition_method.md',
+    'endswith': Path(__file__).parent.parent/'docs'/'strings'/'methods'/'endswith_method.md',
 }
 
 built_in = {
@@ -58,6 +67,7 @@ built_in = {
 }
 
 set_method = {'add': Path(__file__).parent.parent/'docs'/'sets'/'method'/'add_method.md',
+              'union': Path(__file__).parent.parent/'docs'/'sets'/'method'/'union_method.md',  
 
 }
 

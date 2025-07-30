@@ -9,8 +9,16 @@ class PythonCheatSheet:
 
     def __init__(self):
 
-        self.datatypes_sheet = {'list': datatypes_paths['list']
+        self.datatypes_sheet = {'list': datatypes_paths['list'],
+                                'bool': datatypes_paths['bool'],
+                                'dict': datatypes_paths['dict'],
+                                'float': datatypes_paths['float'],
+                                'int': datatypes_paths['int'],
+                                'set': datatypes_paths['set'],
+                                'str': datatypes_paths['str'],
+                                'tuple': datatypes_paths['tuple'],
         }
+
 
         self.builtin_sheet = {'functions':{'min': built_in['min'],
                                            'max': built_in['max'],
@@ -55,6 +63,8 @@ class PythonCheatSheet:
                                                       'capitalize': string_methods['capitalize'],
                                                       'join': string_methods['join'],
                                                       'find': string_methods['find'],
+                                                      'partition': string_methods['partition'],
+                                                      'endswith': string_methods['endswith'],
 
                                                     }}
         
@@ -63,6 +73,7 @@ class PythonCheatSheet:
         
         
         self.set_sheet = {'method': {'add': set_method['add'],
+                                     'union': set_method['union'],
                           
                           }}
         

@@ -55,12 +55,17 @@
 ## data types
 
 - `list()` done
-- `tuple()`
-- `str()`
-- `dict()`
-- `int()`
-- `float()`
-- `bool`
+- `tuple()` done
+- `str()` done
+- `dict()` done
+- `int()` done
+- `float()`done
+- `bool`done
+- `frozenset`
+- `bytes`
+- `bytearray`
+- `complex`
+- `NoneType`
 
 ## standard library
 

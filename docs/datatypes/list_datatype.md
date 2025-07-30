@@ -12,7 +12,7 @@ works_with: []
 file_path: docs/datatypes/list.md
 ---
 
-# list()
+# list
 
 ## Description
 

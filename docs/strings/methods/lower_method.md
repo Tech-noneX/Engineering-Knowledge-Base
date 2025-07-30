@@ -7,8 +7,9 @@ difficulty: beginner
 subscription: free
 reference: "Returns a copy of the string with all letters converted to lowercase"
 tags: ["string", "method", "case", "text", "immutable"]
-see_also: ["upper()", "capitalize()", "casefold()", "lower() normalize user input **R.W.E**"]
+see_also: ["upper()", "capitalize()", "casefold()", "if", lower() normalize user input **R.W.E**"]
 works_with: ["str"]
+file path: 'docs\strings\methods\lower_method.md'
 ---
 
 # lower()
@@ -92,7 +93,8 @@ print(word)          # "hello"
 
 ## See Also
 
-- `upper()`
-- `capitalize()`
-- `casefold()`
-- `lower() normalize user input` **R.W.E**
+- [`upper()`](upper)
+- [`capitalize()`](capitalize)
+- [`casefold()`](casefold)
+- [`if`](if)
+- [`lower() normalize user input` **R.W.E**](lower_rwe)

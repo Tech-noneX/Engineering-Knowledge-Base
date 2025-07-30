@@ -9,6 +9,7 @@ reference: "Returns a new string with trailing (right) whitespace or specified c
 tags: ["string", "method", "whitespace", "strip", "immutable", "right"]
 see_also: ["lstrip()", "strip()", "replace()", "rstrip() clean user-submitted data **R.W.E**"]
 works_with: ["str"]
+file path: docs\strings\methods\rstrip_method.md
 ---
 
 # rstrip()
@@ -91,7 +92,7 @@ print(line.strip("-"))    # "Hello"
 
 ## See Also
 
-- `lstrip()`
-- `strip()`
-- `replace()`
-- `rstrip() clean user-submitted data` **R.W.E**
+- [`lstrip()`](lstrip)
+- [`strip()`](strip)
+- [`replace()`](replace)
+- [`rstrip() clean user-submitted data` **R.W.E**](rstrip_rwe)

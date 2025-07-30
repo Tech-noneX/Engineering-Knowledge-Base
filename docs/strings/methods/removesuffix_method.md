@@ -9,6 +9,7 @@ reference: "Returns a new string with the specified suffix removed, if present"
 tags: ["string", "method", "suffix", "remove", "immutable", "python3.9+"]
 see_also: ["removeprefix()", "replace()", "strip()", "removesuffix() trim file extension **R.W.E**"]
 works_with: ["str"]
+file path: docs\strings\methods\removesuffix_method.md
 ---
 
 # removesuffix()
@@ -93,7 +94,8 @@ print(s)  # "file"
 
 ## See Also
 
-- `removeprefix()`
-- `replace()`
-- `strip()`
-- `removesuffix() trim file extension` **R.W.E**
+- [`removeprefix()`](removeprefix)
+- [`replace()`](replace)
+- [`strip()`](strip)
+- [`if`](if)
+- [`removesuffix() trim file extension` **R.W.E**](removesuffix_rwe)

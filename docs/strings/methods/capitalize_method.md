@@ -9,6 +9,7 @@ reference: "Returns a copy of the string with the first character uppercase and 
 tags: ["string", "method", "case", "capitalize", "immutable", "sentence case"]
 see_also: ["title()", "upper()", "lower()", "capitalize() format user input **R.W.E**"]
 works_with: ["str"]
+file path: 'docs\strings\methods\capitalize_method.md'
 ---
 
 # capitalize()
@@ -89,7 +90,7 @@ print(name.title())        # "John Doe"
 
 ## See Also
 
-- `title()`
-- `upper()`
-- `lower()`
-- `capitalize() format user input` **R.W.E**
+- [`title()`](title)
+- [`upper()`](upper)
+- [`lower()`](lower)
+- [`capitalize() format user input` **R.W.E**](capitalize_rwe)

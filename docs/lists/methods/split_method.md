@@ -125,7 +125,7 @@ parts = text.split(' ', 2)
 
 ## See Also
 
-- [`join()`
-- [`partition()`
-- [`rsplit()`
-- [`split() csv line parser` **R.W.E**
+- [`join()`](join)
+- [`partition()`](partition)
+- [`rsplit()`](rsplit)
+- [`split() csv line parser` **R.W.E**](split_rwe)

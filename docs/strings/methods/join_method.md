@@ -7,8 +7,9 @@ subscription: premium
 difficulty: beginner
 reference: 'Concatenates items of an iterable into a single string with a separator'
 tags: ['string', 'method', 'join', 'concatenate', 'separator', 'combine', 'text']
-see_also: ['split()', 'replace()', 'format()', 'join() CSV row **R.W.E**']
+see_also: ['split()', 'replace()', 'format()', 'comprehension', 'join() CSV row **R.W.E**']
 works_with: ['str', 'list', 'tuple', 'iterable']
+file path: 'docs\strings\methods\join_method.md'
 ---
 
 # join()
@@ -110,7 +111,8 @@ result = ', '.join(str(n) for n in nums)
 
 ## See Also
 
-- `split()`
-- `replace()`
-- `format()`
-- `join() CSV row` **R.W.E**
+- [`split()`](split)
+- [`replace()`](replace)
+- [`format()`](format)
+- [`comprehension`](comprehension)
+- [`join() CSV row` **R.W.E**](join_rwe)

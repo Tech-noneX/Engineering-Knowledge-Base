@@ -9,6 +9,7 @@ reference: 'Returns the lowest index of a substring, or -1 if not found'
 tags: ['string', 'method', 'find', 'substring', 'index', 'search', 'text']
 see_also: ['index()', 'count()', 'replace()', 'find() all positions **R.W.E**']
 works_with: ['str']
+file path: docs\strings\methods\find_method.md'
 ---
 
 # find()
@@ -33,7 +34,7 @@ Searches for a substring within another string.
 ## Syntax
 
 ```python
-str.find(sub[, start[, end]])
+str.find(sub[ , start[ , end]])
 ```
 
 - **explanation:**  
@@ -78,7 +79,7 @@ result = data.find('a', 3, 7)  # returns 5
 ```python
 phrase = "cat and dog"
 pos = phrase.find("dog")
-# pos is 8
+print(pos) # pos is 8
 ```
 
 - **Substring not found (returns -1)**
@@ -117,7 +118,7 @@ while i != -1:
 
 ## See Also
 
-- `index()`
-- `count()`
-- `replace()`
-- `find() all positions` **R.W.E**
+- [`index()`](index)
+- [`count()`](count)
+- [`replace()`](replace)
+- [`find() all positions` **R.W.E**](find_rwe)

@@ -9,6 +9,7 @@ reference: "Returns a copy of the string with all letters converted to uppercase
 tags: ["string", "method", "case", "uppercase", "text"]
 see_also: ["lower()", "capitalize()", "title()", "casefold()", "upper() normalize codes **R.W.E**"]
 works_with: ["str"]
+file path: docs\strings\methods\upper_method.md
 ---
 
 # upper()
@@ -98,8 +99,8 @@ text.upper("wrong")  # TypeError: upper() takes no arguments
 
 ## See Also
 
-- `lower()`
-- `capitalize()`
-- `title()`
-- `casefold()`
-- `upper() normalize codes` **R.W.E**
+- [`lower()`](lower)
+- [`capitalize()`](capitalize)
+- [`title()`](title)
+- [`casefold()`](casefold)
+- [`upper() normalize codes` **R.W.E**](upper_rwe)

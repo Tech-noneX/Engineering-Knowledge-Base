@@ -9,6 +9,7 @@ reference: "Returns a new string with leading (left) whitespace or specified cha
 tags: ["string", "method", "whitespace", "strip", "immutable", "left"]
 see_also: ["rstrip()", "strip()", "replace()", "lstrip() clean user input **R.W.E**"]
 works_with: ["str"]
+file path: 'docs\strings\methods\lstrip_method.md'
 ---
 
 # lstrip()
@@ -91,7 +92,7 @@ print(line.strip("-"))    # "Hello"
 
 ## See Also
 
-- `rstrip()`
-- `strip()`
-- `replace()`
-- `lstrip() clean user input` **R.W.E**
+- [`rstrip()`](rstrip)
+- [`strip()`](strip)
+- [`replace()`](replace)
+- [`lstrip() clean user input` **R.W.E**](lstrip_rwe)

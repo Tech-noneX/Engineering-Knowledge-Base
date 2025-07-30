@@ -9,6 +9,7 @@ reference: "Returns a new string with all (or a limited number of) occurrences o
 tags: ["string", "method", "replace", "immutable", "substring", "count"]
 see_also: ["removeprefix()", "removesuffix()", "strip()", "replace() clean CSV values **R.W.E**"]
 works_with: ["str"]
+file path: docs\strings\methods\replace_method.md
 ---
 
 # replace()
@@ -94,7 +95,7 @@ print(s.replace(" ", ""))  # "helloworld"
 
 ## See Also
 
-- `removeprefix()`
-- `removesuffix()`
-- `strip()`
-- `replace() clean CSV values` **R.W.E**
+- [`removeprefix()`](removepreffix)
+- [`removesuffix()`](removesuffix)
+- [`strip()`](strip)
+- [`replace() clean CSV values` **R.W.E**](replace_rwe)
