@@ -9,7 +9,7 @@ reference: "Mutable ordered collection of items, usually of the same or similar 
 tags: ['data type', 'list', 'sequence','mutable', 'iterable', 'built-in']
 see_also: ['tuple', 'set', 'dict', 'append()', 'pop()', 'extend()', 'slicing', 'comprehension']
 works_with: []
-file_path: docs/datatypes/list.md
+file_path: docs/datatypes/list_datatype.md
 ---
 
 # list

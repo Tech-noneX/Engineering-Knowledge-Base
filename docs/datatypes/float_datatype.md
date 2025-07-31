@@ -9,7 +9,7 @@ reference: Floating-point (decimal) number type; used for real numbers in Python
 tags: ['data type', 'float', 'decimal', 'number', 'numeric', 'math']
 see_also: ['int', 'complex', 'str', 'round', 'math']
 works_with: ['int', 'str', 'list', 'set', 'dict', 'for', 'in']
-file_path: docs/datatypes/float.md
+file_path: docs/datatypes/float_datatype.md
 ---
 
 # float

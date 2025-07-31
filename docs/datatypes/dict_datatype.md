@@ -9,7 +9,7 @@ reference: Unordered, mutable key-value mapping; Python’s main way to store st
 tags: ['data type', 'dict', 'mapping', 'mutable', 'key-value', 'hash']
 see_also: ['list', 'set', 'tuple', 'defaultdict', 'Counter', 'items']
 works_with: ['list', 'tuple', 'str', 'set', 'for', 'in']
-file_path: docs/datatypes/dict.md
+file_path: docs/datatypes/dict_datatype.md
 ---
 
 # dict

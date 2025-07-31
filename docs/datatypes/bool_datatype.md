@@ -9,7 +9,7 @@ reference: Boolean type; represents True or False values in Python.
 tags: ['data type', 'bool', 'boolean', 'logic', 'true', 'false', 'conditional']
 see_also: ['int', 'str', 'float', 'None', 'truthy', 'falsy', 'not']
 works_with: ['int', 'str', 'list', 'set', 'dict', 'for', 'in']
-file_path: docs/datatypes/bool.md
+file_path: docs/datatypes/bool_datatype.md
 ---
 
 # bool
@@ -17,6 +17,7 @@ file_path: docs/datatypes/bool.md
 ## Description
 
 A **bool** (Boolean) is a built-in type that can only have two possible values: `True` or `False`.  
+
 - Used for logical conditions, comparisons, and control flow.
 - The result of comparisons and many built-in functions is a boolean.
 
@@ -81,6 +82,7 @@ print(False * 10)   # 0 (False is 0)
 
 - **Truthy vs Falsy:**  
   Many values evaluate to `False` (empty collections, 0, `None`, `''`); others are `True`.
+  
   ```python
   if not my_list:    # Checks if list is empty
       print("Empty!")
@@ -88,6 +90,7 @@ print(False * 10)   # 0 (False is 0)
 
 - **Not a separate numeric type:**  
   `True` and `False` are just `1` and `0` under the hood.
+
   ```python
   sum([True, False, True])   # 2
   ```

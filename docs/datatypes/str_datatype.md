@@ -7,9 +7,9 @@ difficulty: beginner
 subscription: free
 reference: Immutable, ordered sequence of characters; used for text in Python.
 tags: ['data type', 'str', 'string', 'immutable', 'sequence', 'text']
-see_also: ['list', 'bytes', 'tuple', 'int']
+see_also: ['list', 'bytes', 'tuple', 'int', 'slicing']
 works_with: ['list', 'tuple', 'dict', 'set', 'for', 'in']
-file_path: docs/datatypes/str.md
+file_path: docs/datatypes/str_datatype.md
 ---
 
 # str
@@ -107,3 +107,4 @@ parts = csv.split(",")              # ['a', 'b', 'c']
 - [`bytes`](bytes)
 - [`tuple`](tuple)
 - [`int`](int)
+- [`slicing`](slicing)

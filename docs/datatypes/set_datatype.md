@@ -9,14 +9,15 @@ reference: Unordered, mutable collection of unique, hashable items.
 tags: ['data type', 'set', 'unique', 'collection', 'mutable', 'hash']
 see_also: ['frozenset', 'list', 'dict', 'tuple', 'union', 'intersection']
 works_with: ['list', 'tuple', 'str', 'dict', 'for', 'in']
-file_path: docs/datatypes/set.md
+file_path: docs/datatypes/set_datatype.md
 ---
 
 # set
 
 ## Description
 
-A **set** is an unordered, mutable collection of unique, hashable items.  
+A **set** is an unordered, mutable collection of unique, hashable items.
+
 - Used to store distinct elements and remove duplicates automatically.
 - Great for set operations: union, intersection, difference, symmetric difference.
 - Items must be hashable (e.g., numbers, strings, tuples).
@@ -70,6 +71,14 @@ a = {1, 2, 3}
 b = {3, 4, 5}
 print(a | b)            # {1, 2, 3, 4, 5} (union)
 print(a & b)            # {3}             (intersection)
+# Set difference (elements in a but NOT in b)
+a = {1, 2, 3}
+b = {3, 4, 5}
+print(a - b)   # {1, 2}
+
+# Set symmetric difference (elements in a or b, but NOT both)
+print(a ^ b)   # {1, 2, 4, 5}
+
 
 # Adding and removing elements
 colors = {'red', 'blue'}

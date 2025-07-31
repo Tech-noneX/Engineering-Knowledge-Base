@@ -9,7 +9,7 @@ reference: Immutable, ordered collection of items, often used for fixed data.
 tags: ['data type', 'tuple', 'immutable', 'sequence']
 see_also: ['list', 'set', 'dict', 'namedtuple']
 works_with: ['list', 'set', 'dict', 'for', 'in']
-file_path: docs/datatypes/tuple.md
+file_path: docs/datatypes/tuple_datatype.md
 ---
 
 # tuple
@@ -17,6 +17,7 @@ file_path: docs/datatypes/tuple.md
 ## Description
 
 A **tuple** is an immutable, ordered collection of items.  
+
 - Items are stored in a specific sequence and can be accessed by index.
 - Once created, a tuple **cannot be changed** (no adding, removing, or replacing items).
 - Useful for representing **fixed collections** of values, function return values, or keys in dictionaries.
@@ -82,6 +83,7 @@ print(matrix[1][0])  # 3
 
 - **Immutable:**  
   You can’t change, add, or remove items after creation.  
+
   ```python
   t = (1, 2, 3)
   # t[0] = 10  # ❌ This will raise an error
@@ -94,6 +96,7 @@ print(matrix[1][0])  # 3
   Only if all elements inside are hashable.
 
 - **Supports unpacking:**  
+
   ```python
   name, age = ('Tom', 40)
   ```

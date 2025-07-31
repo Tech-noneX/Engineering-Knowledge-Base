@@ -9,7 +9,7 @@ reference: Whole number type; used for integers in Python (positive, negative, o
 tags: ['data type', 'int', 'integer', 'number', 'numeric', 'math']
 see_also: ['float', 'complex', 'str', 'list', 'abs', 'round']
 works_with: ['float', 'str', 'list', 'set', 'dict', 'for', 'in']
-file_path: docs/datatypes/int.md
+file_path: docs/datatypes/int_datatype.md
 ---
 
 # int
@@ -17,6 +17,7 @@ file_path: docs/datatypes/int.md
 ## Description
 
 An **int** is a whole number—positive, negative, or zero—without any decimal places.  
+
 - Used for counting, indexing, math, and any situation where only whole numbers are allowed.
 - Supports all basic math operations, bitwise operations, and comparisons.
 - Has unlimited precision (can be arbitrarily large).
@@ -41,11 +42,13 @@ temp = -10
 # From other types:
 num = int("123")        # From string: 123
 whole = int(3.99)       # From float: 3 (truncates decimals)
-binary = int("1101", 2) # From binary string: 13
-
+big = 123_456_789_123_456_78
 # Special: large numbers (Python auto-expands as needed)
-big = 123_456_789_123_456_789
+binary = int("1101", 2) # From binary string: 13
 ```
+
+ note:
+> The second argument in int(string, base) tells Python what number system (base) the string is written in. For example, `int("1101", 2)` reads `"1101"` as binary.
 
 ## Key Properties
 
