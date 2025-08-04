@@ -99,6 +99,15 @@ print("Price: ${:.2f}".format(price))
 # Output: Price: $5.68
 ```
 
+- **Fill placeholders with values from a dictionary using ** unpacking**
+  This is useful when your variable names and dictionary keys match.
+
+```python
+data = {'name': 'Bob', 'score': 42}
+print("User: {name}, Score: {score}".format(**data))
+# Output: User: Bob, Score: 42
+```
+
 **Note:**  
 `format()` does not modify the original string—it always returns a new string.  
 Unmatched or missing placeholders will raise an error.
