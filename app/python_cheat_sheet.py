@@ -1,7 +1,11 @@
 import os
 import random
 from greetings_function import greetings
-from md_paths import lists_methods_paths, lists_function_paths,dict_methods_paths, string_methods,built_in, modules, set_method, datatypes_paths
+from md_paths import (lists_methods_paths, datatypes_paths,
+             lists_function_paths, dict_methods_paths,
+             string_methods, built_in, set_method,
+             modules,
+                     )
 
 
 class PythonCheatSheet:
@@ -65,6 +69,7 @@ class PythonCheatSheet:
                                                       'find': string_methods['find'],
                                                       'partition': string_methods['partition'],
                                                       'endswith': string_methods['endswith'],
+                                                      'format': string_methods['format'],
 
                                                     }}
         

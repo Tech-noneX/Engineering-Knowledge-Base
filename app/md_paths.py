@@ -47,6 +47,7 @@ string_methods = {
     'find': Path(__file__).parent.parent/'docs'/'strings'/'methods'/'find_method.md',
     'partition': Path(__file__).parent.parent/'docs'/'strings'/'methods'/'partition_method.md',
     'endswith': Path(__file__).parent.parent/'docs'/'strings'/'methods'/'endswith_method.md',
+    'format': Path(__file__).parent.parent/'docs'/'strings'/'methods'/'format_method.md',
 }
 
 built_in = {
@@ -75,7 +76,11 @@ modules = {'functools module':{'reduce': Path(__file__).parent.parent/'docs'/'mo
                                'functools': Path(__file__).parent.parent/'docs'/'modules'/'functools'/'functools_module.md',
                         }}
 
-
+all_paths = [lists_methods_paths, datatypes_paths,
+             lists_function_paths, dict_methods_paths,
+             string_methods, built_in, set_method,
+             modules,
+                ]
 print(len(lists_function_paths) + 
     len(lists_methods_paths) + 
     len(dict_methods_paths) + 
