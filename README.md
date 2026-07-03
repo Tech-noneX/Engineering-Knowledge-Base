@@ -1,85 +1,53 @@
-# Python-cheat-sheet
+# Python Cheat Sheet
 
-## Python Cheat Sheet
+A beginner-friendly Python reference project with Markdown notes and a small command-line launcher for opening them.
 
-A simple, well-organized `Python` reference project with code examples, explanations, and best practices.
-Perfect for `beginners`, `self-learners`, and anyone who wants a quick refresher on Python `syntax` and concepts.
-
-## What is this?
-
-Python Cheat Sheet is a growing collection of practical Python code snippets and concise explanations.
-It’s designed as a reference you can use while learning, coding, or prepping for interviews.
-Examples are organized by topic (variables, lists, loops, functions, file I/O, etc.).
-Code is commented and easy to follow.
-Markdown files include key notes, summaries, and links to resources.
-
-## How to Use
-
-- Clone the repository
-
-```sh
-Copy
-Edit
-git clone <https://github.com/yourusername/python-cheat-sheet.git>
-cd python-cheat-sheet
-```
-
-- Explore the folders:
-  
-    app/ – Main Python scripts and code examples.
-    docs/ – Markdown notes and explanations.
-
-- Run code samples:
-  
-    Open any .py file in your editor (VS Code recommended) and run with:
-
-```sh
-Copy
-Edit
-python filename.py
-```
+The project is organized around Python topics such as data types, built-in functions, list methods, string methods, dictionary methods, set methods, and the `functools` module.
 
 ## Project Structure
 
-```ph
-python-cheat-sheet/
-├── app/
-│   ├── app.py
-│   └── ... more Python scripts
-├── docs/
-│   ├── cheat_sheet.md
-│   └── ... more notes
-├── README.md
+```text
+Python-cheat-sheet/
++-- app/
+|   +-- python_cheat_sheet.py
+|   +-- md_paths.py
+|   +-- greetings_function.py
+|   +-- save_metadata.py
++-- docs/
+|   +-- builtins/
+|   +-- datatypes/
+|   +-- dictionaries/
+|   +-- lists/
+|   +-- modules/
+|   +-- sets/
+|   +-- strings/
++-- templates/
++-- meta-data/
 ```
 
-Keep code (.py) and docs (.md) separate for easy navigation.
+## How It Works
 
-All file paths are set up to work with relative imports (no hardcoding).
+`app/python_cheat_sheet.py` asks what Python concept you want to look up. If the term is known, it opens the matching Markdown file from `docs/`.
 
-### Features
+Examples of searchable terms include:
 
-- Clean, readable code for each topic.
+- `list`, `dict`, `str`, `tuple`
+- `append`, `sort`, `sorted`, `get`
+- `upper`, `lower`, `replace`, `strip`
+- `len`, `sum`, `range`, `zip`, `map`, `filter`
+- `reduce`, `functools`
 
-- Beginner-friendly explanations.
+## How To Run
 
-- Easily expandable—just add more scripts or notes as you learn.
+From the project folder:
 
-- Perfect for interview prep or revision.
+```bash
+python app/python_cheat_sheet.py
+```
 
-### Contributing
+Enter `q` to quit the lookup prompt.
 
-Want to add examples or fix a typo?
-Pull requests are welcome!
-Just fork the repo, add your changes, and open a PR.
+## Notes
 
-### License
-
-MIT License – free to use, share, and improve.
-
-### Acknowledgements
-
-Inspired by Python Crash Course, Automate the Boring Stuff with Python, and the official Python Docs.
-
-Project by Honzik.
-
-Happy coding! If you find this project useful, feel free to star ⭐ the repo!
+- The launcher uses `os.startfile`, so it is designed for Windows.
+- The Markdown notes can also be opened directly from the `docs/` folder.
