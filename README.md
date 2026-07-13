@@ -1,70 +1,98 @@
 # Engineering Knowledge Base
 
-A long-term, beginner-friendly engineering reference that documents a learning
-journey from electrical installation work into software, electronics, embedded
-systems, automation, and multidisciplinary engineering.
+A structured, long-term record of my journey from electrician to software,
+embedded, automation, and electrical/electronics engineering.
 
-The repository combines concise reference cards with practical programs,
-calculations, visualizations, schematics, and small learning projects. Content
-is organized so it can be studied directly in Markdown today and reused by a
-future Flutter application.
+The repository combines beginner-friendly reference cards with practical code,
+engineering calculations, visualizations, schematics, and small learning
+projects. Its content-first architecture keeps the material useful as Markdown
+today and suitable for a future Flutter application.
 
-## Current Areas
+## Knowledge Areas
 
-### [Python reference](Python%20reference/README.md)
+- [Python](docs/python/README.md)
+- [Electronics](docs/electronics/README.md)
+- [Mathematics](docs/mathematics/README.md)
+- [C](docs/c/README.md)
+- [C++](docs/cpp/README.md)
+- [MicroPython](docs/micropython/README.md)
+- [Embedded systems](docs/embedded-systems/README.md)
+- [Electrical engineering](docs/electrical-engineering/README.md)
+- [Automation and PLCs](docs/automation/README.md)
 
-Structured Python reference cards, reusable Markdown templates, metadata, and
-small helper programs. The cards cover topics such as data types, built-in
-functions, collections, methods, modules, and common programming patterns.
+The Python and electronics sections currently contain the most material. Other
+sections provide a clean foundation for future notes and projects.
 
-### [Electronics](electronics/Resistors/README.md)
-
-Practical electronics notes, resistor calculations, Python examples, and KiCad
-schematics for series, parallel, and combined circuits.
-
-## Repository Structure
+## Repository Architecture
 
 ```text
 Engineering-Knowledge-Base/
-|-- Python reference/
-|   |-- app/          # Helper programs and future tooling
-|   |-- docs/         # Markdown reference cards grouped by topic
-|   |-- meta-data/    # Structured metadata for discovery and applications
-|   `-- templates/    # Reusable card templates
-|-- electronics/
-|   `-- Resistors/    # Notes, calculations, and schematics
+|-- docs/                 # Reference cards and engineering explanations
+|   |-- python/
+|   |-- electronics/
+|   |-- mathematics/
+|   |-- c/
+|   |-- cpp/
+|   |-- micropython/
+|   |-- embedded-systems/
+|   |-- electrical-engineering/
+|   `-- automation/
+|-- templates/            # Reusable Markdown card templates
+|-- assets/               # Images, diagrams, and schematic source files
+|-- examples/             # Small programs and worked engineering examples
+|-- scripts/              # Tools that maintain or browse the knowledge base
+|-- LICENSE
 `-- README.md
 ```
 
-Additional subject areas will be introduced as separate top-level folders as
-the knowledge base grows. Planned areas include C, C++, Embedded C,
-MicroPython, mathematics, electrical engineering, embedded systems,
-PLC/automation, networking, computer science, and AI fundamentals.
+## How Content Is Organized
 
-## Content Principles
+The repository separates different kinds of material deliberately:
 
-- Keep explanations accurate, practical, and approachable for learners.
-- Preserve YAML front matter so reference cards remain machine-readable.
-- Build new cards from the existing templates for consistent structure.
-- Prefer small, reusable examples over large unrelated scripts.
-- Store source schematics and calculations alongside their explanations.
-- Maintain relative links when files or topic folders are reorganized.
-- Separate source material from generated files, caches, and local tooling.
+- `docs/` explains concepts and acts as the main knowledge library.
+- `templates/` keeps new reference cards consistent.
+- `assets/` stores supporting visual and schematic files.
+- `examples/` contains runnable code and worked calculations.
+- `scripts/` contains repository tools rather than learning examples.
 
-## Using the Knowledge Base
+Python reference cards retain YAML front matter for search, filtering, and
+future application use. Fields such as `id`, `title`, `section`, `difficulty`,
+`tags`, `see_also`, and `works_with` should remain machine-readable.
 
-Browse the topic folders directly on GitHub, or clone the repository and open
-the Markdown files in an editor such as Visual Studio Code.
+## Working With the Repository
 
-The Python lookup helper is Windows-oriented. From the `Python reference`
-folder, run:
+Clone the repository and open it in Visual Studio Code:
 
 ```powershell
-python app/python_cheat_sheet.py
+git clone https://github.com/Tech-noneX/Engineering-Knowledge-Base.git
+Set-Location Engineering-Knowledge-Base
 ```
+
+To run the current Windows-oriented Python reference browser:
+
+```powershell
+python scripts/python/python_cheat_sheet.py
+```
+
+Individual examples include their own instructions or accompanying notes.
+
+## Adding New Material
+
+1. Choose the correct subject and topic folder under `docs/`.
+2. Start from the closest matching file in `templates/`.
+3. Keep the YAML metadata keys and value types consistent.
+4. Put reusable images, diagrams, or schematics under `assets/`.
+5. Put runnable demonstrations under `examples/`.
+6. Use relative Markdown links and check them after moving files.
+7. Keep explanations practical, accurate, and understandable to learners.
 
 ## Project Status
 
-This is an evolving learning repository. Some sections are more complete than
-others, and existing material will be reviewed and improved as knowledge and
-engineering experience grow.
+This is an evolving learning project. Some subjects are currently placeholders,
+while Python and electronics already contain reference material and practical
+work. Existing notes will be reviewed and improved as my engineering knowledge
+develops.
+
+## License
+
+This project is available under the [MIT License](LICENSE).

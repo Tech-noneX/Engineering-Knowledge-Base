@@ -37,7 +37,3 @@ Thumbs.db
 *.kicad_pcb-bak
 fp-info-cache
 ~*.lck
-
-# Duplicate generated archives retained locally
-Python reference/docs.zip
-Python reference/docs/builtins.zip
