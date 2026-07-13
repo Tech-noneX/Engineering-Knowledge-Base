@@ -81,12 +81,15 @@ all_paths = [lists_methods_paths, datatypes_paths,
              string_methods, built_in, set_method,
              modules,
                 ]
-print(len(lists_function_paths) + 
-    len(lists_methods_paths) + 
-    len(dict_methods_paths) + 
-    len(built_in) + 
-    len(string_methods) + 
-    len(set_method) +
-    len(datatypes_paths) +
-    len(modules)
-)
+
+if __name__ == "__main__":
+
+    print(len(lists_function_paths) +
+        len(lists_methods_paths) +
+        len(dict_methods_paths) +
+        len(built_in) +
+        len(string_methods) +
+        len(set_method) +
+        len(datatypes_paths) +
+        len(modules)
+    )

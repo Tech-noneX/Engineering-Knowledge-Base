@@ -1,53 +1,70 @@
-# Python Cheat Sheet
+# Engineering Knowledge Base
 
-A beginner-friendly Python reference project with Markdown notes and a small command-line launcher for opening them.
+A long-term, beginner-friendly engineering reference that documents a learning
+journey from electrical installation work into software, electronics, embedded
+systems, automation, and multidisciplinary engineering.
 
-The project is organized around Python topics such as data types, built-in functions, list methods, string methods, dictionary methods, set methods, and the `functools` module.
+The repository combines concise reference cards with practical programs,
+calculations, visualizations, schematics, and small learning projects. Content
+is organized so it can be studied directly in Markdown today and reused by a
+future Flutter application.
 
-## Project Structure
+## Current Areas
+
+### [Python reference](Python%20reference/README.md)
+
+Structured Python reference cards, reusable Markdown templates, metadata, and
+small helper programs. The cards cover topics such as data types, built-in
+functions, collections, methods, modules, and common programming patterns.
+
+### [Electronics](electronics/Resistors/README.md)
+
+Practical electronics notes, resistor calculations, Python examples, and KiCad
+schematics for series, parallel, and combined circuits.
+
+## Repository Structure
 
 ```text
-Python-cheat-sheet/
-+-- app/
-|   +-- python_cheat_sheet.py
-|   +-- md_paths.py
-|   +-- greetings_function.py
-|   +-- save_metadata.py
-+-- docs/
-|   +-- builtins/
-|   +-- datatypes/
-|   +-- dictionaries/
-|   +-- lists/
-|   +-- modules/
-|   +-- sets/
-|   +-- strings/
-+-- templates/
-+-- meta-data/
+Engineering-Knowledge-Base/
+|-- Python reference/
+|   |-- app/          # Helper programs and future tooling
+|   |-- docs/         # Markdown reference cards grouped by topic
+|   |-- meta-data/    # Structured metadata for discovery and applications
+|   `-- templates/    # Reusable card templates
+|-- electronics/
+|   `-- Resistors/    # Notes, calculations, and schematics
+`-- README.md
 ```
 
-## How It Works
+Additional subject areas will be introduced as separate top-level folders as
+the knowledge base grows. Planned areas include C, C++, Embedded C,
+MicroPython, mathematics, electrical engineering, embedded systems,
+PLC/automation, networking, computer science, and AI fundamentals.
 
-`app/python_cheat_sheet.py` asks what Python concept you want to look up. If the term is known, it opens the matching Markdown file from `docs/`.
+## Content Principles
 
-Examples of searchable terms include:
+- Keep explanations accurate, practical, and approachable for learners.
+- Preserve YAML front matter so reference cards remain machine-readable.
+- Build new cards from the existing templates for consistent structure.
+- Prefer small, reusable examples over large unrelated scripts.
+- Store source schematics and calculations alongside their explanations.
+- Maintain relative links when files or topic folders are reorganized.
+- Separate source material from generated files, caches, and local tooling.
 
-- `list`, `dict`, `str`, `tuple`
-- `append`, `sort`, `sorted`, `get`
-- `upper`, `lower`, `replace`, `strip`
-- `len`, `sum`, `range`, `zip`, `map`, `filter`
-- `reduce`, `functools`
+## Using the Knowledge Base
 
-## How To Run
+Browse the topic folders directly on GitHub, or clone the repository and open
+the Markdown files in an editor such as Visual Studio Code.
 
-From the project folder:
+The Python lookup helper is Windows-oriented. From the `Python reference`
+folder, run:
 
-```bash
+```powershell
 python app/python_cheat_sheet.py
 ```
 
-Enter `q` to quit the lookup prompt.
+## Project Status
 
-## Notes
-
-- The launcher uses `os.startfile`, so it is designed for Windows.
-- The Markdown notes can also be opened directly from the `docs/` folder.
+This is an evolving learning repository. Some sections are more complete than
+others, and existing material will be reviewed and improved as knowledge and
+engineering experience grow.
