@@ -1,4 +1,4 @@
-# Resistance calculation
+# Resistance, Voltage drop, Current calculation
 
 ## Schematics
 
@@ -6,9 +6,9 @@
 
 ## resistors
 
-* $R_1$ = 300Ω
-* $R_2$ = 200Ω
-* $R_3$ = 1kΩ
+* $R_1 = 300\Omega$
+* $R_2 = 200\Omega$
+* $R_3 = 1k\Omega$
 
 ## power supply
 

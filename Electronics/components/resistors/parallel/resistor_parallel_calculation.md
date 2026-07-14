@@ -1,4 +1,4 @@
-# Resistance calculation
+# Resistance, Voltage drop, Current calculation
 
 ## Schematics
 
@@ -40,7 +40,7 @@ $R_{total} = \frac{1}{\frac{6}{600}+\frac{3}{600}+\frac{2}{600}}$
 
 $R_{total} = \frac{1}{\frac{11}{600}}$
 
-$R_{total} = \frac{600}{1}$
+$R_{total} = \frac{600}{11}$
 
 $R_{total} = 54.55Ω$
 -
