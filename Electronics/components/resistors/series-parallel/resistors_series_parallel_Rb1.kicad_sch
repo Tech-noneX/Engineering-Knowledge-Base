@@ -425,40 +425,16 @@
 		(uuid "60907179-01a4-4791-8e0e-2a2660f28862")
 	)
 	(junction
-		(at 85.09 25.4)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6cdec2b7-5644-4b02-9e22-6e812e27fb83")
-	)
-	(junction
 		(at 121.92 59.69)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "728a4a40-3daf-4d3a-b274-b02f45809c82")
 	)
 	(junction
-		(at 101.6 38.1)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "73f4a8f5-b211-495e-9807-59ca0cb87997")
-	)
-	(junction
 		(at 68.58 46.99)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "78c921f1-ce39-4e03-a9c2-820916e8320f")
-	)
-	(junction
-		(at 92.71 25.4)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a8943558-53d7-420b-9098-ac1617043c30")
-	)
-	(junction
-		(at 76.2 38.1)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a951fdc0-395b-4932-a1fc-3cbf9493a951")
 	)
 	(junction
 		(at 44.45 38.1)
@@ -538,7 +514,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 38.1) (xy 101.6 38.1)
+			(xy 92.71 38.1) (xy 109.22 38.1)
 		)
 		(stroke
 			(width 0)
@@ -618,16 +594,6 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 38.1) (xy 109.22 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4ce1bbcc-2180-47f3-93df-f2d713ab68f4")
-	)
-	(wire
-		(pts
 			(xy 52.07 38.1) (xy 68.58 38.1)
 		)
 		(stroke
@@ -638,7 +604,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 38.1) (xy 76.2 38.1)
+			(xy 68.58 38.1) (xy 85.09 38.1)
 		)
 		(stroke
 			(width 0)
@@ -678,26 +644,6 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 25.4) (xy 76.2 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7f6b07a1-8123-42a7-969b-fc1747a196e6")
-	)
-	(wire
-		(pts
-			(xy 101.6 25.4) (xy 101.6 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "873a1688-6a2f-450d-bc0a-f65628aaf9a3")
-	)
-	(wire
-		(pts
 			(xy 121.92 38.1) (xy 121.92 59.69)
 		)
 		(stroke
@@ -715,26 +661,6 @@
 			(type default)
 		)
 		(uuid "8ecd607f-40e4-4a45-a7d5-aabf725252a7")
-	)
-	(wire
-		(pts
-			(xy 76.2 25.4) (xy 76.2 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "901a6465-fa7e-461a-bede-0d8bf3e46851")
-	)
-	(wire
-		(pts
-			(xy 86.36 25.4) (xy 85.09 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a5e94dc7-30d7-4cac-85e7-956a54c51d5b")
 	)
 	(wire
 		(pts
@@ -768,26 +694,6 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 25.4) (xy 101.6 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b2bf6028-ca44-4549-8740-3bac41c77697")
-	)
-	(wire
-		(pts
-			(xy 76.2 38.1) (xy 85.09 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b40d0905-27f9-4207-8092-f10a61cfcd89")
-	)
-	(wire
-		(pts
 			(xy 121.92 59.69) (xy 121.92 60.96)
 		)
 		(stroke
@@ -805,16 +711,6 @@
 			(type default)
 		)
 		(uuid "c1d948f1-5b88-4a7f-93f2-05c4297fb53a")
-	)
-	(wire
-		(pts
-			(xy 91.44 25.4) (xy 92.71 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ee15f545-455a-4f80-b67c-c082fbcb5b4a")
 	)
 	(wire
 		(pts
@@ -983,7 +879,7 @@
 			(uuid "b6c60fbc-9c1d-4e9c-aac7-a2c245ac573c")
 		)
 		(instances
-			(project "resistors_series_parallel_combined"
+			(project "resistors_series_parallel_Rb1 - Copy"
 				(path "/ae436056-4544-44d2-91a0-fceb0c77bc0a"
 					(reference "BT1")
 					(unit 1)
@@ -1063,7 +959,7 @@
 			(uuid "b37a801d-6752-4684-8794-c2d250a9803e")
 		)
 		(instances
-			(project "resistors_series_parallel_combined"
+			(project "resistors_series_parallel_Rb1 - Copy"
 				(path "/ae436056-4544-44d2-91a0-fceb0c77bc0a"
 					(reference "R1")
 					(unit 1)
@@ -1093,7 +989,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "230.769"
 			(at 88.9 34.29 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1143,7 +1039,7 @@
 			(uuid "26c6edda-9877-4d30-9aa2-128078d23db9")
 		)
 		(instances
-			(project "resistors_series_parallel_combined"
+			(project "resistors_series_parallel_Rb1 - Copy"
 				(path "/ae436056-4544-44d2-91a0-fceb0c77bc0a"
 					(reference "Rb1")
 					(unit 1)
@@ -1225,89 +1121,9 @@
 			(uuid "4eadb0fc-ebed-40b9-932f-51862030c969")
 		)
 		(instances
-			(project "resistors_series_parallel_combined"
+			(project "resistors_series_parallel_Rb1 - Copy"
 				(path "/ae436056-4544-44d2-91a0-fceb0c77bc0a"
 					(reference "R7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 88.9 25.4 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9de8b456-ccc2-4abb-9f4f-288205ee8ee3")
-		(property "Reference" "R4"
-			(at 88.9 19.05 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "300"
-			(at 88.9 21.59 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 88.9 23.622 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 88.9 25.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 88.9 25.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "634f663a-cffa-4203-8142-a8513b4eb1f0")
-		)
-		(pin "1"
-			(uuid "a41cf2d8-c69b-4127-a3ba-0bb21a853173")
-		)
-		(instances
-			(project "resistors_series_parallel_combined"
-				(path "/ae436056-4544-44d2-91a0-fceb0c77bc0a"
-					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -1387,7 +1203,7 @@
 			(uuid "93c80cec-79c8-4d83-be57-87103844055c")
 		)
 		(instances
-			(project "resistors_series_parallel_combined"
+			(project "resistors_series_parallel_Rb1 - Copy"
 				(path "/ae436056-4544-44d2-91a0-fceb0c77bc0a"
 					(reference "R2")
 					(unit 1)
@@ -1469,7 +1285,7 @@
 			(uuid "9bb7aa6f-9b5c-4c29-8616-772eb85cce4c")
 		)
 		(instances
-			(project "resistors_series_parallel_combined"
+			(project "resistors_series_parallel_Rb1 - Copy"
 				(path "/ae436056-4544-44d2-91a0-fceb0c77bc0a"
 					(reference "R6")
 					(unit 1)
@@ -1551,7 +1367,7 @@
 			(uuid "16643f35-08cb-484a-9a5d-72d2619926b9")
 		)
 		(instances
-			(project "resistors_series_parallel_combined"
+			(project "resistors_series_parallel_Rb1 - Copy"
 				(path "/ae436056-4544-44d2-91a0-fceb0c77bc0a"
 					(reference "R3")
 					(unit 1)

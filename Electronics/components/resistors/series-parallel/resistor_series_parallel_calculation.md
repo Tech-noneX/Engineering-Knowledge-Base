@@ -70,3 +70,33 @@ $$
 $$
 \boxed{R_{b1} = 230.769\,\Omega}
 $$
+
+![Series-parallel Rb1](resistors_series_parallel_Rb1.svg)
+
+## 2. Calculation $R_{b2}$ - parallel
+
+$R_6 = 2\,\mathrm{k}\Omega$
+
+$R_7 = 500\,\Omega$
+
+$$
+R_{b2} = \frac{1}{\frac{1}{2000}+\frac{1}{500}}
+$$
+
+$$
+R_{b2} = \frac{1}{\frac{1}{2000}+\frac{4}{2000}}
+$$
+
+$$
+R_{b2} = \frac{1}{\frac{5}{2000}}
+$$
+
+$$
+R_{b2} = \frac{2000}{5}
+$$
+
+$$
+\boxed{R_{b2} = 400\,\Omega}
+$$
+
+![Series_parallel-Rb2](resistors_series_parallel_Rb2.svg)
