@@ -55,18 +55,23 @@ Finally $\boxed{R_{total} = R_1 + R_{eq}}$
 $R_4 = 300\,\Omega$
 
 $R_5 = 1\,\mathrm{k}\Omega$
+
 $$
 R_{b1} = \frac{1}{\frac{1}{300} + \frac{1}{1000}}
 $$
+
 $$
 R_{b1} = \frac{1}{\frac{10}{3000} + \frac{3}{3000}}
 $$
+
 $$
 R_{b1} = \frac{1}{\frac{13}{3000}}
 $$
+
 $$
 R_{b1} = \frac{3000}{13}
 $$
+
 $$
 \boxed{R_{b1} = 230.769\,\Omega}
 $$
