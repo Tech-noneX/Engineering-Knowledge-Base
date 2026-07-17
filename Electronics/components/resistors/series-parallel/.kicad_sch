@@ -2,7 +2,7 @@
 	(version 20260306)
 	(generator "eeschema")
 	(generator_version "10.0")
-	(uuid "a19113d5-4559-4036-b32c-0fbc09dde4b6")
+	(uuid "7724c099-aa54-4bf8-b529-b9725db452b8")
 	(paper "A4")
 	(lib_symbols)
 	(sheet
@@ -32,7 +32,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "resistors_series_parallel_Rb2.kicad_sch"
+		(property "Sheetfile" "resistors_series_parallel_Rs1.kicad_sch"
 			(at 0 4.3946 0)
 			(show_name no)
 			(do_not_autoplace no)

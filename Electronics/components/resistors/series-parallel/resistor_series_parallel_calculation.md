@@ -73,8 +73,10 @@ R_{b1} = \frac{3000}{13}
 $$
 
 $$
-\boxed{R_{b1} = 230.769\ \Omega}
+\boxed{R_{b1} = 230.769\ \Omega}\ \ or \ \boxed{R_{b1} = \frac{3000}{13}}
 $$
+
+- For the following calculations, we will keep the result as an exact fraction to avoid rounding errors.
 
 ![Series-parallel Rb1](resistors_series_parallel_Rb1.svg)
 
@@ -105,3 +107,73 @@ $$
 $$
 
 ![Series_parallel-Rb2](resistors_series_parallel_Rb2.svg)
+
+## 3. Calculation $R_{b3}$ - series
+
+$R_{b1} = \frac{3000}{13}\ \Omega$
+
+$R_{b2} = 400\ \Omega$
+
+$$
+R_{b3} = \frac{3000}{13} + 400
+$$
+
+$$
+R_{b3} = \frac{3000}{13} + \frac{13\times 400}{13}
+$$
+
+$$
+R_{b3} = \frac{3000}{13} + \frac{5200}{13}
+$$
+
+$$
+R_{b3} = \frac{8200}{13}
+$$
+
+$$
+\boxed{R_{b3} = 630.769\ \Omega}\ or\ \boxed{R_{b3}=\frac{8200}{13}\ \Omega}
+$$
+
+![Series_parallel_Rb3](resistors_series_parallel_Rb3.svg)
+
+## 4. Calculation $R_{s1}$ - series
+
+$R_2 = 150\ \Omega$
+
+$R_3 = 150\ \Omega$
+
+$$
+R_{s1} = 150 + 150
+$$
+
+$$
+\boxed{R_{s1} = 300\ \Omega}
+$$
+
+![Series_parallel_Rs1](resistors_series_parallel_Rs1.svg)
+
+## 5. Calculation $R_{eq}$ - parallel
+
+$R_{s1} = 300\ \Omega$
+
+$R_{b3} = 630.769\ \Omega$ , $\frac{8200}{13}\ \Omega$
+
+$$
+R_{eq} = \frac{1}{\frac{1}{300} + \frac{1}{\frac{8200}{13}}}
+$$
+
+$$
+R_{eq} = \frac{1}{\frac{1}{300} + \frac{1}{\frac{8200}{13}}} = \frac{1}{\frac{1}{300} + \frac{13}{8200}}
+$$
+
+$$
+R_{eq} = \frac{1}{\frac{82}{24600} + \frac{39}{24600}}
+$$
+
+$$
+R_{eq} = \frac{1}{\frac{121}{24600}}
+$$
+
+$$
+R_{eq} = \frac{24600}{121} = 203.306\ \Omega
+$$
