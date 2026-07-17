@@ -73,7 +73,7 @@ R_{b1} = \frac{3000}{13}
 $$
 
 $$
-\boxed{R_{b1} = 230.769\ \Omega}\ \ or \ \boxed{R_{b1} = \frac{3000}{13}}
+\boxed{R_{b1} = 230.769\ \Omega}\ \ or \ \boxed{R_{b1} = \frac{3000}{13}\ \Omega}
 $$
 
 - For the following calculations, we will keep the result as an exact fraction to avoid rounding errors.
