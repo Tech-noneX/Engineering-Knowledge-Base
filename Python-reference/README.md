@@ -47,13 +47,54 @@ Python-reference/
 `-- README.md
 ```
 
-## Run the Reference Browser
+## Requirements
 
-From the root of the Engineering Knowledge Base repository, run:
+You must have **Python 3** installed on your computer to run the reference
+browser. The browser itself uses only Python's standard library, so no extra
+Python packages are required.
+
+Open PowerShell or Command Prompt and check that Python is available:
 
 ```powershell
-python Python-reference/app/python_cheat_sheet.py
+python --version
 ```
+
+If the command displays a Python 3 version, you are ready to continue. If
+Windows reports that `python` is not recognised, install Python from
+[python.org](https://www.python.org/downloads/) and enable the option to add
+Python to `PATH` during installation. On Windows, you can also try the Python
+launcher with `py --version` and use `py` instead of `python` in the commands
+below.
+
+## Run the Reference Browser from the Command Line
+
+Open PowerShell or Command Prompt and change directory to the root of the
+Engineering Knowledge Base repository. For example:
+
+```powershell
+cd C:\path\to\Engineering-Knowledge-Base
+```
+
+Then start the program:
+
+```powershell
+python .\Python-reference\app\python_cheat_sheet.py
+```
+
+If your terminal is already inside the `Python-reference` folder, run:
+
+```powershell
+python .\app\python_cheat_sheet.py
+```
+
+If your Windows installation uses the `py` launcher, the equivalent command
+is:
+
+```powershell
+py .\Python-reference\app\python_cheat_sheet.py
+```
+
+Use `q` from the main menu to close the program.
 
 The main menu displays the available categories:
 
