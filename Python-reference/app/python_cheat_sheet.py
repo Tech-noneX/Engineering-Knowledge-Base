@@ -45,7 +45,6 @@ class PythonCheatSheet:
                                                     'extend': lists_methods_paths['extend'],
                                                     'sort': lists_methods_paths['sort'],
                                                     'sorted': lists_function_paths['sorted'],
-                                                    'split': lists_methods_paths['split'],
                                                     'insert': lists_methods_paths['insert'],
                                                     'index': lists_methods_paths['index'],
                                                     'remove': lists_methods_paths['remove'],
@@ -57,6 +56,7 @@ class PythonCheatSheet:
         
         
         self.string_sheet = {'functions & methods': {'upper': string_methods['upper'],
+                                                      'split': string_methods['split'],
                                                       'lower': string_methods['lower'],
                                                       'title': string_methods['title'],
                                                       'lstrip': string_methods['lstrip'],

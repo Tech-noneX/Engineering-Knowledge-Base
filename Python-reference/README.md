@@ -24,10 +24,10 @@ application.
 | Built-in functions | 14 | `len`, `range`, `enumerate` |
 | Data types | 8 | `list`, `dict`, `tuple` |
 | Dictionary methods | 1 | `get` |
-| List functions and methods | 11 | `append`, `pop`, `sorted` |
+| List functions and methods | 10 | `append`, `pop`, `sorted` |
 | Modules | 2 | `functools`, `reduce` |
 | Set methods | 2 | `add`, `union` |
-| String methods | 15 | `strip`, `replace`, `format` |
+| String methods | 16 | `split`, `strip`, `replace` |
 | **Total** | **53** | |
 
 ## Project Structure

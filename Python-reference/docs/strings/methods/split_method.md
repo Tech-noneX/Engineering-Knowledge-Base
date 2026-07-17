@@ -9,7 +9,7 @@ reference: "Splits a string into a list of substrings using a delimiter"
 tags: ["string", "method", "split", "delimiter", "text", "conversion"]
 see_also: ["join()", "partition()", "rsplit()", "split() csv line parser **R.W.E**"]
 works_with: ["str"]
-file_path: Python-reference/docs/lists/methods/split_method.md
+file_path: Python-reference/docs/strings/methods/split_method.md
 ---
 
 # split

@@ -1066,34 +1066,6 @@
     "content": "# sort()\n\n- **Used with:**\n  lists  \n- **Construct:**\n  Method  \n- **Library:**\n Built-in  \n- **Iterable:**\n Yes (the list itself is sorted in place)  \n- **Time Complexity:**\n O(n log n)\n\n## Description\n\nSorts the items of a list in ascending order by default.  \nThis method sorts the list **in place** and returns `None`.\n\n## Usable With\n\nPython `list` objects.\n\n## Syntax\n\n```python\nlist.sort(*, key=None, reverse=False)\n```\n\n## Arguments\n\n**Required:** 0  \n**Optional:** 2 (keyword-only: `key`, `reverse`)  \n**Maximum:** 2\n\n- Required:\n\n```python\n# No required positional arguments.\n# Example:\nnumbers = [3, 1, 2]\nnumbers.sort()  # sorts in ascending order\n```\n\n- Optional:\n\n```python\nkey      # (Optional) Function to extract a comparison key from each list element.\n# Example:\nwords = ['pear', 'apple', 'banana']\nwords.sort(key=len)  # sorts by string length\n\nreverse  # (Optional) If True, sorts the list in descending order.\n# Example:\nnumbers = [1, 2, 3]\nnumbers.sort(reverse=True)  # [3, 2, 1]\n```\n\n- Maximum\n\n```python\n# Maximum arguments: key and reverse (both optional).\n# Example using both:\nwords = ['pear', 'apple', 'banana']\nwords.sort(key=len, reverse=True)  # longest to shortest\n```\n\n## Examples\n\n- **Sort a list of numbers in ascending order**\n\n```python\nnumbers = [3, 1, 4, 2]\nnumbers.sort()\n# numbers is now [1, 2, 3, 4]\n```\n\n- **Sort in descending order**\n\n```python\nnumbers = [3, 1, 4, 2]\nnumbers.sort(reverse=True)\n# numbers is now [4, 3, 2, 1]\n```\n\n- **Sort using a key function (sort by string length)**\n\n```python\nwords = ['apple', 'fig', 'banana']\nwords.sort(key=len)\n# words is now ['fig', 'apple', 'banana']\n```\n\n- **Sort using both key and reverse**\n\n```python\nwords = ['apple', 'fig', 'banana']\nwords.sort(key=len, reverse=True)\n# words is now ['banana', 'apple', 'fig']\n```\n\n **Note:**  \n`sort()` modifies the original list and **returns `None`**.  \nTo get a new sorted list without modifying the original, use `sorted()`.\n\n## Tips & Common mistakes\n\n- `sort()` sorts the list in place; **it does NOT return the sorted list**.\n- For non-destructive sorting, use `sorted(list)` instead.\n- The `key` argument expects a function that takes one argument and returns a value to use for sorting.\n- Only works with lists—not with tuples or other iterables.\n- Avoid mixing data types in the list; may raise `TypeError`.\n\n```python\n# Incorrect usage: returns None!\nnumbers = [3, 1, 2]\nsorted_numbers = numbers.sort()\nprint(sorted_numbers)  # Output: None\n```\n\n## See Also\n\n- [`sorted()`](sorted)  \n- [`reverse()`](reverse)\n- [`pop()`](pop)\n- [`sort() leaderboard update` **R.W.E**](sort_rwe)"
   },
   {
-    "id": "split",
-    "title": "split()",
-    "section": "String Methods",
-    "module": "built-in",
-    "difficulty": "beginner",
-    "subscription": "free",
-    "reference": "Splits a string into a list of substrings using a delimiter",
-    "tags": [
-      "string",
-      "method",
-      "split",
-      "delimiter",
-      "text",
-      "conversion"
-    ],
-    "see_also": [
-      "join()",
-      "partition()",
-      "rsplit()",
-      "split() csv line parser **R.W.E**"
-    ],
-    "works_with": [
-      "str"
-    ],
-    "file_path": "Python-reference/docs/lists/methods/split_method.md",
-    "content": "# split\n\n- **Used with:**  \nstrings  \n- **Construct:**  \nMethod  \n- **Library:**  \nBuilt-in  \n- **Iterable:**  \nYes (returns a list)  \n- **Time Complexity:**  \nO(n) (where n is the length of the string)\n\n## Description\n\nSplits a string into a list of substrings based on a separator (delimiter).  \nIf no separator is specified, it splits on any whitespace by default.\n\n## Usable With\n\nPython `str` objects.\n\n## Syntax\n\n```python\nstr.split(sep=None, maxsplit=-1)\n```\n\n- **explanation:**\n  - `str`: Your string variable (e.g., `\"hello world\"`).\n  - `.split()`: Method called on the string.\n  - `sep=None`: (Optional) String delimiter to split by. If not specified or `None`, splits on whitespace.\n  - `maxsplit=-1`: (Optional) Maximum number of splits. `-1` means no limit.\n  - Returns a **list** of substrings.\n\n## Arguments\n\n**Required:** 0 (both arguments are optional)  \n**Optional:** 2 (`sep`, `maxsplit`)  \n**Maximum:** 2\n\n- Required:\n\n```python\n# No required arguments; can be used with none.\n\"hello world\".split()  # ['hello', 'world']\n```\n\n- Optional:\n\n```python\nsep  # (Optional) The delimiter to split by.\n# Example:\n\"one,two,three\".split(',')  # ['one', 'two', 'three']\n\nmaxsplit  # (Optional) Maximum splits to do.\n# Example:\n\"a b c d\".split(' ', 2)  # ['a', 'b', 'c d']\n```\n\n- Maximum\n\n```python\n# Using both arguments:\n\"apple,banana,cherry\".split(',', 1)  # ['apple', 'banana,cherry']\n```\n\n## Examples\n\n- **Split a string by whitespace**\n\n```python\nsentence = \"hello world\"\nwords = sentence.split()\n# words is ['hello', 'world']\n```\n\n- **Split by a specific delimiter**\n\n```python\ndata = \"apple,banana,cherry\"\nfruits = data.split(',')\n# fruits is ['apple', 'banana', 'cherry']\n```\n\n- **Split with a maxsplit limit**\n\n```python\ntext = \"a b c d\"\nparts = text.split(' ', 2)\n# parts is ['a', 'b', 'c d']\n```\n\n **Note:**  \n\n- If `sep` is not specified or is `None`, consecutive whitespace is treated as a single separator.\n- If the string starts or ends with the separator, the result will include empty strings at the ends.\n\n## Tips & Common mistakes\n\n- Using `split()` with no argument splits on *any* whitespace (spaces, tabs, newlines).\n- If the delimiter does not occur in the string, `split()` returns a list containing the original string.\n- If `maxsplit=0`, no splitting occurs, returns the whole string in a single-element list.\n- Works only on strings; use `re.split()` for regular expression splits.\n- Trailing delimiters produce empty strings in the result.\n\n```python\n# Example with trailing delimiter:\n\"one,two,\".split(',')  # ['one', 'two', '']\n```\n\n## See Also\n\n- [`join()`](join)\n- [`partition()`](partition)\n- [`rsplit()`](rsplit)\n- [`split() csv line parser` **R.W.E**](split_rwe)"
-  },
-  {
     "id": "functools",
     "title": "functools",
     "section": "Modules",
@@ -1551,6 +1523,34 @@
     ],
     "file_path": "Python-reference/docs/strings/methods/rstrip_method.md",
     "content": "# rstrip()\n\n- **Used with:** `str` (string)\n- **Construct:** method\n- **Library:** Built-in\n- **Iterable:** No\n- **Time Complexity:** O(n) (n = length of the string)\n\n## Description\n\nThe `rstrip()` method returns a new string with all trailing (right-side) whitespace removed. Optionally, you can specify a string of characters to remove instead of just whitespace. The original string is not changed (strings are immutable in Python).\n\n## Usable With\n\nUse `rstrip()` with any string. Often used for cleaning up user input, data processing, or removing unwanted characters from the end of strings.\n\n## Syntax\n\n```python\nstring.rstrip([chars])\n```\n\n- **explanation:** Call `rstrip()` on any string. The optional `chars` argument is a string specifying the set of characters to remove from the right. If omitted, removes whitespace by default.\n\n## Arguments\n\n- **Required:** 0  \n- **Optional:** 1 (`chars`, string: characters to remove from the end)  \n- **Maximum:** 1\n\n```python\n# Remove trailing whitespace (default)\ns = \"hello   \"\nprint(s.rstrip())  # \"hello\"\n\n# Remove specific trailing characters\ndata = \"123abc!!!\"\nprint(data.rstrip(\"!c\"))  # \"123ab\"\n```\n\n## Examples\n\n- **Trim right-side whitespace**\n\n```python\nmsg = \"Python   \"\nprint(msg.rstrip())  # Output: \"Python\"\n```\n\n- **Remove multiple different trailing characters**\n\n```python\nfancy = \"***###hello###***\"\nprint(fancy.rstrip(\"*#\"))  # Output: \"***###hello\"\n```\n\n- **No effect if trailing characters not in 'chars'**\n\n```python\ndata = \"data123\"\nprint(data.rstrip(\"x\"))  # Output: \"data123\" (unchanged)\n```\n\n**Note:** `rstrip()` only affects the *end* of the string.\n\n## Tips & Common mistakes\n\n- `rstrip()` does **not** modify the original string—always use or assign the return value.\n- If you provide a string to `chars`, **every** character in that string will be removed from the end until a character not in `chars` is found (it is not treated as a substring).\n- To remove whitespace from both ends, use `strip()`. To remove from the left, use `lstrip()`.\n\n```python\nline = \"---Hello---\"\nprint(line.rstrip(\"-\"))   # \"---Hello\"\nprint(line.lstrip(\"-\"))   # \"Hello---\"\nprint(line.strip(\"-\"))    # \"Hello\"\n```\n\n## See Also\n\n- [`lstrip()`](lstrip)\n- [`strip()`](strip)\n- [`replace()`](replace)\n- [`rstrip() clean user-submitted data` **R.W.E**](rstrip_rwe)"
+  },
+  {
+    "id": "split",
+    "title": "split()",
+    "section": "String Methods",
+    "module": "built-in",
+    "difficulty": "beginner",
+    "subscription": "free",
+    "reference": "Splits a string into a list of substrings using a delimiter",
+    "tags": [
+      "string",
+      "method",
+      "split",
+      "delimiter",
+      "text",
+      "conversion"
+    ],
+    "see_also": [
+      "join()",
+      "partition()",
+      "rsplit()",
+      "split() csv line parser **R.W.E**"
+    ],
+    "works_with": [
+      "str"
+    ],
+    "file_path": "Python-reference/docs/strings/methods/split_method.md",
+    "content": "# split\n\n- **Used with:**  \nstrings  \n- **Construct:**  \nMethod  \n- **Library:**  \nBuilt-in  \n- **Iterable:**  \nYes (returns a list)  \n- **Time Complexity:**  \nO(n) (where n is the length of the string)\n\n## Description\n\nSplits a string into a list of substrings based on a separator (delimiter).  \nIf no separator is specified, it splits on any whitespace by default.\n\n## Usable With\n\nPython `str` objects.\n\n## Syntax\n\n```python\nstr.split(sep=None, maxsplit=-1)\n```\n\n- **explanation:**\n  - `str`: Your string variable (e.g., `\"hello world\"`).\n  - `.split()`: Method called on the string.\n  - `sep=None`: (Optional) String delimiter to split by. If not specified or `None`, splits on whitespace.\n  - `maxsplit=-1`: (Optional) Maximum number of splits. `-1` means no limit.\n  - Returns a **list** of substrings.\n\n## Arguments\n\n**Required:** 0 (both arguments are optional)  \n**Optional:** 2 (`sep`, `maxsplit`)  \n**Maximum:** 2\n\n- Required:\n\n```python\n# No required arguments; can be used with none.\n\"hello world\".split()  # ['hello', 'world']\n```\n\n- Optional:\n\n```python\nsep  # (Optional) The delimiter to split by.\n# Example:\n\"one,two,three\".split(',')  # ['one', 'two', 'three']\n\nmaxsplit  # (Optional) Maximum splits to do.\n# Example:\n\"a b c d\".split(' ', 2)  # ['a', 'b', 'c d']\n```\n\n- Maximum\n\n```python\n# Using both arguments:\n\"apple,banana,cherry\".split(',', 1)  # ['apple', 'banana,cherry']\n```\n\n## Examples\n\n- **Split a string by whitespace**\n\n```python\nsentence = \"hello world\"\nwords = sentence.split()\n# words is ['hello', 'world']\n```\n\n- **Split by a specific delimiter**\n\n```python\ndata = \"apple,banana,cherry\"\nfruits = data.split(',')\n# fruits is ['apple', 'banana', 'cherry']\n```\n\n- **Split with a maxsplit limit**\n\n```python\ntext = \"a b c d\"\nparts = text.split(' ', 2)\n# parts is ['a', 'b', 'c d']\n```\n\n **Note:**  \n\n- If `sep` is not specified or is `None`, consecutive whitespace is treated as a single separator.\n- If the string starts or ends with the separator, the result will include empty strings at the ends.\n\n## Tips & Common mistakes\n\n- Using `split()` with no argument splits on *any* whitespace (spaces, tabs, newlines).\n- If the delimiter does not occur in the string, `split()` returns a list containing the original string.\n- If `maxsplit=0`, no splitting occurs, returns the whole string in a single-element list.\n- Works only on strings; use `re.split()` for regular expression splits.\n- Trailing delimiters produce empty strings in the result.\n\n```python\n# Example with trailing delimiter:\n\"one,two,\".split(',')  # ['one', 'two', '']\n```\n\n## See Also\n\n- [`join()`](join)\n- [`partition()`](partition)\n- [`rsplit()`](rsplit)\n- [`split() csv line parser` **R.W.E**](split_rwe)"
   },
   {
     "id": "strip",

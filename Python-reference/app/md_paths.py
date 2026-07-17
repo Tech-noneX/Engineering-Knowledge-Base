@@ -15,7 +15,6 @@ lists_methods_paths = {
     "append": doc_path("lists", "methods", "append_method.md"),
     "extend": doc_path("lists", "methods", "extend_method.md"),
     "sort": doc_path("lists", "methods", "sort_method.md"),
-    "split": doc_path("lists", "methods", "split_method.md"),
     "insert": doc_path("lists", "methods", "insert_method.md"),
     "index": doc_path("lists", "methods", "index_method.md"),
     "pop": doc_path("lists", "methods", "pop_method.md"),
@@ -44,6 +43,7 @@ dict_methods_paths = {
 }
 
 string_methods = {
+    "split": doc_path("strings", "methods", "split_method.md"),
     "upper": doc_path("strings", "methods", "upper_method.md"),
     "lower": doc_path("strings", "methods", "lower_method.md"),
     "title": doc_path("strings", "methods", "title_method.md"),
