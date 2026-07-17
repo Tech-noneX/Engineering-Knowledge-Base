@@ -9,7 +9,7 @@ reference: 'Returns the type of an object or creates a new type/class'
 tags: ['built-in', 'function', 'type', 'introspection', 'class', 'object', 'reflection']
 see_also: ['isinstance()', 'str()', 'print()', 'id()', 'type() custom class **R.W.E**']
 works_with: [any object]
-file path: 'docs\builtins\type_function.md'
+file_path: Python-reference/docs/builtins/type_function.md
 ---
 
 # type()

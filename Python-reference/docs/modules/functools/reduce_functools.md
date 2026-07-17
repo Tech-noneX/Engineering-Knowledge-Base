@@ -9,6 +9,7 @@ reference: "Cumulatively applies a function to items in an iterable, reducing to
 tags: ["standard library", "function", "reduce", "iteration", "functools", "aggregation", "fold"]
 see_also: ["sum()", "map()", "filter()", "functools", "reduce() invoice total calculation **R.W.E**"]
 works_with: ["list", "tuple", "set", "iterable"]
+file_path: Python-reference/docs/modules/functools/reduce_functools.md
 ---
 
 # reduce()
@@ -32,18 +33,19 @@ Use `reduce()` with any iterable and a function that takes two arguments. Most c
 ```python
 from functools import reduce
 
-reduce(function, iterable[, initializer])
+reduce(function, iterable)
+reduce(function, iterable, initial)
 ```
 
 - **explanation:**  
   - `function`: a function taking two arguments, applied cumulatively.
   - `iterable`: items to process.
-  - `initializer` (optional): starting value; if given, is the first value for accumulation.
+  - `initial` (optional): starting value; if given, it is placed before the iterable's items and is returned when the iterable is empty.
 
 ## Arguments
 
 - **Required:** 2 (`function`, `iterable`)
-- **Optional:** 1 (`initializer`, any type)
+- **Optional:** 1 (`initial`, any type)
 - **Maximum:** 3
 
 ```python
@@ -55,6 +57,13 @@ total = reduce(lambda x, y: x + y, nums)  # 10
 
 # With initializer
 total = reduce(lambda x, y: x + y, nums, 5)  # 15
+```
+
+Python 3.14+ also accepts `initial` as a keyword argument:
+
+```python
+total = reduce(lambda x, y: x + y, [], initial=0)
+print(total)  # 0
 ```
 
 ## Examples
@@ -90,14 +99,14 @@ total = reduce(lambda x, y: x + y, nums, 100)
 print(total)  # Output: 160
 ```
 
-**Note:** If the iterable is empty and no initializer is provided, `TypeError` is raised.
+**Note:** If the iterable is empty and no `initial` value is provided, `TypeError` is raised. The `initial` keyword form was added in Python 3.14; pass it positionally on older versions.
 
 ## Tips & Common mistakes
 
 - Always import `reduce` from `functools` in Python 3+ (`from functools import reduce`).
 - For simple addition or multiplication, prefer `sum()` or `math.prod()` for clarity and performance.
 - The function must take exactly **two arguments** and return a result of the same type.
-- If the iterable is empty and no initializer is provided, a `TypeError` is raised.
+- If the iterable is empty and no `initial` value is provided, a `TypeError` is raised.
 
 ```python
 # Common error

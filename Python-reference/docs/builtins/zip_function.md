@@ -5,11 +5,11 @@ section: 'Built-in Functions'
 module: 'built-in'
 subscription: premium
 difficulty: beginner
-reference: 'Combines multiple iterables element-wise into tuples'
+reference: 'Combines iterables element-wise into tuples, with optional length checking'
 tags: ['built-in', 'function', 'zip', 'combine', 'iterator', 'tuple', 'parallel']
 see_also: ['enumerate()', 'map()', 'list()', 'dict()', 'zip() real-world pairing **R.W.E**']
 works_with: ['list', 'tuple', 'str', 'set', 'range', 'iterable', 'sequence']
-file path: 'docs\builtins\zip_function.md'
+file_path: Python-reference/docs/builtins/zip_function.md
 ---
 
 # zip()
@@ -22,7 +22,7 @@ file path: 'docs\builtins\zip_function.md'
 
 ## Description
 
-The `zip()` function takes two or more iterables (like lists, tuples, strings) and returns an iterator of tuples, where each tuple contains the elements from each iterable at the same position. Stops when the shortest input is exhausted.  
+The `zip()` function takes zero or more iterables (like lists, tuples, or strings) and returns an iterator of tuples. Each tuple contains the items from the same position in each input. By default, `zip()` stops when the shortest input is exhausted.
 Commonly used to combine data, loop in parallel, or pair items together.
 
 ## Usable With
@@ -32,18 +32,19 @@ Use `zip()` with any combination of iterables—lists, tuples, strings, sets, ra
 ## Syntax
 
 ```python
-zip(iterable1, iterable2, ...)
+zip(*iterables, strict=False)
 ```
 
 - **explanation:**  
-  - Pass two or more iterables to combine their elements by index.
+  - `*iterables`: zero or more iterable objects to combine by position.
+  - `strict`: keyword-only argument. When `True`, different input lengths raise `ValueError` instead of silently dropping extra items.
   - Returns an iterator of tuples; convert to a list or loop over it.
 
 ## Arguments
 
-- **Required:** 2 or more iterables
-- **Optional:** Unlimited (as many iterables as you want)
-- **Maximum:** Unlimited
+- **Required:** 0
+- **Optional:** Any number of iterables and the keyword-only `strict` argument
+- **Maximum:** No fixed maximum number of iterables
 
 - Required:
 
@@ -71,6 +72,15 @@ a = [1, 2, 3]
 b = [4, 5]
 c = [6, 7, 8]
 print(list(zip(a, b, c)))  # [(1, 4, 6), (2, 5, 7)]
+```
+
+- Strict length checking:
+
+```python
+names = ["Ada", "Linus"]
+scores = [95, 88]
+print(list(zip(names, scores, strict=True)))
+# [('Ada', 95), ('Linus', 88)]
 ```
 
 ## Examples
@@ -110,13 +120,16 @@ nums, chars = zip(*pairs)
 **Note:**  
 If the iterables are different lengths, `zip()` stops at the shortest.  
 Use `itertools.zip_longest()` if you want to fill missing values.
+Use `strict=True` when different lengths would indicate a bug. The `strict`
+argument was added in Python 3.10.
 
 ## Tips & Common mistakes
 
 - Result is an **iterator**; convert to a list to reuse or index.
-- Stops at the shortest input—no error or filling!
+- Stops at the shortest input by default; use `strict=True` to detect mismatched lengths.
 - To "unzip," use the unpacking operator: `zip(*zipped)`.
 - Use with any number of iterables (not just two).
+- `zip()` with no inputs produces an empty iterator; one input produces 1-item tuples.
 
 ```python
 # zip() with 3 iterables, convert to list

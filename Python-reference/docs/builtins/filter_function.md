@@ -9,7 +9,7 @@ reference: 'Filters elements of an iterable, keeping only those for which a func
 tags: ['built-in', 'function', 'filter', 'iterator', 'condition', 'iterable']
 see_also: ['map()', 'list()', 'comprehension', 'lambda', 'filter() with lambda **R.W.E**']
 works_with: ['list', 'tuple', 'str', 'set', 'range', 'iterable']
-file path: 'docs\builtins\filter_function.md'
+file_path: Python-reference/docs/builtins/filter_function.md
 ---
 
 # filter()

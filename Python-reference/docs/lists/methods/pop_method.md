@@ -9,6 +9,7 @@ reference: 'Removes and returns item at given index (default last) from a list'
 tags: ['list', 'method', 'remove', 'return', 'index', 'mutable']
 see_also: ['append()', 'remove()', 'del', 'pop() last item **R.W.E**']
 works_with: ['list']
+file_path: Python-reference/docs/lists/methods/pop_method.md
 ---
 
 # pop()

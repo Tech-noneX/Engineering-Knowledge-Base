@@ -9,7 +9,7 @@ reference: 'Applies a function to every item in one or more iterables, returning
 tags: ['built-in', 'function', 'map', 'apply', 'iterator', 'iterable', 'transformation']
 see_also: ['filter()', 'zip()', 'list()', 'comprehension', 'map() real-world **R.W.E**']
 works_with: ['list', 'tuple', 'str', 'set', 'range', 'iterable']
-file path: 'docs\builtins\map_function.md'
+file_path: Python-reference/docs/builtins/map_function.md
 ---
 
 # map()
@@ -24,7 +24,8 @@ file path: 'docs\builtins\map_function.md'
 
 The `map()` function applies a given function to each item of one or more iterables (like lists or tuples) and returns an iterator with the results.  
 Commonly used for transforming data, converting types, or applying calculations to all items in a sequence.  
-Stops at the shortest input if multiple iterables are provided.
+With multiple inputs it stops at the shortest iterable by default. Python 3.14+
+can use `strict=True` to raise `ValueError` when their lengths differ.
 
 ## Usable With
 
@@ -33,19 +34,21 @@ Use `map()` with any function (can be built-in, lambda, or custom) and any itera
 ## Syntax
 
 ```python
-map(function, iterable, ...)
+map(function, iterable, *iterables)
+map(function, iterable, *iterables, strict=True)  # Python 3.14+
 ```
 
 - **explanation:**  
   - `function` (required): Function to apply to each item (must take as many arguments as there are iterables).
   - `iterable` (required): One or more iterables (lists, tuples, etc.).
+  - `strict` (optional, Python 3.14+): Raise `ValueError` if the iterables have different lengths.
   - Returns an iterator with results.
 
 ## Arguments
 
 - **Required:** 2 (function, iterable)
-- **Optional:** Unlimited (can add more iterables)
-- **Maximum:** Unlimited
+- **Optional:** More iterables; `strict` is also available in Python 3.14+
+- **Maximum:** No fixed maximum number of iterables
 
 - Required:
 
@@ -69,6 +72,15 @@ summed = map(lambda x, y: x + y, a, b)  # 11, 22, 33
 # map() works with as many iterables as you want, function must accept that many args
 result = map(lambda x, y, z: x + y + z, [1, 2], [3, 4], [5, 6])
 # result yields 9, 12
+```
+
+- Strict length checking (Python 3.14+):
+
+```python
+left = [1, 2]
+right = [10, 20]
+result = map(lambda x, y: x + y, left, right, strict=True)
+print(list(result))  # [11, 22]
 ```
 
 ## Examples
@@ -101,13 +113,14 @@ result = list(map(lambda x, y: x + y, a, b))
 **Note:**  
 `map()` returns an **iterator**—wrap in `list()` or loop to access results.  
 Stops when the shortest iterable is exhausted.
+In Python 3.14+, `strict=True` can detect different input lengths.
 
 ## Tips & Common mistakes
 
 - Always use `list(map(...))` or a loop if you want the results as a list (especially in Python 3).
 - For simple transformations, list comprehensions are often clearer and more Pythonic.
 - The function must accept as many arguments as there are iterables.
-- Stops at the shortest input; extra items in longer iterables are ignored.
+- Stops at the shortest input by default; Python 3.14+ can use `strict=True` to detect a mismatch.
 
 ```python
 words = ['a', 'b', 'c']

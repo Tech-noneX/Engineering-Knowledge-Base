@@ -9,6 +9,7 @@ reference: "Higher-order functions and utilities for functional programming and 
 tags: [ "standard library", "functional", "decorator", "caching", "tools" ]
 see_also: [ "itertools", "operator", "collections" ]
 works_with: [ "function", "callable", "iterable" ]
+file_path: Python-reference/docs/modules/functools/functools_module.md
 ---
 
 # functools

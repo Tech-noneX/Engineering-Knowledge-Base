@@ -9,7 +9,7 @@ reference: "Returns a new string with all (or a limited number of) occurrences o
 tags: ["string", "method", "replace", "immutable", "substring", "count"]
 see_also: ["removeprefix()", "removesuffix()", "strip()", "replace() clean CSV values **R.W.E**"]
 works_with: ["str"]
-file path: docs\strings\methods\replace_method.md
+file_path: Python-reference/docs/strings/methods/replace_method.md
 ---
 
 # replace()
@@ -31,7 +31,8 @@ Use `replace()` on any string. Common for cleaning data, normalizing text, repla
 ## Syntax
 
 ```python
-string.replace(old, new[, count])
+string.replace(old, new)
+string.replace(old, new, count)
 ```
 
 - **explanation:** Call `replace()` on a string, passing:
@@ -53,6 +54,13 @@ print(text.replace("l", "x"))  # "hexxo worxd"
 # Replace up to 1
 s = "one one one"
 print(s.replace("one", "two", 1))  # "two one one"
+```
+
+Python 3.13+ also allows `count` to be passed by keyword:
+
+```python
+text = "fault fault fault"
+print(text.replace("fault", "ok", count=2))  # "ok ok fault"
 ```
 
 ## Examples
@@ -86,6 +94,7 @@ print(greeting.replace("bye", "hi"))  # Output: "hello"
 - Replacement is **case-sensitive**: `"A".replace("a", "b")` returns `"A"`.
 - To remove a substring, use `replace(substring, "")`.
 - For multiple different replacements, chain `replace()` calls or use regular expressions for more advanced patterns.
+- The `count` keyword form requires Python 3.13 or newer; use a positional third argument on older versions.
 
 ```python
 # Remove all spaces
@@ -95,7 +104,7 @@ print(s.replace(" ", ""))  # "helloworld"
 
 ## See Also
 
-- [`removeprefix()`](removepreffix)
+- [`removeprefix()`](removeprefix)
 - [`removesuffix()`](removesuffix)
 - [`strip()`](strip)
 - [`replace() clean CSV values` **R.W.E**](replace_rwe)

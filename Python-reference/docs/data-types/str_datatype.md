@@ -47,6 +47,10 @@ empty = ""
 
 # From other types:
 s = str(42)  # '42'
+
+# Decode bytes with the encoding and errors arguments:
+decoded = str(b"caf\xc3\xa9", encoding="utf-8", errors="strict")
+# 'café'
 ```
 
 ## Key Properties
@@ -100,6 +104,11 @@ parts = csv.split(",")              # ['a', 'b', 'c']
 
 - **Converting other types:**  
   Use `str()` to turn numbers or objects into strings.
+
+- **Decoding bytes:**
+  When the input is `bytes`, `str(object, encoding, errors)` decodes it. Calling
+  `str(b"text")` without an encoding produces the representation `"b'text'"`
+  rather than decoding the bytes.
 
 ## See Also
 

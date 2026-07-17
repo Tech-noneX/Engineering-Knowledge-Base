@@ -9,7 +9,7 @@ reference: 'Concatenates items of an iterable into a single string with a separa
 tags: ['string', 'method', 'join', 'concatenate', 'separator', 'combine', 'text']
 see_also: ['split()', 'replace()', 'format()', 'comprehension', 'join() CSV row **R.W.E**']
 works_with: ['str', 'list', 'tuple', 'iterable']
-file path: 'docs\strings\methods\join_method.md'
+file_path: Python-reference/docs/strings/methods/join_method.md
 ---
 
 # join()

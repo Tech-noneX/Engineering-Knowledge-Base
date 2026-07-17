@@ -5,7 +5,7 @@ section: Data Types
 module: built-in
 difficulty: beginner
 subscription: free
-reference: Unordered, mutable key-value mapping; Python’s main way to store structured data.
+reference: Mutable, insertion-ordered key-value mapping for structured data.
 tags: ['data type', 'dict', 'mapping', 'mutable', 'key-value', 'hash']
 see_also: ['list', 'set', 'tuple', 'defaultdict', 'Counter', 'items']
 works_with: ['list', 'tuple', 'str', 'set', 'for', 'in']
@@ -16,7 +16,8 @@ file_path: Python-reference/docs/data-types/dict_datatype.md
 
 ## Description
 
-A **dictionary** (`dict`) is a mutable, unordered collection of key-value pairs.  
+A **dictionary** (`dict`) is a mutable mapping of unique keys to values. Modern
+Python dictionaries preserve the order in which keys were inserted.
 - Each value is associated with a unique key (keys must be hashable and unique).
 - Used for storing structured data, fast lookups, and flexible mappings.
 - Allows dynamic adding, changing, and removing of keys and values.
@@ -26,7 +27,7 @@ Commonly used for databases, config data, mapping names to values, and more.
 ## Usable With
 
 - Used in loops, `for`/`in` statements, and comprehensions.
-- Keys can be any immutable (hashable) type: strings, numbers, tuples.
+- Keys must be hashable: common examples include strings, numbers, and tuples whose items are also hashable.
 - Works with many built-in functions (`len()`, `list()`, `dict()`, `keys()`, `values()`, etc.).
 - Easily convertible to/from lists of tuples.
 
@@ -42,13 +43,16 @@ info = dict(city='London', country='UK')
 # Empty dict:
 empty = {}
 
-# From a list of pairs:
+# From an iterable of key-value pairs:
 grades = dict([('math', 90), ('art', 80)])
+
+# From another mapping plus keyword arguments:
+settings = dict({'voltage': 230}, phase='single')
 ```
 
 ## Key Properties
 
-- **Unordered (Python 3.6+: insertion order preserved by default)**
+- **Insertion ordered:** Order has been guaranteed by the language since Python 3.7.
 - **Mutable:** Can add, change, or remove keys and values.
 - **Keys must be unique and hashable:** (strings, numbers, tuples, etc.)
 - **Fast lookup by key.**
@@ -87,7 +91,7 @@ for k, v in user.items():
   Changes affect all references to the same dict.
 
 - **Order preservation:**  
-  As of Python 3.7+, dicts remember insertion order, but don't rely on it in very old code.
+  Updating an existing key does not move it. Deleting and reinserting a key places it at the end.
 
 - **Immutable keys only:**  
   Lists and other dicts can’t be keys.

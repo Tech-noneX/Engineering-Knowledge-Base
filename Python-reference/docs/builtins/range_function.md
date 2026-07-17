@@ -9,7 +9,7 @@ reference: "Generates a sequence of numbers for looping or indexing"
 tags: ["built-in", "function", "range", "sequence", "iteration", "for loop", "integer"]
 see_also: ["list()", "for", "enumerate()", "reversed()", "range() pagination"]
 works_with: ["int", "for loop", "iteration"]
-file path: 'docs\builtins\range_function.md'
+file_path: Python-reference/docs/builtins/range_function.md
 ---
 
 # range()
@@ -32,7 +32,8 @@ Use `range()` for any situation where you need a sequence of integers, such as i
 
 ```python
 range(stop)
-range(start, stop[, step])
+range(start, stop)
+range(start, stop, step)
 ```
 
 - **explanation:**
@@ -101,6 +102,7 @@ print(nums)  # Output: [0, 1, 2, 3]
 - If step is negative, start must be greater than stop for results (e.g., `range(5, 0, -1)`).
 - `range()` returns a range object (not a list). Convert to list with `list(range(...))` if you need indexing or slicing.
 - All arguments must be integers (no floats allowed).
+- `step` cannot be `0`; `range(1, 5, 0)` raises `ValueError`.
 - Range object supports indexing and `in`, but is immutable.
 
 ```python

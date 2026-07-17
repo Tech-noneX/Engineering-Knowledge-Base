@@ -44,6 +44,9 @@ empty = ()
 
 # Single-item tuple (MUST include a comma):
 single = (42,)
+
+# Convert any iterable with tuple(iterable):
+coordinates = tuple([51.5, -0.12])
 ```
 
 ## Key Properties

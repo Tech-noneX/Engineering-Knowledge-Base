@@ -9,7 +9,7 @@ reference: 'Splits a string into a 3-tuple at the first occurrence of a separato
 tags: ['string', 'method', 'partition', 'split', 'separator', 'tuple']
 see_also: ['split()', 'rsplit()', 'find()', 'replace()', 'rpartition()']
 works_with: ['str']
-file path: 'docs\strings\methods\partition_method.md'
+file_path: Python-reference/docs/strings/methods/partition_method.md
 ---
 
 # partition()

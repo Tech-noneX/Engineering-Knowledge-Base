@@ -5,7 +5,7 @@ section: Data Types
 module: built-in
 difficulty: beginner
 subscription: free
-reference: Floating-point (decimal) number type; used for real numbers in Python.
+reference: Binary floating-point number type used for approximate real-number calculations.
 tags: ['data type', 'float', 'decimal', 'number', 'numeric', 'math']
 see_also: ['int', 'complex', 'str', 'round', 'math']
 works_with: ['int', 'str', 'list', 'set', 'dict', 'for', 'in']
@@ -16,11 +16,14 @@ file_path: Python-reference/docs/data-types/float_datatype.md
 
 ## Description
 
-A **float** is a real (decimal) number in Python, used for representing numbers with fractional parts.  
+A **float** is Python's binary floating-point number type, used for approximate
+real-number calculations and values with fractional parts.
 - Used for measurements, scientific calculations, and any data that requires decimals.
 - Supports positive/negative numbers, zero, special values (`inf`, `-inf`, `nan`).
 
-Commonly used for math, data analysis, physics, finance, and engineering.
+Commonly used for math, data analysis, physics, measurements, and engineering.
+Use `decimal.Decimal` instead when exact base-10 arithmetic is required, such as
+money calculations.
 
 ## Usable With
 
@@ -50,8 +53,8 @@ not_a_num = float('nan')    # Not a Number
 ## Key Properties
 
 - **Immutable:** Cannot change after creation (operations create new floats).
-- **Decimal representation:** Can represent fractional values.
-- **Limited precision:** 64-bit floating point (about 15–17 significant digits).
+- **Binary representation:** Many familiar decimal fractions cannot be stored exactly.
+- **Limited precision:** CPython normally uses IEEE 754 binary64 values (about 15–17 significant decimal digits).
 - **Supports arithmetic and comparison operations.**
 - **Special values:** Can represent infinity and NaN.
 
@@ -83,6 +86,10 @@ print(float('inf') > 1e10)   # True
 # Checking if float is whole number
 x = 5.0
 print(x.is_integer())  # True
+
+# Compare calculated floats with a tolerance
+import math
+print(math.isclose(0.1 + 0.2, 0.3))  # True
 ```
 
 ## Tips & Common Mistakes
@@ -92,7 +99,7 @@ print(x.is_integer())  # True
   ```python
   print(0.1 + 0.2)  # 0.30000000000000004
   ```
-  Use `round()` for display or compare within a tolerance.
+  Use `round()` for display or `math.isclose()` for approximate comparisons.
 
 - **String conversion:**  
   `float("10.5")` works, but `float("ten")` raises a ValueError.
@@ -101,7 +108,10 @@ print(x.is_integer())  # True
   `/` always returns a float (even with integer inputs).
 
 - **NaN and Infinity:**  
-  Operations with `nan` always return `nan`; comparisons with `nan` are always False (except `!=`).
+  NaN is not equal to itself. Use `math.isnan(value)` to test for it rather than `value == float('nan')`.
+
+- **Money:**
+  Use `decimal.Decimal` when values must follow exact decimal arithmetic rules.
 
 - **Do not use floats as dict keys if you need exact matching:**  
   Due to rounding errors, avoid using floats as keys unless you are careful.

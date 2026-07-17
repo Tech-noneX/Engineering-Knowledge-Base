@@ -9,7 +9,7 @@ reference: 'Gets a line of user input as a string from the console'
 tags: ['built-in', 'function', 'input', 'user', 'string', 'console', 'prompt']
 see_also: ['print()', 'str()', 'int()', 'type()', 'input() input validation **R.W.E**']
 works_with: ['str', 'user', 'console']
-file path: 'docs\builtins\input_function.md'
+file_path: Python-reference/docs/builtins/input_function.md
 ---
 
 # input()
@@ -31,7 +31,7 @@ Use `input()` to read text entered by the user at the keyboard. The input is alw
 ## Syntax
 
 ```python
-input(prompt)
+input(prompt="")
 ```
 
 - **explanation:**  
@@ -84,6 +84,7 @@ print("Twice your number:", num * 2)
 - `input()` always returns a **string**—convert to `int` or `float` if you need numbers.
 - Don’t forget to add prompts so users know what to enter.
 - Be ready for errors: if user input is not what you expect (e.g., letters instead of numbers), your program may crash—use `try/except` for safe conversion.
+- `input()` raises `EOFError` if the input stream ends before a line is read.
 
 ```python
 try:

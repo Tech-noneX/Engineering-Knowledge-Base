@@ -88,8 +88,8 @@ print(False * 10)   # 0 (False is 0)
       print("Empty!")
   ```
 
-- **Not a separate numeric type:**  
-  `True` and `False` are just `1` and `0` under the hood.
+- **Boolean is a subclass of `int`:**
+  `True` and `False` behave like `1` and `0` in numeric operations, but they are boolean objects and should normally be used for logic.
 
   ```python
   sum([True, False, True])   # 2
@@ -100,6 +100,14 @@ print(False * 10)   # 0 (False is 0)
 
 - **Case-sensitive:**  
   Must be capitalized: `True`/`False` (not `true`/`false`).
+
+- **`and` and `or` may return operands:**
+  These operators do not always return a `bool`; they return one of the values they evaluate.
+
+  ```python
+  name = "Ada"
+  display_name = name or "Anonymous"  # "Ada"
+  ```
 
 ## See Also
 

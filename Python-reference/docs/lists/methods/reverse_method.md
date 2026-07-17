@@ -9,7 +9,7 @@ reference: 'Reverses the elements of a list in place'
 tags: ['list', 'method', 'reverse', 'in-place', 'mutable', 'order']
 see_also: ['reversed()', 'sort()', 'slicing', 'reverse() string **R.W.E**']
 works_with: ['list']
-file path: 'docs\lists\methods\reverse_method.md'
+file_path: Python-reference/docs/lists/methods/reverse_method.md
 ---
 
 # reverse()

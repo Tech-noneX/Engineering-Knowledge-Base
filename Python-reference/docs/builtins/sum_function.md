@@ -9,7 +9,7 @@ reference: "Adds up all numeric items in an iterable, with optional start value"
 tags: ["built-in", "function", "sum", "numeric", "iterable", "addition"]
 see_also: ["min()", "max()", "len()", "reduce()", "sum() total invoice calculation"]
 works_with: ["list", "tuple", "set", "dict", "iterable", "range"]
-file path: 'docs\builtins\sum_function.md'
+file_path: Python-reference/docs/builtins/sum_function.md
 ---
 
 # sum()

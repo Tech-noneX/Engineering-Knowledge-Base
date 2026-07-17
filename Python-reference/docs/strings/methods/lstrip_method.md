@@ -9,7 +9,7 @@ reference: "Returns a new string with leading (left) whitespace or specified cha
 tags: ["string", "method", "whitespace", "strip", "immutable", "left"]
 see_also: ["rstrip()", "strip()", "replace()", "lstrip() clean user input **R.W.E**"]
 works_with: ["str"]
-file path: 'docs\strings\methods\lstrip_method.md'
+file_path: Python-reference/docs/strings/methods/lstrip_method.md
 ---
 
 # lstrip()

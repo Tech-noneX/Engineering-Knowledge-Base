@@ -10,7 +10,7 @@ reference: "Safely gets the value for a key in a dictionary, returns default if 
 tags: ["dict", "dictionary", "method", "safe access", "default", "lookup"]
 see_also: ["setdefault()", "keys()", "values()", "get() user profile lookup **R.W.E**"]
 works_with: ["dict"]
-file path: 'docs\dictionaries\methods\get_method.md'
+file_path: Python-reference/docs/dictionaries/methods/get_method.md
 ---
 
 # get()
@@ -96,7 +96,7 @@ print(d.get('z', 999))    # 999
 
 ## Tips & Common mistakes
 
-- **No KeyError:** Unlike `dict[key]`, `get()` never raises an error if the key doesn't exist.
+- **No `KeyError` for a missing key:** Unlike `dict[key]`, `get()` returns the default when a valid key is absent. An unhashable key, such as a list, still raises `TypeError`.
 - Use the `default` parameter to avoid having to check if a key is in the dictionary first.
 - Forgetting to use the `default` parameter and assuming you'll always get a value back.
 - Thinking `get()` works with lists or other types—it’s for dictionaries only.

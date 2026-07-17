@@ -9,6 +9,7 @@ reference: 'Returns the number of times a value appears in a list'
 tags: ['list', 'method', 'count', 'search', 'value', 'frequency']
 see_also: ['index()', 'len()', 'collections.Counter', 'count() all types **R.W.E**']
 works_with: ['list']
+file_path: Python-reference/docs/lists/methods/count_method.md
 ---
 
 # count()

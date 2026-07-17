@@ -33,7 +33,7 @@ Accepts variables, literals, expressions, and can work with both positional and 
 ## Syntax
 
 ```python
-"template string with {}".format(value)
+str.format(*args, **kwargs)
 ```
 
 - **explanation:**  
@@ -46,7 +46,7 @@ Accepts variables, literals, expressions, and can work with both positional and 
 
 - **Optional:** Unlimited (`*args`, `**kwargs` — any values you want to insert)
 
-- **Maximum:** As many as there are placeholders
+- **Maximum:** No fixed argument limit, although every referenced placeholder must have a matching value
 
 - Required:
 
@@ -99,7 +99,7 @@ print("Price: ${:.2f}".format(price))
 # Output: Price: $5.68
 ```
 
-- **Fill placeholders with values from a dictionary using ** unpacking**
+- **Fill placeholders from a dictionary using `**` unpacking**
   This is useful when your variable names and dictionary keys match.
 
 ```python
@@ -110,7 +110,9 @@ print("User: {name}, Score: {score}".format(**data))
 
 **Note:**  
 `format()` does not modify the original string—it always returns a new string.  
-Unmatched or missing placeholders will raise an error.
+Missing positional placeholders raise `IndexError`; missing named placeholders
+raise `KeyError`. Extra arguments are allowed and are ignored if no placeholder
+refers to them.
 
 ## Tips & Common mistakes
 

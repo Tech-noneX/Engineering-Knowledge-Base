@@ -9,7 +9,7 @@ reference: "Returns the smallest item in an iterable or among given values"
 tags: ["built-in", "function", "minimum", "iterable", "comparison", "numeric", "string"]
 see_also: ["max()", "sorted()", "sum()", "min() slowest response"]
 works_with: ["list", "tuple", "str", "set", "dict", "iterable"]
-file path: 'docs\builtins\min_function.md'
+file_path: Python-reference/docs/builtins/min_function.md
 ---
 
 # min()

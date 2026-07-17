@@ -9,7 +9,7 @@ reference: "Adds a single item to the end of a list in place"
 tags: ["list", "method", "in-place", "add", "mutable"]
 see_also: ['add()', 'extend()', 'insert()', 'pop()', "append() build shopping cart **R.W.E**"]
 works_with: ['list'] 
-file path: 'docs\lists\methods\append_method.md'
+file_path: Python-reference/docs/lists/methods/append_method.md
 ---
 
 # append()

@@ -9,7 +9,7 @@ reference: Returns an iterator that yields items in reverse order
 tags: ["built-in", "function", "reverse", "sequence", "iteration", "for loop", "iterator"]
 see_also: ["list()", "range()", "for", "sorted()", "reversed() undo navigation"]
 works_with: ["list", "tuple", "str", "range", "sequence", "iterable"]
-file path: 'docs\builtins\reversed_function.md'
+file_path: Python-reference/docs/builtins/reversed_function.md
 ---
 
 # reversed()
@@ -26,7 +26,10 @@ The `reversed()` function returns a reverse iterator over the given sequence. It
 
 ## Usable With
 
-Use `reversed()` with lists, tuples, strings, ranges, or any custom sequence object that implements `__len__()` and `__getitem__()`. For other iterables (like sets, dicts), convert to a sequence (e.g., `list()`) first.
+Use `reversed()` with lists, tuples, strings, ranges, dictionaries, or custom
+objects that implement `__reversed__()`. It also supports objects with the
+sequence protocol (`__len__()` and integer-based `__getitem__()`). Sets must be
+converted to an ordered sequence first because they do not define reverse order.
 
 ## Syntax
 
@@ -75,13 +78,22 @@ for i in reversed(range(3)):
 # Output: 2 1 0
 ```
 
+- **Reverse dictionary keys (Python 3.8+)**
+
+```python
+settings = {"voltage": 230, "current": 5, "phase": 1}
+print(list(reversed(settings)))
+# ['phase', 'current', 'voltage']
+```
+
 **Note:** For objects that don’t support `__len__()` and `__getitem__()`, use `list(reversed(obj))` or `reversed(list(obj))`.
 
 ## Tips & Common mistakes
 
 - `reversed()` returns an **iterator**—to get a list, use `list(reversed(sequence))`.
-- Does **not** work directly with sets or dictionaries (they’re unordered or don’t support indexing); convert them to a list first.
-- Only works with sequences (objects with defined length and indexes).
+- Does **not** work directly with sets because a set has no defined order.
+- Dictionaries are reversible in Python 3.8+ and yield keys in reverse insertion order.
+- Custom objects can support it through `__reversed__()` or the sequence protocol.
 - If you need to reverse in place (for lists), use the `.reverse()` method instead.
 
 ```python

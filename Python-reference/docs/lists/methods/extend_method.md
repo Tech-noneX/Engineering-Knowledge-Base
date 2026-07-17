@@ -9,6 +9,7 @@ reference: "Adds all items from an iterable to the end of a list in place"
 tags: ["list", "method", "in-place", "add", "iterable", "mutable",]
 see_also: ["add()", "append()", "insert()", "pop()", "extend() merge datasets **R.W.E**"]
 works_with: ["list"]
+file_path: Python-reference/docs/lists/methods/extend_method.md
 ---
 
 # extend

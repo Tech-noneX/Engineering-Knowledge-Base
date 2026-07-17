@@ -9,6 +9,7 @@ reference: 'Adds a single element to a set if not already present'
 tags: ['set', 'method', 'add', 'unique', 'collection', 'mutable']
 see_also: ['remove()', 'discard()', 'update()', 'add() set union **R.W.E**']
 works_with: ['set']
+file_path: Python-reference/docs/sets/method/add_method.md
 ---
 
 # add()

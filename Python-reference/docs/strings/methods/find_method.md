@@ -9,7 +9,7 @@ reference: 'Returns the lowest index of a substring, or -1 if not found'
 tags: ['string', 'method', 'find', 'substring', 'index', 'search', 'text']
 see_also: ['index()', 'count()', 'replace()', 'find() all positions **R.W.E**']
 works_with: ['str']
-file path: docs\strings\methods\find_method.md'
+file_path: Python-reference/docs/strings/methods/find_method.md
 ---
 
 # find()
@@ -23,8 +23,8 @@ file path: docs\strings\methods\find_method.md'
 ## Description
 
 The `find()` string method returns the **lowest index** in the string where a specified substring is found.  
-Returns `-1` if the substring is not found.  
-Safe for searching, as it never raises an error (unlike `index()`).
+Returns `-1` if the substring is not found instead of raising `ValueError` like
+`index()` does.
 
 ## Usable With
 
@@ -34,7 +34,9 @@ Searches for a substring within another string.
 ## Syntax
 
 ```python
-str.find(sub[ , start[ , end]])
+str.find(sub)
+str.find(sub, start)
+str.find(sub, start, end)
 ```
 
 - **explanation:**  
@@ -102,6 +104,7 @@ Returns the lowest index only; for all positions, use a loop or regular expressi
 ## Tips & Common mistakes
 
 - Use `find()` if you don’t want an error when the substring is missing (returns `-1`).
+- Invalid argument types can still raise `TypeError`; the no-error behavior refers to a missing substring.
 - For strict error handling, use `str.index()` (raises `ValueError` if not found).
 - Start and end are slice indexes (like with string slicing).
 - For all matches, use a loop or regex (`re.finditer`).

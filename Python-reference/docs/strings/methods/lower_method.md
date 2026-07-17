@@ -9,7 +9,7 @@ reference: "Returns a copy of the string with all letters converted to lowercase
 tags: ["string", "method", "case", "text", "immutable"]
 see_also: ["upper()", "capitalize()", "casefold()", "if", lower() normalize user input **R.W.E**"]
 works_with: ["str"]
-file path: 'docs\strings\methods\lower_method.md'
+file_path: Python-reference/docs/strings/methods/lower_method.md
 ---
 
 # lower()

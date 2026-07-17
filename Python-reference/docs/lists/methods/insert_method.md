@@ -9,6 +9,7 @@ reference: "Inserts an item at a specific index in a list, shifting elements to 
 tags: ["list", "method", "in-place", "add", "mutable", "position"]
 see_also: ["append()", "extend()", "pop()", "insert() insert priority task **R.W.E**"]
 works_with: ["list"]
+file_path: Python-reference/docs/lists/methods/insert_method.md
 ---
 
 # insert

@@ -9,7 +9,7 @@ reference: "Returns a new string with the first letter of each word capitalized 
 tags: ["string", "method", "case", "capitalize", "titlecase", "immutable"]
 see_also: ["capitalize()", "lower()", "upper()", "title() format book titles **R.W.E**"]
 works_with: ["str"]
-file path: docs\strings\methods\title_method.md
+file_path: Python-reference/docs/strings/methods/title_method.md
 ---
 
 # title()

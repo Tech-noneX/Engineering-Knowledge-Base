@@ -9,7 +9,7 @@ reference: "Returns a new string with the specified prefix removed, if present"
 tags: ["string", "method", "prefix", "remove", "immutable", "python3.9+"]
 see_also: ["removesuffix()", "replace()", "strip()", "removeprefix() clean log output **R.W.E**"]
 works_with: ["str"]
-file path: 'docs\strings\methods\removeprefix_method.md'
+file_path: Python-reference/docs/strings/methods/removeprefix_method.md
 ---
 
 # removeprefix()

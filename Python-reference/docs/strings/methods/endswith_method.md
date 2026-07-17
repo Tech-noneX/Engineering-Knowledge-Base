@@ -27,7 +27,7 @@ It returns `True` if the string ends with the suffix, and `False` otherwise.
 
 You can also specify optional `start` and `end` indexes to limit the check to a substring.
 
-- **Safe to use:** Never raises an error—always returns a boolean.
+- **Missing suffixes are safe:** A non-matching suffix returns `False` rather than raising `ValueError`.
 - **Common use:** Input validation, file extension checking, pattern matching.
 
 ## Usable With
@@ -38,7 +38,9 @@ You can also specify optional `start` and `end` indexes to limit the check to a 
 ## Syntax
 
 ```python
-str.endswith(suffix[, start[, end]])
+str.endswith(suffix)
+str.endswith(suffix, start)
+str.endswith(suffix, start, end)
 ```
 
 - `suffix`: String or tuple of strings to check for.
@@ -62,8 +64,9 @@ str.endswith(suffix[, start[, end]])
 'archive.tar.gz'.endswith('.tar', 0, 11)    # True (checks only 'archive.tar')
 ```
 
-- **Maximum:**  
-  - `suffix` can be a tuple for multiple options.
+- **Maximum:** 3 arguments (`suffix`, `start`, `end`)
+
+  `suffix` may be a tuple of strings to check several endings in one call.
 
 ```python
 'main.py'.endswith(('.py', '.txt'))   # True (matches either suffix)
@@ -92,7 +95,7 @@ file.endswith(('.jpg', '.jpeg', '.png'))   # True
 
 ```python
 url = 'https://example.com/index.html'
-url.endswith('.html', 0, 27)   # True
+url.endswith('.html', 0, len(url))   # True
 ```
 
 **Note:**  
@@ -122,6 +125,9 @@ url.endswith('.html', 0, 27)   # True
 
 - **Index boundaries:**  
   If you specify a `start` and `end` that cut off the suffix, result will be `False`.
+
+- **Argument types:**
+  A non-string suffix raises `TypeError`; a tuple must contain only strings.
 
 ## See Also
 

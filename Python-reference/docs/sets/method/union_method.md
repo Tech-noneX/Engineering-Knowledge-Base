@@ -5,7 +5,7 @@ section: Set Methods
 module: set
 subscription: premium
 difficulty: beginner
-reference: Returns a new set with all unique elements from two or more sets.
+reference: Returns a new set containing unique elements from the original set and any supplied iterables.
 tags: ['method', 'set', 'union', 'combine', 'unique']
 see_also: ['update', 'intersection', 'difference', 'symmetric_difference', 'copy']
 works_with: ['set']
@@ -22,10 +22,11 @@ file_path: Python-reference/docs/sets/method/union_method.md
 
 ## Description
 
-The `union()` method returns a **new set** containing all unique elements from the set and one or more other sets or iterables.
+The `union()` method returns a **new set** containing all unique elements from
+the original set and zero or more other sets or iterables.
 
 - It does **not** modify the original set.
-- Equivalent to using the `|` operator (pipe).
+- Similar to using the `|` operator (pipe), although the method accepts any iterable while the operator requires set-like operands.
 - **Duplicates are automatically removed**.
 
 Commonly used to combine elements from multiple collections.
@@ -38,7 +39,7 @@ Commonly used to combine elements from multiple collections.
 ## Syntax
 
 ```python
-set1.union(set2, set3, ...)
+set1.union(*others)
 # or using the operator:
 set1 | set2 | set3
 ```
@@ -48,7 +49,7 @@ set1 | set2 | set3
 ## Arguments
 
 - **Required:**  
-  - At least one other set or iterable is optional. Can be called with no arguments, which just returns a copy of the original set.
+  - None. Calling `set1.union()` with no arguments returns a shallow copy.
 
 ```python
 a = {1, 2, 3}
@@ -121,6 +122,9 @@ Original sets are not changed—union always returns a new set.
 
 - **Only hashable elements allowed:**  
   Passing an iterable with unhashable elements (like lists) will raise a `TypeError`.
+
+- **Method versus operator:**
+  `{1}.union([2, 3])` works, but `{1} | [2, 3]` raises `TypeError` because `|` expects set-like operands.
 
 - **Empty argument just returns a copy:**  
   `a.union()` returns a shallow copy of `a`.

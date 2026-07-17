@@ -9,6 +9,7 @@ reference: "Returns the index of the first occurrence of a value in a sequence"
 tags: ["list", "tuple", "string", "method", "search", "sequence"]
 see_also: ["find()", "count()", "pop()", "enumerate()", "index() error handling **R.W.E**"]
 works_with: ["list", "tuple", "string"]
+file_path: Python-reference/docs/lists/methods/index_method.md
 ---
 
 # index

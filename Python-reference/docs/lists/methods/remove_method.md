@@ -9,7 +9,7 @@ reference: 'Removes the first occurrence of a value from a list'
 tags: ['list', 'method', 'remove', 'value', 'in-place', 'mutable']
 see_also: ['pop()', 'del', 'clear()', 'remove() all occurrences **R.W.E**']
 works_with: ['list']
-file path: '\docs\lists\methods\remove_method.md'
+file_path: Python-reference/docs/lists/methods/remove_method.md
 ---
 
 # remove()

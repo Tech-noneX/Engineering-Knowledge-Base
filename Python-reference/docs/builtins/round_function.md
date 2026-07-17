@@ -9,7 +9,7 @@ reference: "Rounds a number to the nearest integer or specified decimal place"
 tags: ["built-in", "function", "round", "float", "decimal", "precision", "number"]
 see_also: ["int()", "float()", "math.ceil()", "math.floor()", "round() currency formatting"]
 works_with: ["int", "float", "numeric"]
-file path: 'docs\builtins\round_function.md'
+file_path: Python-reference/docs/builtins/round_function.md
 ---
 
 # round()
