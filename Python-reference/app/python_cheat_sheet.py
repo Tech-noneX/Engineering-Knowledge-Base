@@ -4,7 +4,7 @@ from greetings_function import greetings
 from md_paths import (lists_methods_paths, datatypes_paths,
              lists_function_paths, dict_methods_paths,
              string_methods, built_in, set_method,
-             modules,
+             modules, PYTHON_DOCS,
                      )
 
 
@@ -51,6 +51,7 @@ class PythonCheatSheet:
                                                     'remove': lists_methods_paths['remove'],
                                                     'count': lists_methods_paths['count'],
                                                     'reverse': lists_methods_paths['reverse'],
+                                                    'pop': lists_methods_paths['pop'],
 
                                                     }}
         
@@ -87,17 +88,110 @@ class PythonCheatSheet:
                                          'functools': modules['functools module']['functools'],
                                         }}
 
+        self.menu_categories = {
+            '1': ('BUILT-IN FUNCTIONS', self.builtin_sheet['functions']),
+            '2': ('DATA TYPES', self.datatypes_sheet),
+            '3': ('LIST FUNCTIONS & METHODS', self.lists_sheet['functions & methods']),
+            '4': ('STRING METHODS', self.string_sheet['functions & methods']),
+            '5': ('DICTIONARY METHODS', self.dict_sheet['functions & methods']),
+            '6': ('SET METHODS', self.set_sheet['method']),
+            '7': ('MODULES', {
+                name: path
+                for module in self.modules_in.values()
+                for name, path in module.items()
+            }),
+        }
 
-        
+
+    def display_menu(self, title, menu_lines):
+        menu_width = 60
+
+        print("+" + "-" * (menu_width - 2) + "+")
+        print("|" + title.center(menu_width - 2) + "|")
+        print("+" + "-" * (menu_width - 2) + "+")
+        for line in menu_lines:
+            print(f"|  {line}".ljust(menu_width - 1) + "|")
+        print("+" + "-" * (menu_width - 2) + "+\n")
+
+
     def main_menu(self):
-        pass
+        card_count = sum(1 for _ in PYTHON_DOCS.rglob("*.md"))
+
+        while True:
+            self.display_menu("PYTHON REFERENCE BROWSER", [
+                f"{card_count} reference cards available",
+                "",
+                "1  Built-in functions",
+                "2  Data types",
+                "3  List functions and methods",
+                "4  String methods",
+                "5  Dictionary methods",
+                "6  Set methods",
+                "7  Modules",
+                "",
+                "s  Search all cards",
+                "q  Quit",
+            ])
+
+            menu_choice = input("Choose a menu: ").lower().strip()
+
+            if menu_choice == "q":
+                break
+            if menu_choice == "s":
+                self.functions_menu()
+                continue
+            if menu_choice in self.menu_categories:
+                title, cards = self.menu_categories[menu_choice]
+                self.category_menu(title, cards)
+                continue
+            print("Menu option not found. Choose 1-7, s or q.\n")
+
+
+    def category_menu(self, title, cards):
+        card_names = sorted(cards)
+        menu_lines = [f"{len(card_names)} cards available", ""]
+
+        for index in range(0, len(card_names), 3):
+            row = "".join(
+                f"{name:<17}" for name in card_names[index:index + 3]
+            ).rstrip()
+            menu_lines.append(row)
+
+        menu_lines.extend([
+            "",
+            "Type a listed name to open its card.",
+            "b  Back to main menu",
+        ])
+        self.display_menu(title, menu_lines)
+
+        while True:
+            card_choice = input("Choose a card: ").lower().strip()
+
+            if card_choice == "b":
+                break
+            if card_choice in cards:
+                os.startfile(cards[card_choice])
+                print(f"Opened: {card_choice}\n")
+                continue
+            print("Card not found. Choose a listed name or enter b.\n")
 
     
     def functions_menu(self):
+        self.display_menu("SEARCH ALL CARDS", [
+            "Search examples: append, enumerate, list, dict, reduce",
+            "",
+            "help  Show available topics",
+            "b     Back to main menu",
+        ])
+
         while True:
-            find_function = input(f"{random.choice(greetings)}\n:").lower().strip()
-            if "q" == find_function:
+            find_function = input(f"{random.choice(greetings)}\nSearch: ").lower().strip()
+            if "b" == find_function:
                 break
+            if "help" == find_function:
+                print("Available topics: built-ins, data types, dictionaries, "
+                      "lists, modules, sets and strings.\n")
+                continue
             if find_function in self.lists_sheet['functions & methods']:
                 os.startfile(self.lists_sheet['functions & methods'][find_function])
                 continue
@@ -116,13 +210,18 @@ class PythonCheatSheet:
             elif find_function in self.datatypes_sheet:
                 os.startfile(self.datatypes_sheet[find_function])
                 continue
-            for modules,functions in self.modules_in.items():
+            module_found = False
+            for modules, functions in self.modules_in.items():
                 if find_function in functions:
                     os.startfile(self.modules_in[modules][find_function])
-                    continue
+                    module_found = True
+                    break
+            if module_found:
+                continue
             print("Function not found!")
 
 
 
-pychsh = PythonCheatSheet()
-pychsh.functions_menu()
+if __name__ == "__main__":
+    pychsh = PythonCheatSheet()
+    pychsh.main_menu()

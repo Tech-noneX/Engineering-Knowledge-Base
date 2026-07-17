@@ -19,6 +19,9 @@ build/
 dist/
 *.egg-info/
 
+# Downloaded application installers
+Python-reference/app/*-setup.exe
+
 # Local environment and secret files
 .env
 .env.*
