@@ -35,7 +35,7 @@ $$
 18 = 2 \times 3^2
 $$
 
-The prime factors common to both numbers are \(2\) and \(3\).
+The prime factors common to both numbers are (2) and (3).
 
 Choose their lowest powers:
 
@@ -46,7 +46,7 @@ $$
 Therefore:
 
 $$
-\operatorname{HCF}(12,18)=6
+\text{HCF}(12,18)=6
 $$
 
 ## Why We Need HCF
@@ -87,7 +87,7 @@ Suppose we have:
 We want to make the greatest possible number of identical component packs.
 
 $$
-\operatorname{HCF}(18,24)=6
+\text{HCF}(18,24)=6
 $$
 
 Therefore, we can make \(6\) identical packs.
@@ -158,7 +158,7 @@ $$
 Therefore:
 
 $$
-\operatorname{LCM}(12,18)
+\text{LCM}(12,18)
 =
 4 \times 9
 =
@@ -186,7 +186,7 @@ $$
 Find the LCM of the denominators:
 
 $$
-\operatorname{LCM}(6,8)=24
+\text{LCM}(6,8)=24
 $$
 
 Convert both fractions:
@@ -216,7 +216,7 @@ Another machine completes a cycle every \(8\) minutes.
 Their cycles will finish together after:
 
 $$
-\operatorname{LCM}(6,8)=24
+\text{LCM}(6,8)=24
 $$
 
 Therefore, both machines complete a cycle together every \(24\) minutes.
