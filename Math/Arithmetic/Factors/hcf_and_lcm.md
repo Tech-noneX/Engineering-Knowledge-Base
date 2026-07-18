@@ -72,17 +72,15 @@ The HCF of \(18\) and \(24\) is \(6\).
 Divide the numerator and denominator by \(6\):
 
 $$
-\frac{18 \div 6}{24 \div 6}
-=
-\frac{3}{4}
+\frac{18 \div 6}{24 \div 6}=\frac{3}{4}
 $$
 
 ### Real-World Example
 
 Suppose we have:
 
-- \(18\) red components;
-- \(24\) blue components.
+- \(18\) red components
+- \(24\) blue components
 
 We want to make the greatest possible number of identical component packs.
 
@@ -158,11 +156,7 @@ $$
 Therefore:
 
 $$
-\text{LCM}(12,18)
-=
-4 \times 9
-=
-36
+\text{LCM}(12,18) = 4 \times 9 = 36
 $$
 
 ## Why We Need LCM
@@ -202,9 +196,7 @@ $$
 Now add:
 
 $$
-\frac{4}{24}+\frac{3}{24}
-=
-\frac{7}{24}
+\frac{4}{24}+\frac{3}{24} = \frac{7}{24}
 $$
 
 ### Real-World Timing Example
