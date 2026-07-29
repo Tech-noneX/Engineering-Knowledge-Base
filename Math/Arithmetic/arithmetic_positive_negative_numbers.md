@@ -137,7 +137,7 @@ $$-3-3=-6$$
 For multiplication, the signs determine whether the result is positive or
 negative.
 
-### Same Signs Give a Positive Result
+### Same Signs Give a Positive Result (Division)
 
 $$(+)(+)=+$$
 
@@ -195,7 +195,7 @@ $$12\div3=4$$
 
 $$(-12)\div(-3)=4$$
 
-### Different Signs Give a Negative Result
+## Different Signs Give a Negative Result (Division)
 
 $$\frac{+9}{-3}=-3$$
 
@@ -238,12 +238,12 @@ $$a-b=a+(-b)$$
 
 ### Multiplication and Division
 
-| First sign | Second sign | Result |
-|---       |---       |---       |
-| Positive | Positive | Positive |
-| Negative | Negative | Positive |
-| Positive | Negative | Negative |
-| Negative | Positive | Negative |
+| First sign | Second sign | Result   |
+| --- | --- | --- |
+| Positive   | Positive    | Positive |
+| Negative   | Negative    | Positive |
+| Positive   | Negative    | Negative |
+| Negative   | Positive    | Negative |
 
 Memory rule:
 
