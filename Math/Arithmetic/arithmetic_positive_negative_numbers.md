@@ -215,21 +215,21 @@ $$(-12)\div3=-4$$
 
 ### Addition
 
-| First number | Second number | Rule | Result |
-|---|---|---|---|
-| Positive | Positive | Add the magnitudes | Positive |
-| Negative | Negative | Add the magnitudes | Negative |
-| Positive | Negative | Subtract the magnitudes | Sign of the larger magnitude, or zero if equal |
-| Negative | Positive | Subtract the magnitudes | Sign of the larger magnitude, or zero if equal |
+| First number | Second number | Rule                    | Result                                         |
+|---           |---            |---                      |---                                             |
+| Positive     | Positive      | Add the magnitudes      | Positive                                       |
+| Negative     | Negative      | Add the magnitudes      | Negative                                       |
+| Positive     | Negative      | Subtract the magnitudes | Sign of the larger magnitude, or zero if equal |
+| Negative     | Positive      | Subtract the magnitudes | Sign of the larger magnitude, or zero if equal |
 
 ### Subtraction
 
-| First number | Number being subtracted | Rewrite as addition | Result |
-|---|---|---|---|
-| Positive | Positive | Positive + Negative | Depends on the larger magnitude, or zero if equal |
-| Positive | Negative | Positive + Positive | Positive |
-| Negative | Positive | Negative + Negative | Negative |
-| Negative | Negative | Negative + Positive | Depends on the larger magnitude, or zero if equal |
+| First number | Number being subtracted | Rewrite as addition | Result                                            |
+|---           |---                      |---                  |---                                                |
+| Positive     | Positive                | Positive + Negative | Depends on the larger magnitude, or zero if equal |
+| Positive     | Negative                | Positive + Positive | Positive                                          |
+| Negative     | Positive                | Negative + Negative | Negative                                          |
+| Negative     | Negative                | Negative + Positive | Depends on the larger magnitude, or zero if equal |
 
 For subtraction, reverse the sign of the number being subtracted and then use
 the addition rules:
@@ -239,7 +239,7 @@ $$a-b=a+(-b)$$
 ### Multiplication and Division
 
 | First sign | Second sign | Result   |
-| --- | --- | --- |
+| ---        | ---         | ---      |
 | Positive   | Positive    | Positive |
 | Negative   | Negative    | Positive |
 | Positive   | Negative    | Negative |
