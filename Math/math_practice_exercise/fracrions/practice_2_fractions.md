@@ -5,11 +5,10 @@
 ### `solution: 1`
 
 ```math
-\require{cancel}
 \begin{aligned}
 2\frac{1}{2} - \frac{3}{5} \times \frac{20}{27}
-&=\frac{5}{2} - \frac{3}{\cancelto{1}{5}} \times \frac{\cancelto{4}{20}}{27} \\[6pt]
-&=\frac{5}{2} - \frac{\cancelto{1}{3}}{1} \times \frac{4}{\cancelto{9}{27}} \\[6pt]
+&=\frac{5}{2} - \frac{3}{\cancel{5}^{1}} \times \frac{\cancel{20}^{4}}{27} \\[6pt]
+&=\frac{5}{2} - \frac{\cancel{3}^{1}}{1} \times \frac{4}{\cancel{27}^{9}} \\[6pt]
 &=\frac{5}{2} - \frac{4}{9} = \frac{45}{18} - \frac{8}{18} \\[6pt]
 &=\frac{37}{18} \\[6pt]
 &=\boxed{2\frac{1}{18}}
