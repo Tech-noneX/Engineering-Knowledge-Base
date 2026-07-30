@@ -68,7 +68,7 @@ $$
 $$
 \begin{aligned}
 \frac{4}{5} \times \frac{1}{2} - \frac{1}{6} \div \frac{2}{5} + \frac{2}{3}
-&= \frac{\cancel{4}^{2}}{5} \times \frac{1}{\cancel{2}^{1}} - \frac{1}{6} \times \frac{5}{2} + \frac{2}{3} \\[6pt]
+&= \frac{\cancel{4}^{2}}{5} \times \frac{1}{\cancel{2}^{1}}-\frac{1}{6} \times \frac{5}{2} + \frac{2}{3} \\[6pt]
 &= \frac{2}{5} - \frac{5}{12} + \frac{2}{3} \\[6pt]
 &= \frac{24}{60} - \frac{25}{60} + \frac{40}{60} \\[6pt]
 &= \frac{39}{60} \\[6pt]
@@ -102,9 +102,12 @@ $$
 
 $$
 \begin{aligned}
-\frac{1}{2}\text{ of }\left(4\frac{2}{5} - 3\frac{7}{10}\right) + \left(3\frac{1}{3} \div \frac{2}{3}\right) - \frac{2}{5}
-&= \frac{1}{2} \times \left(\frac{22}{5} - \frac{37}{10}\right) + \left(\frac{10}{3} \times \frac{3}{2}\right) - \frac{2}{5} \\[6pt]
-&= \frac{1}{2} \times \left(\frac{44}{10} - \frac{37}{10}\right) + \left(\frac{10}{\cancel{3}^{1}} \times \frac{\cancel{3}^{1}}{2}\right) - \frac{2}{5} \\[6pt]
+\frac{1}{2}\text{ of }\left(4\frac{2}{5} - 3\frac{7}{10}\right)
++ \left(3\frac{1}{3} \div \frac{2}{3}\right) - \frac{2}{5}
+&= \frac{1}{2} \times \left(\frac{22}{5} - \frac{37}{10}\right)
++ \left(\frac{10}{3} \times \frac{3}{2}\right) - \frac{2}{5} \\[6pt]
+&= \frac{1}{2} \times \left(\frac{44}{10} - \frac{37}{10}\right)
++ \left(\frac{10}{\cancel{3}^{1}} \times \frac{\cancel{3}^{1}}{2}\right) - \frac{2}{5} \\[6pt]
 &= \frac{1}{2} \times \frac{7}{10} + 5 - \frac{2}{5} \\[6pt]
 &= \frac{7}{20} + 5 - \frac{2}{5} \\[6pt]
 &= \frac{7}{20} + \frac{100}{20} - \frac{8}{20} \\[6pt]
@@ -117,7 +120,7 @@ $$
 
 ### `calculation: 8`
 
-#### Numerator
+***Numerator***
 
 $$
 \begin{aligned}
@@ -129,7 +132,7 @@ $$
 \end{aligned}
 $$
 
-#### Denominator
+***Denominator***
 
 $$
 \begin{aligned}
@@ -142,7 +145,7 @@ $$
 \end{aligned}
 $$
 
-#### Final calculation
+***Final calculation***
 
 $$
 \begin{aligned}
@@ -178,7 +181,8 @@ $$
 \begin{aligned}
 \frac{1}{4} \times \frac{2}{5} - \frac{1}{5} \div \frac{2}{3} + \frac{4}{15}
 &= \frac{1}{4} \times \frac{2}{5} - \frac{1}{5} \times \frac{3}{2} + \frac{4}{15} \\[6pt]
-&= \frac{1}{\cancel{4}^{2}} \times \frac{\cancel{2}^{1}}{5} - \frac{1}{5} \times \frac{3}{2} + \frac{4}{15} \\[6pt]
+&= \frac{1}{\cancel{4}^{2}} \times \frac{\cancel{2}^{1}}{5}
+- \frac{1}{5} \times \frac{3}{2} + \frac{4}{15} \\[6pt]
 &= \frac{1}{10} - \frac{3}{10} + \frac{4}{15} \\[6pt]
 &= -\frac{2}{10} + \frac{4}{15} \\[6pt]
 &= -\frac{1}{5} + \frac{4}{15} \\[6pt]
@@ -191,37 +195,28 @@ $$
 
 ### `calculation: 11`
 
-#### Rewrite the complex fraction as division
+***Rewrite the complex fraction as division***
 
 $$
-\frac{
-    \frac{2}{3} + 3\frac{1}{5} \times 2\frac{1}{2} + 1\frac{1}{3}
-}{
-    8\frac{1}{3} \div 3\frac{1}{3}
-} =
-\left(
-    \frac{2}{3} + 3\frac{1}{5} \times 2\frac{1}{2} + 1\frac{1}{3}
-\right)
-\div
-\left(
-    8\frac{1}{3} \div 3\frac{1}{3}
-\right)
+\frac{\frac{2}{3} + 3\frac{1}{5} \times 2\frac{1}{2} + 1\frac{1}{3}}{8\frac{1}{3} \div 3\frac{1}{3}}=
+\left(\frac{2}{3} + 3\frac{1}{5} \times 2\frac{1}{2} + 1\frac{1}{3}\right)\div
+\left(8\frac{1}{3} \div 3\frac{1}{3}\right)
 $$
 
-#### First bracket
+***First bracket***
 
 $$
 \begin{aligned}
-\frac{2}{3} + 3\frac{1}{5} \times 2\frac{1}{2} + 1\frac{1}{3}
-&= \frac{2}{3} + \frac{16}{5} \times \frac{5}{2} + \frac{4}{3} \\[6pt]
-&= \frac{2}{3} + \frac{\cancel{16}^{8}}{\cancel{5}^{1}} \times \frac{\cancel{5}^{1}}{\cancel{2}^{1}} + \frac{4}{3} \\[6pt]
-&= \frac{2}{3} + 8 + \frac{4}{3} \\[6pt]
-&= \frac{2}{3} + \frac{24}{3} + \frac{4}{3} \\[6pt]
+\frac{2}{3}+3\frac{1}{5}\times 2\frac{1}{2}+1\frac{1}{3}
+&= \frac{2}{3}+\frac{16}{5}\times\frac{5}{2}+\frac{4}{3}\\[6pt]
+&= \frac{2}{3}+\frac{\cancel{16}^{8}}{\cancel{5}^{1}}\times \frac{\cancel{5}^{1}}{\cancel{2}^{1}}+\frac{4}{3} \\[6pt]
+&= \frac{2}{3}+8+\frac{4}{3}\\[6pt]
+&= \frac{2}{3}+\frac{24}{3}+\frac{4}{3} \\[6pt]
 &= \frac{30}{3} = 10
 \end{aligned}
 $$
 
-#### Second bracket
+***Second bracket***
 
 $$
 \begin{aligned}
@@ -235,7 +230,7 @@ $$
 \end{aligned}
 $$
 
-#### Final calculation
+***Final Calculation***
 
 $$
 \begin{aligned}
@@ -251,7 +246,7 @@ $$
 
 ### `calculation: 12`
 
-#### First bracket
+***First Bracket***
 
 $$
 \begin{aligned}
@@ -262,7 +257,7 @@ $$
 \end{aligned}
 $$
 
-#### Second bracket
+***Second Bracket***
 
 $$
 \begin{aligned}
@@ -274,7 +269,7 @@ $$
 \end{aligned}
 $$
 
-#### Final calculation
+***Final Calculation***
 
 $$
 \begin{aligned}
