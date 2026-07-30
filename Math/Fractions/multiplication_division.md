@@ -10,9 +10,9 @@ $$
 
 - **Numerator:** the number above the fraction line. It tells us how many parts we have.
 - **Denominator:** the number below the fraction line. It tells us how many equal parts make one whole. It cannot be zero.
-- **Proper fraction:** the numerator is smaller than the denominator, such as \(\frac{2}{5}\).
-- **Improper fraction:** the numerator is equal to or greater than the denominator, such as \(\frac{7}{4}\).
-- **Mixed number:** a whole number and a proper fraction together, such as \(1\frac{3}{4}\).
+- **Proper fraction:** the numerator is smaller than the denominator, such as \($\frac{2}{5}$\).
+- **Improper fraction:** the numerator is equal to or greater than the denominator, such as \($\frac{7}{4}$\).
+- **Mixed number:** a whole number and a proper fraction together, such as \($1\frac{3}{4}$\).
 
 Convert mixed numbers to improper fractions before multiplying or dividing:
 
@@ -109,7 +109,7 @@ $$
 =\frac{a\times d}{b\times c}
 $$
 
-The divisor cannot be zero, so \(c\neq0\).
+The divisor cannot be zero, so \( $c\neq0$ \).
 
 ### Division Example 1: Proper Fractions
 
