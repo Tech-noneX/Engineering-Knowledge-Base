@@ -38,13 +38,14 @@ file_path: docs/mathematics/latex/fractions_and_mixed_numbers.md
 `LaTeX code:`
 
 ```markdown
-\frac {3 \frac{5}{10} \div \frac{1}{2}} {\frac{8}{12} \times 6 \frac{1}{10}}
-
+$$
+\frac{3\frac{5}{10}\,\div\,\frac{1}{2}}{\frac{8}{12}\,\times\,6\frac{1}{10}}=1\frac{44}{61}
+$$
 ```
 
 `Rendered:`
 
->## $\frac{3\frac{5}{10}\, \div\, \frac{1}{2}}{\frac{8}{12}\, \times\,6\frac{1}{10}} = 1\frac{44}{61}$
+> ## $`\frac{3\frac{5}{10}\,\div\,\frac{1}{2}}{\frac{8}{12}\,\times\,6\frac{1}{10}}=1\frac{44}{61}`$
 
 ## Tips and Common Mistakes
 
