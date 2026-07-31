@@ -41,11 +41,12 @@ file_path: docs/mathematics/latex/brackets_and_grouping.md
 ```markdown
 $$
 \left\{\frac{3}{2}\times\left[\frac{(a+b)\times(d-e)}{c}\right]\right\}
+$$
 ```
 
 `rendered:`
 
-> ## $\left\{\frac{3}{2}\times\left[\frac{(a+b)\times(d-e)}{c}\right]\right\}$
+> ## $`\left\{\frac{3}{2}\times\left[\frac{(a+b)\times(d-e)}{c}\right]\right\}`$
 
 ## Tips and Common Mistakes
 
