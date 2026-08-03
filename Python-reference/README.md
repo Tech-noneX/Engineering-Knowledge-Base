@@ -94,7 +94,7 @@ is:
 py .\Python-reference\app\python_cheat_sheet.py
 ```
 
-Use `q` from the main menu to close the program.
+Use `q` from any menu to close the program.
 
 The main menu displays the available categories:
 
@@ -119,18 +119,26 @@ The main menu displays the available categories:
 
 Choose a numbered topic to see all cards available in that category. Type a
 listed name, such as `append`, to open its Markdown card. The category menu
-remains active so that another card can be opened afterwards.
+remains active so that another card can be opened afterwards. The Modules topic
+first displays module names; choosing a module opens its own card submenu.
 
 ### Controls
 
 | Input | Action |
 |---|---|
 | `1` to `7` | Open a topic menu |
+| Module name | Open that module's card submenu |
 | Card name | Open the corresponding Markdown card |
-| `b` | Return to the main menu |
+| `b` | Return to the previous menu |
 | `s` | Search across every category |
 | `help` | Show topics while using global search |
-| `q` | Quit from the main menu |
+| `q` | Quit from any menu |
+
+The Modules menu lists module names such as `functools` and `pathlib`. Choosing
+`functools` displays its `functools` and `reduce` cards. Future cards added to
+the `pathlib` mapping, such as `read_text()`, will appear automatically in the
+`pathlib` submenu. Module functions also remain available through global
+search.
 
 > [!NOTE]
 > The browser uses `os.startfile()` to open Markdown files, so the current CLI

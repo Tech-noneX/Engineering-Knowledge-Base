@@ -84,12 +84,10 @@ class PythonCheatSheet:
                           }}
         
 
-        self.modules_in = {'functools': {'reduce': modules['functools module']['reduce'],
-                                         'functools': modules['functools module']['functools'],
-                                        },
-                           'pathlib': {'pathlib': modules['pathlib module']['pathlib'],
-                                       },
-                           }
+        self.modules_in = {
+            'functools': modules['functools module'],
+            'pathlib': modules['pathlib module'],
+        }
 
         self.menu_categories = {
             '1': ('BUILT-IN FUNCTIONS', self.builtin_sheet['functions']),
@@ -99,9 +97,8 @@ class PythonCheatSheet:
             '5': ('DICTIONARY METHODS', self.dict_sheet['functions & methods']),
             '6': ('SET METHODS', self.set_sheet['method']),
             '7': ('MODULES', {
-                name: path
-                for module in self.modules_in.values()
-                for name, path in module.items()
+                module_name: cards[module_name]
+                for module_name, cards in self.modules_in.items()
             }),
         }
 
@@ -119,8 +116,10 @@ class PythonCheatSheet:
 
     def main_menu(self):
         card_count = sum(
-            len(cards) for _, cards in self.menu_categories.values()
-        )
+            len(cards)
+            for menu_number, (_, cards) in self.menu_categories.items()
+            if menu_number != '7'
+        ) + sum(len(cards) for cards in self.modules_in.values())
 
         while True:
             self.display_menu("PYTHON REFERENCE BROWSER", [
@@ -143,11 +142,17 @@ class PythonCheatSheet:
             if menu_choice == "q":
                 break
             if menu_choice == "s":
-                self.functions_menu()
+                if self.functions_menu():
+                    break
+                continue
+            if menu_choice == "7":
+                if self.modules_menu():
+                    break
                 continue
             if menu_choice in self.menu_categories:
                 title, cards = self.menu_categories[menu_choice]
-                self.category_menu(title, cards)
+                if self.category_menu(title, cards):
+                    break
                 continue
             print("Menu option not found. Choose 1-7, s or q.\n")
 
@@ -165,7 +170,8 @@ class PythonCheatSheet:
         menu_lines.extend([
             "",
             "Type a listed name to open its card.",
-            "b  Back to main menu",
+            "b  Back to previous menu",
+            "q  Quit",
         ])
         self.display_menu(title, menu_lines)
 
@@ -173,12 +179,42 @@ class PythonCheatSheet:
             card_choice = input("Choose a card: ").lower().strip()
 
             if card_choice == "b":
-                break
+                return False
+            if card_choice == "q":
+                return True
             if card_choice in cards:
                 os.startfile(cards[card_choice])
                 print(f"Opened: {card_choice}\n")
                 continue
-            print("Card not found. Choose a listed name or enter b.\n")
+            print("Card not found. Choose a listed name, b or q.\n")
+
+
+    def modules_menu(self):
+        module_names = sorted(self.modules_in)
+
+        while True:
+            menu_lines = [f"{len(module_names)} modules available", ""]
+            menu_lines.extend(module_names)
+            menu_lines.extend([
+                "",
+                "Type a module name to see its cards.",
+                "b  Back to main menu",
+                "q  Quit",
+            ])
+            self.display_menu("MODULES", menu_lines)
+
+            module_choice = input("Choose a module: ").lower().strip()
+
+            if module_choice == "b":
+                return False
+            if module_choice == "q":
+                return True
+            if module_choice in self.modules_in:
+                title = f"{module_choice.upper()} MODULE"
+                if self.category_menu(title, self.modules_in[module_choice]):
+                    return True
+                continue
+            print("Module not found. Choose a listed name, b or q.\n")
 
     
     def functions_menu(self):
@@ -187,12 +223,15 @@ class PythonCheatSheet:
             "",
             "help  Show available topics",
             "b     Back to main menu",
+            "q     Quit",
         ])
 
         while True:
             find_function = input(f"{random.choice(greetings)}\nSearch: ").lower().strip()
             if "b" == find_function:
-                break
+                return False
+            if "q" == find_function:
+                return True
             if "help" == find_function:
                 print("Available topics: built-ins, data types, dictionaries, "
                       "lists, modules, sets and strings.\n")
