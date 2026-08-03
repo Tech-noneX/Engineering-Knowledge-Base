@@ -11,6 +11,19 @@
 =\boxed{\frac{8}{35}}
 ```
 
+`Python Calculation:`
+
+```python
+from fractions import Fraction
+
+calculation_fraction = Fraction(2, 5) * Fraction(4, 7)
+
+print(calculation_fraction)
+
+# output 8/35
+```
+
+
 ## 2. $5\times\frac{4}{9}$
 
 ### `calculation: 2`
@@ -76,6 +89,17 @@
 &= \boxed{\frac{3}{5}}
 \end{aligned}
 ```
+
+```python
+from fractions import Fraction
+
+calculation_fraction = Fraction(3, 5) * Fraction(7, 9) * Fraction((1*7+2), 7)
+
+print(calculation_fraction)
+
+# output 3/5
+```
+
 
 ## 7. $\frac{13}{17}\times4\frac{7}{11}\times3\frac{4}{39}$
 
