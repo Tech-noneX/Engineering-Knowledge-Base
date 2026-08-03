@@ -129,20 +129,6 @@
 \end{aligned}
 ```
 
-```python
-from fractions import Fraction
-
-numerator = Fraction((6*3+2), 3) * Fraction((1*5+2), 5) - Fraction(1, 3)
-
-denominator = Fraction((6*4+3), 4) / Fraction((1*2+1), 2)
-
-result = numerator / denominator
-
-print(result)
-
-# output 2 
-```
-
 ***Denominator***
 
 ```math
@@ -166,6 +152,20 @@ print(result)
 &= \cancel{9}^{1} \times \frac{2}{\cancel{9}^{1}} \\[6pt]
 &= \boxed{2}
 \end{aligned}
+```
+
+```python
+from fractions import Fraction
+
+numerator = Fraction((6*3+2), 3) * Fraction((1*5+2), 5) - Fraction(1, 3)
+
+denominator = Fraction((6*4+3), 4) / Fraction((1*2+1), 2)
+
+result = numerator / denominator
+
+print(result)
+
+# output 2 
 ```
 
 ## 9. $1\frac{1}{3} \times 2\frac{1}{5} \div \frac{2}{5}$
