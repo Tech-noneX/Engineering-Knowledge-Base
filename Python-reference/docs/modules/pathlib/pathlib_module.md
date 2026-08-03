@@ -60,12 +60,12 @@ path is `C:\Github_repos\temperature.txt`.
 
 ## Reading and writing methods
 
-| Method | Purpose | Important behaviour |
-|---|---|---|
-| `read_text()` | Read the entire file as one string | The file must exist |
-| `write_text()` | Create a file and write a string | Overwrites existing contents |
-| `open("a")` | Open a file and append text | Preserves existing contents |
-| `exists()` | Check whether a path exists | Returns `True` or `False` |
+| Method         | Purpose                            | Important behaviour          |
+|---             |---                                 |---                           |
+| `read_text()`  | Read the entire file as one string | The file must exist          |
+| `write_text()` | Create a file and write a string   | Overwrites existing contents |
+| `open("a")`    | Open a file and append text        | Preserves existing contents  |
+| `exists()`     | Check whether a path exists        | Returns `True` or `False`    |
 
 Use `encoding="utf-8"` for predictable handling of ordinary text and symbols.
 
@@ -139,12 +139,12 @@ The mode `"a"` means **append**. New text is added at the end of the file. The
 
 ## Common file modes
 
-| Mode | Meaning | If the file is missing | If the file exists |
-|---|---|---|---|
-| `"r"` | Read | Raises an error | Reads it |
-| `"w"` | Write | Creates it | Overwrites it |
-| `"a"` | Append | Creates it | Adds to the end |
-| `"x"` | Create only | Creates it | Raises an error |
+| Mode  | Meaning     | If the file is missing | If the file exists |
+|---    |---          |---                     |---                 |
+| `"r"` | Read        | Raises an error        | Reads it           |
+| `"w"` | Write       | Creates it             | Overwrites it      |
+| `"a"` | Append      | Creates it             | Adds to the end    |
+| `"x"` | Create only | Creates it             | Raises an error    |
 
 ## Writing a list as comma-separated data
 
