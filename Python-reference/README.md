@@ -3,7 +3,7 @@
 A structured library of beginner-friendly Python reference cards with a small
 command-line browser, reusable Markdown templates and generated metadata.
 
-The project currently contains **53 completed reference cards** across seven
+The project currently contains **54 completed reference cards** across seven
 topic categories. It is a working and growing part of the wider Engineering
 Knowledge Base, with the long-term goal of supplying content to a Flutter
 application.
@@ -25,10 +25,10 @@ application.
 | Data types | 8 | `list`, `dict`, `tuple` |
 | Dictionary methods | 1 | `get` |
 | List functions and methods | 10 | `append`, `pop`, `sorted` |
-| Modules | 2 | `functools`, `reduce` |
+| Modules | 3 | `functools`, `reduce`, `pathlib` |
 | Set methods | 2 | `add`, `union` |
 | String methods | 16 | `split`, `strip`, `replace` |
-| **Total** | **53** | |
+| **Total** | **54** | |
 
 ## Project Structure
 
@@ -102,7 +102,7 @@ The main menu displays the available categories:
 +----------------------------------------------------------+
 |                 PYTHON REFERENCE BROWSER                 |
 +----------------------------------------------------------+
-|  53 reference cards available                            |
+|  54 reference cards available                            |
 |                                                          |
 |  1  Built-in functions                                   |
 |  2  Data types                                           |

@@ -2,7 +2,7 @@
 
 ## Completed
 
-- 53 reference cards across built-ins, data types, dictionaries, lists,
+- 54 reference cards across built-ins, data types, dictionaries, lists,
   modules, sets and strings
 - Windows CLI search tool for opening reference cards
 - YAML metadata on every card

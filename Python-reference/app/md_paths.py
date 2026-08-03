@@ -88,6 +88,9 @@ modules = {
         "reduce": doc_path("modules", "functools", "reduce_functools.md"),
         "functools": doc_path("modules", "functools", "functools_module.md"),
     },
+    "pathlib module": {
+        "pathlib": doc_path("modules", "pathlib", "pathlib_module.md"),
+    },
 }
 
 all_paths = [

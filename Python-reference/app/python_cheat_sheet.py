@@ -4,7 +4,7 @@ from greetings_function import greetings
 from md_paths import (lists_methods_paths, datatypes_paths,
              lists_function_paths, dict_methods_paths,
              string_methods, built_in, set_method,
-             modules, PYTHON_DOCS,
+             modules,
                      )
 
 
@@ -86,7 +86,10 @@ class PythonCheatSheet:
 
         self.modules_in = {'functools': {'reduce': modules['functools module']['reduce'],
                                          'functools': modules['functools module']['functools'],
-                                        }}
+                                        },
+                           'pathlib': {'pathlib': modules['pathlib module']['pathlib'],
+                                       },
+                           }
 
         self.menu_categories = {
             '1': ('BUILT-IN FUNCTIONS', self.builtin_sheet['functions']),
@@ -115,7 +118,9 @@ class PythonCheatSheet:
 
 
     def main_menu(self):
-        card_count = sum(1 for _ in PYTHON_DOCS.rglob("*.md"))
+        card_count = sum(
+            len(cards) for _, cards in self.menu_categories.values()
+        )
 
         while True:
             self.display_menu("PYTHON REFERENCE BROWSER", [
